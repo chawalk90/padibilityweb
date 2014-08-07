@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
+	<span class="menu-trigger">MENU</span>
+	<div class="nav">
+	<ul class="clearfix">
+		<li id="house"><a href="index.html"><img class="home" src="images/home.png" height="50" width="50" /></a></li>
+		<li><a href="how_it_works.html">How It Works</a></li>
+		<li><a href="team.html">The Team</a></li>
+		<li><a href="mailto:info@padibility.com">Contact Us</a></li>
+		<li class="highlight"><a class="logout" href ="/logout">Log Out</a><a href="log_in.html">Log In</a></li>		
+		<li><a href="all_set.html">I'm All Set!</a></li>
+		<li class="mypad"><!--<span class='user-name'><%= session[:username] %></span>-->
+		<a href="seekers_profile.html"><span>Charlie Walker</span><img src="images/charlie_thumb.jpg" height="60" width="60" /></a></li>
+	</ul>
+</div>
+</header>
+<body>
+	<h2>Browse Seekers</h2>
+	<h4>SORT BY:</h4><select class="sort">
+		<option value="Compatibility">Compatibility</option>
+		<option value="Update Recency">Update Recency</option>
+		<option value="Price Range">Price Range</option>
+		<option value="Distance from Me">Distance from Me</option>
+		<option value="Register Date">Register Date</option>
+	</select>
+	<table id="seekers">
+		<tr>
+			<td><div class="cell"><img src="images/miguel.jpg" class="thumbnail" />
+				<p class="fullname">Miguel Castillo</p>
+				<p class="percent">78%</p></div>
+			</td>
+			<td><div class="cell"><img src="images/andrea.jpg" class="thumbnail" />
+				<p class="fullname">Andrea Schneider</p>
+				<p class="percent">51%</p></div>
+				</td>
+				<td><div class="cell"><img src="images/jamie.jpg" class="thumbnail" /><p class="fullname">Jamie Seymour</p>
+				<p class="percent">75%</p></div></td>
+		</tr>
+		<tr>
+			<td><div class="cell"><img src="images/liam.jpg" class="thumbnail" />
+				<p class="fullname">Liam Blackwell</p>
+				<p class="percent">67%</p></div>
+			</td>
+			<td><div class="cell"><img src="images/meaghan.jpg" class="thumbnail" />
+				<p class="fullname">Meaghan Underwood</p>
+				<p class="percent">44%</p></div>
+			</td>
+			<td><div class="cell"><img src="images/david.jpg" class="thumbnail" />
+				<p class="fullname">David Randall</p>
+				<p class="percent">56%</p></div></td>
+		</tr>
+		<tr>
+			<td><div class="cell"><img src="images/jessica.jpg" class="thumbnail" /><p class="fullname">Jessica Wallace</p>
+				<p class="percent">59%</p></div></td>
+					<td><div class="cell"><img src="images/matthew.jpg" class="thumbnail" /><p class="fullname">Matthew Song</p>
+						<p class="percent">76%</p></div></td>
+						<td><div class="cell"><img src="images/kevin.jpg" class="thumbnail" /><p class="fullname">Kevin Moulton</p>
+							<p class="percent">60%</p></div>
+		</tr>
+		<tr>
+			<td><div class="cell"><img src="images/kelly.jpg" class="thumbnail" /><p class="fullname">Kelly Donovan</p>
+				<p class="percent">82%</p></div></td>
+				<td><div class="cell"><img src="images/jennifer.jpg" class="thumbnail" /><p class="fullname">Jennifer Burns</p>
+					<p class="percent">35%</p></div></td>
+						<td><div class="cell"><img src="images/cameron.jpg" class="thumbnail" /><p class="fullname">Cameron Wiley</p>
+							<p class="percent">82%</p></div></td>
+		</tr>
+		<tr>
+			<td><div class="cell"><img src="images/christian.jpg" class="thumbnail" />
+					<p class="fullname">Christian Watson</p>
+					<p class="percent">84%</p></div>
+				</td>
+				<td><div class="cell"><img src="images/whitney.jpg" class="thumbnail" /><p class="fullname">Whitney Morrison</p>
+					<p class="percent">54%</p></div></td>
+					<td><div class="cell"><img src="images/stephen.jpg" class="thumbnail" /><p class="fullname">Stephen Lowell</p>
+						<p class="percent">71%</p></div></td>
+		</tr>
+
+	</table>
+	<footer><p>Copyright Padibility 2014</p> <p class="info">Contact us: <a href="info@padibility.com">info@padibility.com</a></p>
+	</footer>
+	</body>
+	</html>

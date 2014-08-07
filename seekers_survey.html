@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
+    <span class="menu-trigger">MENU</span>
+    <div class="nav">
+    <ul class="clearfix">
+        <li id="house"><a href="index.html"><img class="home" src="images/home.png" height="50" width="50" /></a></li>
+        <li><a href="how_it_works.html">How It Works</a></li>
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="mailto:info@padibility.com">Contact Us</a></li>
+        <li class="highlight"><a class="logout" href ="/logout">Log Out</a><a href="log_in.html">Log In</a></li>        
+        <li><a href="all_set.html">I'm All Set!</a></li>
+        <li class="mypad"><!--<span class='user-name'><%= session[:username] %></span>-->
+        <a href="seekers_profile.html"><span>Charlie Walker</span><img src="images/charlie_thumb.jpg" height="60" width="60" /></a></li>
+    </ul>
+</div>
+</header>
+<body>
+	 <div id="wrapper">
+                <div id="form_one_page" class="font one page link">
+        <form action="/form_db_1" method="post" name="quiz" id="quiz">
+                <h3 class="title">Padibility Questionnaire</h3>
+ 
+                <div class="holder">
+                	<label>Your school email address:</label>
+                	<label>nfilali@college.harvard.edu</label>
+                    <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " hidden/>
+                </div>
+                
+                <div class="holder">
+                    <div>
+                        <p>What are you looking for?</p>
+                            <span class="only"><input type="radio" id="survey_type_1" name="roommates" class="regular-radio" value="Roommates only" checked/><label for="roommates">Only roommates</label>
+                            <input type="radio" id="survey_type_2" name="room" class="regular-radio" value="Room only"/><label for="room">Only a room</label>
+                            <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label></span></div><br />
+                        </div>
+                    </div>
+                </div> 
+                
+            <div class="holder">
+                 <div>
+                    <label>Where will you be moving to?</label>
+                    <label class="housing_only">We will be expanding to more cities in the coming weeks!</label>
+                    <div class="button-holder">
+                        <input type="radio" id="moving_to_1" name="moving_to" class="regular-radio" value="New York City" checked="checked"/><label for="moving_to_1"></label><div class="radio-text">New York City</div><br />
+                        <input type="radio" id="moving_to_2" name="moving_to" class="regular-radio" value="Boston"/><label for="moving_to_2"></label><div class="radio-text">Boston</div><br />
+                        <input type="radio" id="moving_to_3" name="moving_to" class="regular-radio" value="Washington D.C."/><label for="moving_to_3"></label><div class="radio-text">Washington, D.C.</div><br />
+                        <div class="roommates_both">
+                        <input type="radio" id="moving_to_4" name="moving_to" class="regular-radio" value="San Francisco"/><label for="moving_to_4"></label><div class="radio-text">San Francisco</div><br />
+                        <input type="radio" id="moving_to_5" name="moving_to" class="regular-radio" value="Chicago"/><label for="moving_to_5"></label><div class="radio-text">Chicago</div><br />
+                        <input type="radio" id="moving_to_6" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="moving_to_6"></label><div class="radio-text">Los Angeles</div><br />
+                        <input type="radio" id="moving_to_7" name="moving_to" class="regular-radio" value="Other"/><label for="moving_to_7"></label><div class="radio-text">Other</div><br />
+                        <input id="long" type="text" name="moving_to_other" placeholder="City Name" hidden/>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of holder -->     
+            
+             <div class="holder">
+                <label>What is your gender?</label>
+                <div class="button-holder">
+                    <input type="radio" id="sex_1" name="sex" class="regular-radio" value="Male" checked="checked" /><label for="sex_1"></label><div class="radio-text">Male</div><br />
+                    <input type="radio" id="sex_2" name="sex" class="regular-radio" value="Female"/><label for="sex_2"></label><div class="radio-text">Female</div><br />
+                    <input type="radio" id="sex_3" name="sex" class="regular-radio" value="Other"/><label for="sex_3"></label><div class="radio-text">Other</div><br />
+                </div>
+            </div> 
+
+            <div class="holder">
+                <label>Are you okay with co-ed housing?</label>
+                <div class="button-holder">
+                    <input type="radio" id="coed_1" name="coed" class="regular-radio" value="Yes"/><label for="coed_1"></label><div class="radio-text">Yes</div><br />
+                    <input type="radio" id="coed_2" name="coed" class="regular-radio" value="No" checked="checked" /><label for="coed_2"></label><div class="radio-text">No</div><br />
+                    
+                </div>
+            </div> 
+
+            <div class="holder">
+                <div>
+                    <label>How old are you?</label>
+                    <input class="short" type="text" name="age" placeholder="Age" required="required"/>
+                </div>
+            </div>
+
+                <div class="holder">
+                <label class="housing_only">What type of housing are you looking for?</label>
+                <label class="roommates_only">What type of roommates are you looking for?</label>
+                <label class="both">What type of housing/roommates are you looking for?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="housing_type_1" name="housing_type" class="regular-radio" value="Postgraduate" checked="checked"/><label for="housing_type_1"></label><div class="radio-text">Postgraduate (long-term)</div><br />
+                        <input type="radio" id="housing_type_2" name="housing_type" class="regular-radio" value="Summer"/><label for="housing_type_2"></label><div class="radio-text">Summer (short-term, summer)</div><br />
+                    </div>
+                </div>
+
+            <div class="holder">
+                 <div>
+                    <label class="roommates_both">How many roommates would you like?</label>
+                    <label class="housing_only">How many roommates will be living with you?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="roommates_num_1" name="roommates_num" class="regular-radio" value="1" checked="checked"/><label for="roommates_num_1"></label><div class="radio-text">1</div><br />
+                        <input type="radio" id="roommates_num_2" name="roommates_num" class="regular-radio" value="2"/><label for="roommates_num_2"></label><div class="radio-text">2</div><br />
+                        <input type="radio" id="roommates_num_3" name="roommates_num" class="regular-radio" value="3"/><label for="roommates_num_3"></label><div class="radio-text">3</div><br />
+                        <input type="radio" id="roommates_num_4" name="roommates_num" class="regular-radio" value="4"/><label for="roommates_num_4"></label><div class="radio-text">4</div><br />
+                        <div class="roommates_both">
+                        <input type="radio" id="roommates_num_5" name="roommates_num" class="regular-radio" value="Do not care"/><label for="roommates_num_5"></label><div class="radio-text">Don't care</div><br />
+                        </div>
+                        <div class="housing_only">
+                            <input type="radio" id="roommates_num_6" name="roommates_num" class="regular-radio" value="Other"/><label for="roommates_num_6"></label><div class="radio-text">5 or more, specify</div><br />
+                            <input class="short_other" type="text" name="roommates_num_other" placeholder=""/>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of holder -->
+
+            <div class="holder">
+                <div class="roommates_both">
+                    <label >Have you already formed a roommate group of two or more to which you are looking to add roommates?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="formed_group_1" name="formed_group" class="regular-radio" value="Yes"/><label for="formed_group_1"></label><div class="radio-text">Yes</div><br />
+                        <input type="radio" id="formed_group_2" name="formed_group" class="regular-radio" value="No" checked="checked" /><label for="formed_group_2"></label><div class="radio-text">No</div><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                <div class="roommates_both other_roommates">
+                    <label> Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too.</label>
+                    <input id="long" type="text" name="names_other_roommates" placeholder="Other roommates"/>
+                </div>
+            </div>
+            <div class"holder">
+                <div class="housing_both">
+                    <p>
+                      <label for="amount">Maximum amount you want to spend on rent (per person):</label>
+                      <input type="text" name="max_rent" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                     
+                    <div id="slider"></div>
+                </div>
+            </div> <!-- End of holder -->
+            
+            <div class="holder">
+                <p>Move in date: <input type="text" name="move_in" id="datepicker-in" required="required"></p>
+                <p>Move out date (optional): <input type="text" name="move_out" id="datepicker-out"></p>
+            </div> <!-- End of holder -->
+
+            <div class="holder">
+                <div class="housing_both">
+                    <label>How many bedrooms would you prefer to have in your apartment?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="bed_num_1" name="bed_num" class="regular-radio" value="Studio" checked="checked"/><label for="bed_num_1"></label><div class="radio-text">Studio</div><br />
+                        <input type="radio" id="bed_num_2" name="bed_num" class="regular-radio" value="1"/><label for="bed_num_2"></label><div class="radio-text">1 Bedroom</div><br />
+                        <input type="radio" id="bed_num_3" name="bed_num" class="regular-radio" value="2"/><label for="bed_num_3"></label><div class="radio-text">2 Bedrooms</div><br />
+                        <input type="radio" id="bed_num_4" name="bed_num" class="regular-radio" value="3"/><label for="bed_num_4"></label><div class="radio-text">3 Bedrooms</div><br />
+                        <input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bed_num_5"></label><div class="radio-text">4+ Bedrooms</div><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                <div class="housing_both">
+                    <label>What minimum amenities would you prefer to have in your apartment?</label>
+                    <div class="button-holder">
+                        <input type="checkbox" id="amenities_1" name="amenities[]" class="regular-checkbox" value="Balcony" /><label for="amenities_1"></label><div class="checkbox-text">Balcony</div><br />
+                        <input type="checkbox" id="amenities_2" name="amenities[]" class="regular-checkbox" value="Dishwasher"/><label for="amenities_2"></label><div class="checkbox-text">Dishwasher</div><br />
+                        <input type="checkbox" id="amenities_3" name="amenities[]" class="regular-checkbox" value="Doorman"/><label for="amenities_3"></label><div class="checkbox-text">Doorman</div><br />
+                        <input type="checkbox" id="amenities_4" name="amenities[]" class="regular-checkbox" value="Elevator"/><label for="amenities_4"></label><div class="checkbox-text">Elevator</div><br />
+                        <input type="checkbox" id="amenities_5" name="amenities[]" class="regular-checkbox" value="Furnished"/><label for="amenities_5"></label><div class="checkbox-text">Furnished</div><br />
+                        <input type="checkbox" id="amenities_6" name="amenities[]" class="regular-checkbox" value="Garage"/><label for="amenities_6"></label><div class="checkbox-text">Garage</div><br />
+                        <input type="checkbox" id="amenities_7" name="amenities[]" class="regular-checkbox" value="Gym"/><label for="amenities_7"></label><div class="checkbox-text">Gym</div><br />
+                        <input type="checkbox" id="amenities_8" name="amenities[]" class="regular-checkbox" value="In-Unit Laundry"/><label for="amenities_8"></label><div class="checkbox-text">In-Unit Laundry</div><br />
+                        <input type="checkbox" id="amenities_9" name="amenities[]" class="regular-checkbox" value="Laundry Room"/><label for="amenities_9"></label><div class="checkbox-text">Laundry Room</div><br />
+                        <input type="checkbox" id="amenities_10" name="amenities[]" class="regular-checkbox" value="Outdoor Space"/><label for="amenities_10"></label><div class="checkbox-text">Outdoor Space</div><br />
+                        <input type="checkbox" id="amenities_11" name="amenities[]" class="regular-checkbox" value="Parking Space"/><label for="amenities_11"></label><div class="checkbox-text">Parking</div><br />
+                        <input type="checkbox" id="amenities_12" name="amenities[]" class="regular-checkbox" value="Terrace"/><label for="amenities_12"></label><div class="checkbox-text">Terrace</div><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                 <div>
+                    <label class="housing_only">Are you okay with pets in the apartment?</label>
+                    <label class="roommates_both">Would you be okay if your roommate had a pet?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="pets_1" name="pets" class="regular-radio" value="Yes" checked="checked"/><label for="pets_1"></label><div class="radio-text">Yes</div><br />
+                        <input type="radio" id="pets_2" name="pets" class="regular-radio" value="No"/><label for="pets_2"></label><div class="radio-text">No</div><br />
+                        <input type="radio" id="pets_3" name="pets" class="regular-radio" value="Do not care"/><label for="pets_3"></label><div class="radio-text">Don&#39;t care</div><br />
+                    </div>
+                </div>
+            </div> 
+
+            <div>
+                <label>Which state or country are you originally from?</label>
+                <input id="long" type="text" name="hometown" placeholder="Hometown" required="required"/>
+            </div>
+            <div>
+                <label>What school do you or did you most recently attend?</label>
+                <select class="styled-select" name="school">
+                  <option value="Harvard">Harvard</option>
+                  <option value="Yale">Yale</option>
+                  <option value="MIT">MIT</option>
+                </select>
+            </div>
+            <div>
+                <label>At what company or organization will you be working this summer or after graduation?</label>
+                <input id="long" type="text" name="work" placeholder="Company or organization" required="required"/>
+            </div>
+
+            <div class="housing_only">
+                <input type="checkbox" id="terms_1" name="terms" class="regular-checkbox terms_class" value="read"/><label for="terms_1"></label><div class="checkbox-text">I have read the <a href="/terms" target="_blank">Terms & Conditions</a></div><br />
+                <span class="terms_error">Please read the Terms & Conditions</span>
+            </div>
+            
+            <div class="circle_wrapper roommates_both">
+                <div class="dark_circle" ></div>
+                <div class="light_circle" ></div>
+                <div class="light_circle" ></div>
+            </div>
+            <div class="roommates_both">
+                <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/>
+            </div>
+            <div class="housing_only">
+                <div class="submit_button">
+                <input id="submit_room_only" class="nextbutton one pages submitbutton" type="submit" name="submit" value="Submit!" disabled/>
+                </div>
+            </div>
+        </form>
+        <form action="FileUpload.php" method="post" enctype="multipart/form-data">
+    <label for="upload">File:</label>
+    <input type="file" name="upload" id="upload"><br/>
+    <input type="submit" name="submit" value="Upload">
+</form>
+
+        </div> <!-- End of page one -->
+        
+        
+        
+         
+    </div> <!-- End of wrapper -->
+
+	<footer><p>Copyright Padibility 2014</p> <p class="info">Contact us: <a href="info@padibility.com">info@padibility.com</a></p>
+	</footer>
+</body>
+</html>

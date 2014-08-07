@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
+	<span class="menu-trigger">MENU</span>
+	<div class="nav">
+	<ul class="clearfix">
+		<li id="house"><a href="index.html"><img class="home" src="images/home.png" height="50" width="50" /></a></li>
+		<li><a href="how_it_works.html">How It Works</a></li>
+		<li><a href="team.html">The Team</a></li>
+		<li><a href="mailto:info@padibility.com">Contact Us</a></li>
+		<li class="highlight"><a class="logout" href ="/logout">Log Out</a><a href="log_in.html">Log In</a></li>		
+		<li><a href="all_set.html">I'm All Set!</a></li>
+		<li class="mypad"><!--<span class='user-name'><%= session[:username] %></span>-->
+		<a href='/profile'><span>Charlie Walker</span><img src="images/charlie_thumb.jpg" height="60" width="60" /></a></li>
+	</ul>
+</div>
+</header>
+<body>
+	<div id="profile">
+		<div class="general">
+		<img class="owner" src="images/owner.jpg" height="200" width="200" />
+		<span class="basics"><h2>Trish O'Connor</h2>
+		<p><strong>Pad Owner</strong><br />
+			Selling <strong>1 apartment</strong> in <strong>New York</strong> for <strong>3</strong> residents at <strong>$2,600/month</strong><br />
+			Property Address: <strong>640 Columbus Ave.</strong><br />
+			Currently lives in <strong>New York</strong><br />
+			Works for <strong>New York Realty</strong></p></span>
+		</div>
+		<p><strong>3</strong> bedrooms<br />
+			<strong>1.5</strong> bathrooms<br />
+			<strong>1 joined kitchen & living room</strong><br />
+			<strong>Laundry in building</strong><br />
+			Noise Level: <strong>Average</strong><br />
+			Neighbors' Age Range: <strong>15</strong> - <strong>57</strong><br />
+			Neighbors' Age Mode: <strong>25</strong><br />
+			Residents' Satisfaction Rating: <strong>70%</strong><br />
+			Rent Includes: Heat</span>, <strong><em>Hot Water</em></strong>, <strong><em>Air Conditioning</em></strong>,  <strong><em>Bills</em></strong>, Furnishings<br />
+			Availability Date: <strong>9/1/2014</strong></p>
+			<p class="gallery"><a href="images/home1.jpg" target="_blank"><img src="images/home1_thumb.jpg" /></a>
+				<a href="images/home2.jpg" target="_blank"><img src="images/home2_thumb.jpg" /></a>
+				<a href="images/home3.jpg" target="_blank"><img src="images/home3_thumb.jpg" /></a>
+				<a href="images/home4.jpg"  target="_blank"><img src="images/home4_thumb.jpg" /></a>
+			</p>
+			<collapsible heading="Current Residents">
+		</collapsible>
+		<collapsible heading="Future Residents">
+	</collapsible>
+	<collapsible heading="Resident Complaints">
+	</collapsible>
+			</p>
+			<p class="edit">Edit Profile</p>
+	</div>
+	<footer><p>Copyright Padibility 2014</p> <p class="info">Contact us: <a href="info@padibility.com">info@padibility.com</a></p>
+	</footer>
+	</body>
+	</html>
