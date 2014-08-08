@@ -40,3 +40,21 @@ class DeviseCreateUsers < ActiveRecord::Migration
     # add_index :users, :unlock_token,         unique: true
   end
 end
+
+class AddAvatarColumnsToUsers < ActiveRecord::Migration
+  def self.up
+    add_attachment :users, :avatar
+  end
+
+  def self.down
+    remove_attachment :users, :avatar
+  end
+end
+class AddAttachmentToUsers < ActiveRecord::Migration
+  def change
+    add_attachment :users, :avatar
+    create_table :users do |t|
+      t.attachment :avatar
+    end
+  end
+end

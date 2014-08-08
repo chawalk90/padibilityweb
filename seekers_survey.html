@@ -18,14 +18,13 @@
 </div>
 </header>
 <body>
-	 <div id="wrapper">
+     <div id="wrapper">
                 <div id="form_one_page" class="font one page link">
         <form action="/form_db_1" method="post" name="quiz" id="quiz">
                 <h3 class="title">Padibility Questionnaire</h3>
  
                 <div class="holder">
-                	<label>Your school email address:</label>
-                	<label>nfilali@college.harvard.edu</label>
+                    <label for="email">Your school email address:</label>
                     <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " hidden/>
                 </div>
                 
@@ -44,14 +43,14 @@
                     <label>Where will you be moving to?</label>
                     <label class="housing_only">We will be expanding to more cities in the coming weeks!</label>
                     <div class="button-holder">
-                        <input type="radio" id="moving_to_1" name="moving_to" class="regular-radio" value="New York City" checked="checked"/><label for="moving_to_1"></label><div class="radio-text">New York City</div><br />
-                        <input type="radio" id="moving_to_2" name="moving_to" class="regular-radio" value="Boston"/><label for="moving_to_2"></label><div class="radio-text">Boston</div><br />
-                        <input type="radio" id="moving_to_3" name="moving_to" class="regular-radio" value="Washington D.C."/><label for="moving_to_3"></label><div class="radio-text">Washington, D.C.</div><br />
+                        <input type="radio" id="moving_to_1" name="nyc" class="regular-radio" value="New York City" checked="checked"/><label for="nyc">>New York City</label></div><br />
+                        <input type="radio" id="moving_to_2" name="boston" class="regular-radio" value="Boston"/><label for="boston"></label><div class="radio-text">Boston</div><br />
+                        <input type="radio" id="moving_to_3" name="dc" class="regular-radio" value="Washington D.C."/><label for="dc">Washington, D.C.</label><br />
                         <div class="roommates_both">
-                        <input type="radio" id="moving_to_4" name="moving_to" class="regular-radio" value="San Francisco"/><label for="moving_to_4"></label><div class="radio-text">San Francisco</div><br />
-                        <input type="radio" id="moving_to_5" name="moving_to" class="regular-radio" value="Chicago"/><label for="moving_to_5"></label><div class="radio-text">Chicago</div><br />
-                        <input type="radio" id="moving_to_6" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="moving_to_6"></label><div class="radio-text">Los Angeles</div><br />
-                        <input type="radio" id="moving_to_7" name="moving_to" class="regular-radio" value="Other"/><label for="moving_to_7"></label><div class="radio-text">Other</div><br />
+                        <input type="radio" id="moving_to_4" name="sanfran" class="regular-radio" value="San Francisco"/><label for="sanfran">San Francisco</label><br />
+                        <input type="radio" id="moving_to_5" name="chicago" class="regular-radio" value="Chicago"/><label for="chicago">Chicago</label><br />
+                        <input type="radio" id="moving_to_6" name="la" class="regular-radio" value="Los Angeles"/><label for="la">Los Angeles</label><br />
+                        <input type="radio" id="moving_to_7" name="othercity" class="regular-radio" value="Other"/><label for="othercity">Other</label><br />
                         <input id="long" type="text" name="moving_to_other" placeholder="City Name" hidden/>
                         </div>
                     </div>
@@ -61,35 +60,35 @@
              <div class="holder">
                 <label>What is your gender?</label>
                 <div class="button-holder">
-                    <input type="radio" id="sex_1" name="sex" class="regular-radio" value="Male" checked="checked" /><label for="sex_1"></label><div class="radio-text">Male</div><br />
-                    <input type="radio" id="sex_2" name="sex" class="regular-radio" value="Female"/><label for="sex_2"></label><div class="radio-text">Female</div><br />
-                    <input type="radio" id="sex_3" name="sex" class="regular-radio" value="Other"/><label for="sex_3"></label><div class="radio-text">Other</div><br />
+                    <input type="radio" id="sex_1" name="male" class="regular-radio" value="Male" checked="checked" /><label for="male">Male</label><br />
+                    <input type="radio" id="sex_2" name="female" class="regular-radio" value="Female"/><label for="female">Female</label><br />
+                    <input type="radio" id="sex_3" name="othersex" class="regular-radio" value="Other"/><label for="othersex">Other</label><br />
                 </div>
             </div> 
 
             <div class="holder">
                 <label>Are you okay with co-ed housing?</label>
                 <div class="button-holder">
-                    <input type="radio" id="coed_1" name="coed" class="regular-radio" value="Yes"/><label for="coed_1"></label><div class="radio-text">Yes</div><br />
-                    <input type="radio" id="coed_2" name="coed" class="regular-radio" value="No" checked="checked" /><label for="coed_2"></label><div class="radio-text">No</div><br />
+                    <input type="radio" id="coed_1" name="coedyes" class="regular-radio" value="Yes"/><label for="coedyes">Yes</label><br />
+                    <input type="radio" id="coed_2" name="coedno" class="regular-radio" value="No" checked="checked" /><label for="coedno">No</label><br />
                     
                 </div>
             </div> 
 
             <div class="holder">
                 <div>
-                    <label>How old are you?</label>
+                    <label for="age">How old are you?</label>
                     <input class="short" type="text" name="age" placeholder="Age" required="required"/>
                 </div>
             </div>
 
                 <div class="holder">
-                <label class="housing_only">What type of housing are you looking for?</label>
-                <label class="roommates_only">What type of roommates are you looking for?</label>
-                <label class="both">What type of housing/roommates are you looking for?</label>
+                <p>What type of housing are you looking for?</p>
+                <p>What type of roommates are you looking for?</p>
+                <p>What type of housing/roommates are you looking for?</p>
                     <div class="button-holder">
-                        <input type="radio" id="housing_type_1" name="housing_type" class="regular-radio" value="Postgraduate" checked="checked"/><label for="housing_type_1"></label><div class="radio-text">Postgraduate (long-term)</div><br />
-                        <input type="radio" id="housing_type_2" name="housing_type" class="regular-radio" value="Summer"/><label for="housing_type_2"></label><div class="radio-text">Summer (short-term, summer)</div><br />
+                        <input type="radio" id="housing_type_1" name="postgrad" class="regular-radio" value="Postgraduate" checked="checked"/><label for="postgrad">Postgraduate (long-term)</label><br />
+                        <input type="radio" id="housing_type_2" name="summer" class="regular-radio" value="Summer"/><label for="summer">Summer (short-term, summer)</label><br />
                     </div>
                 </div>
 
@@ -239,7 +238,7 @@
          
     </div> <!-- End of wrapper -->
 
-	<footer><p>Copyright Padibility 2014</p> <p class="info">Contact us: <a href="info@padibility.com">info@padibility.com</a></p>
-	</footer>
+    <footer><p>Copyright Padibility 2014</p> <p class="info">Contact us: <a href="info@padibility.com">info@padibility.com</a></p>
+    </footer>
 </body>
 </html>
