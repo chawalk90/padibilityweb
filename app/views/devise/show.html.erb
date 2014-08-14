@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<body>
-	<div id="profile">
+<div id="profile">
 		<div class="general">
-		<img src="images/charlie_thumb.jpg" height="200" width="200" />
+		<%= image_tag(current_user.avatar.url(:thumb)) %>
 		<span class="basics"><h2>Charlie Walker</h2>
+			<br><%= @user.email %>
 		<p><strong>Pad Seeker</strong><br />
 			Seeking <strong>2 male</strong> roommates ages <strong>20 - 27</strong><br />
 			Currently lives in <strong>Boston</strong><br />
@@ -21,14 +19,10 @@
 			Religious Views: <strong>Agnostic</strong><br />
 			Activities & Interests: <strong>Yoga</strong>, <strong><em>Music</em></strong>, <strong>Cooking</strong><br />
 			Smokes <strong>occasionally & socially</strong><br />
-			Drinks <strong>occasionally & socially</strong><br />`
+			Drinks <strong>occasionally & socially</strong><br />
 			<strong>Private</strong> & <strong>conservative</strong> with <strong>sex</strong><br />
 			<strong>Open</strong> to roommates bringing home overnight guests <strong>on weekends</strong><br />
 			<strong>Open</strong> to pets, but <strong>not a pet owner</strong></p>
 			<hr />
-			<p class="edit">Edit Profile</p>
+			<%= link_to "EDIT PROFILE", edit_user_registration_path, :class => 'edit' %>
 	</div>
-	<footer><p>Copyright Padibility 2014</p> <p class="info">Contact us: <a href="info@padibility.com">info@padibility.com</a></p>
-	</footer>
-	</body>
-	</html>

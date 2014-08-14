@@ -11,13 +11,29 @@
 	<div class="nav">
 	<ul class="clearfix">
 		<li id="house"><%= link_to "#{image_tag("home.png")}".html_safe, root_path %></li>
-		<li><a href="how_it_works.html">How It Works</a></li>
-		<li><a href="team.html">The Team</a></li>
+		<li><%= link_to "How it Works", howitworks_path %></li>
+		<li><%= link_to "The Team", team_path %></li>
 		<li><a href="mailto:info@padibility.com">Contact Us</a></li>
-		<li class="highlight"><a class="logout" href ="/logout">Log Out</a><a href="log_in.html">Log In</a></li>		
-		<li><a href="all_set.html">I'm All Set!</a></li>
-		<li class="mypad"><!--<span class='user-name'><%= session[:username] %></span>-->
-		<a href="seekers_profile.html"><span>Charlie Walker</span><img src="images/charlie_thumb.jpg" height="60" width="60" /></a></li>
+		<% if user_signed_in? %>
+		<li class="highlight">
+			<%= link_to 'Log Out', destroy_user_session_path, :method=>'delete' %>
+		</li>
+		<li class="highlight">
+				<%= link_to 'I\'m All Set', "#" %>
+			</li>
+			<% else %>
+			<li>
+			<%= link_to 'Log In', new_user_session_path %></li>
+			<% end %>
+			<% if user_signed_in? %>
+			<li class="highlight">
+				<%= link_to "#{image_tag(":avatar")}".html_safe, user_path(current_user) %>
+			</li>
+			<% else %>
+			<li class="highlight">
+				<%= link_to 'Sign Up', new_user_registration_path %>
+			</li>
+			<% end %>
 	</ul>
 
 </div>

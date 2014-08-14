@@ -5,7 +5,16 @@ Rails.application.routes.draw do
 
   get '/howitworks' => 'static_pages#howitworks'
 
+  get '/team' => 'static_pages#team'
+
+  get '/seekerssurvey' => 'surveys#seeker'
+
+  get '/ownersurvey' => 'surveys#owner'
+
+
+
   devise_for :users
+  resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
