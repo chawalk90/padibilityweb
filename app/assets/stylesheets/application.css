@@ -46,11 +46,6 @@ header {
 	left:-15px;
 	top:13px;
 }
-#house li:hover {
-	background-color:black;
-	height:80px;
-	width:200px;
-}
 .second {
 	height:450px;
 	width:600px;
@@ -69,17 +64,23 @@ header {
 	list-style-type:none;
 	height:100%;
 	text-align:center;
-	margin-right:-10px;
+	margin-right:0px;
 	display:inline;
 	height:80px;
 	width:100px;
 	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 .nav .logout {
 	display:none;
 }
+.nav li span {
+	text-align:center;
+}
 .nav #house {
 	float:left;
+	margin-top:-10px;
 }
 .nav li a {
 	display:inline;
@@ -100,12 +101,32 @@ header {
 	text-decoration:none;
 	display:inline;
 }
-.nav li a:hover {
+.nav li:not(:first-child):hover {
 	background-color:#ed9c28;
 	height:60px;
 	width:100px;
 	display:inline;
-
+}
+.entrance {
+	margin-top:-15px;
+	margin-left:-15px;
+	list-style-type:none;
+}
+.schoolemail .nombre {
+	margin-top:18px;
+}
+.schoolemail input {
+	width:300px;
+}
+.schoolemail label {
+	font-size:18px;
+	font-weight:bold;
+}
+.housing_only {
+	display:none;
+}
+.roommates_only {
+	display:none;
 }
 .clearfix {
 	margin:0;
@@ -115,14 +136,14 @@ header {
 	color:#ed9c28;
 	font-size:22px;
 }
+#namelist {
+	margin-bottom:18px;
+	width:300px;
+}
 #nav .mypad {
 	float:right;
 	font-size:22px;
 	width:150px;
-}
-#nav .mypad:hover {
-	color:white;
-	background:black;
 }
 .mypad img {
 	border:3px solid #ed9c28;
@@ -157,18 +178,33 @@ header {
 	margin-top:15px;
 	padding-top:28px;
 	margin-left:147px;
+	text-align:center;
 }
-.pad a {
+.pad {
 	color:black;
 	text-decoration:none;
 	font-size:20px;
+	text-align:center;
 }
-.intro, .signin {
+.intro {
 	background:black;
 	height:690px;
 	width:600px;
 	padding-top:20px;
 	background: rgba(0, 0, 0, 0.65);
+}
+.signin {
+	background:black;
+	height:350px;
+	width:400px;
+	padding-top:20px;
+	background: rgba(0, 0, 0, 0.65);
+	margin-left:auto;
+	margin-right:auto;
+}
+.signin #popup.center {
+	margin-left:auto;
+	margin-right:auto;
 }
 .intro {
 	position:relative;
@@ -283,15 +319,25 @@ h2 {
 }
 #lineup {
 	width:920px;
-	height:1050px;
+	height:1300px;
 	margin-left:20px;
 	background: rgba(0, 0, 0, 0.65);
-	padding-left:15px;
-	padding-right:15px;
+	padding-left:30px;
+	padding-right:30px;
 	padding-top:5px;
 }
-#lineup #team {
-	margin-top:-130px;
+#lineup table td {
+	width:300px;
+	padding-right:5px;
+	text-align:center;
+}
+#lineup #linear {
+	vertical-align:top;
+}
+table .dos {
+	width:650px;
+	position:relative;
+	left:120px;
 }
 #manual p, #manual li {
 	font-size:18px;
@@ -316,6 +362,21 @@ h2 {
 }
 .holder .availability {
 	margin-left:35px;
+}
+#range {
+	padding-bottom:18px;
+}
+#sound .housing_only {
+	display:all;
+}
+.move {
+	margin-top:-7px;
+}
+#movingla {
+	margin-left:15px;
+}
+.cityoptions {
+	padding-bottom:20px;
 }
 .wakeup {
 	font-weight:bold;
@@ -391,4 +452,5 @@ h2 {
 }
 .only {
 	display:inline-block;
+	margin-bottom:-10px;
 }

@@ -2,12 +2,13 @@
                 <div id="form_one_page" class="font one page link">
         <form action="/form_db_1" method="post" name="quiz" id="quiz">
                 <h3 class="title">Padibility Questionnaire</h3>
- 
-                <div class="holder">
-                	<p>Your school email address:</p>
-                    <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " hidden/>
+                <div class="schoolemail">
+                	<label for="email">Your school email address:</label>
+                    <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " />
+                    <br />
+                    <label for="fullname">Your name:</label>
+                    <input id="long" type="text" name="fullname" placeholder="Name"required="required" />
                 </div>
-                
                 <div class="holder">
                     <div>
                         <p>What are you looking for?</p>
@@ -16,100 +17,100 @@
                             <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label></span></div><br />
                         </div>
                     </div>
-                </div> 
                 
             <div class="holder">
                  <div>
-                    <p>Where will you be moving to? (We will be expanding to more cities in the coming weeks!)</p>
+                    <p class="move">Where will you be moving to? (We will be expanding to more cities in the coming weeks!)</p>
                     <div class="button-holder">
-                        <input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label><br />
-                        <input type="radio" id="moving_to_2" name="movingboston" class="regular-radio" value="Boston"/><label for="movingboston">Boston</label><br />
-                        <input type="radio" id="moving_to_3" name="movingdc" class="regular-radio" value="Washington D.C."/><label for="movingdc">Washington, D.C.</label><br />
-                        <div class="roommates_both">
-                        <input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label><br />
-                        <input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label><br />
-                        <input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label><br />
-                        <input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label><br />
-                        <input id="long" type="text" name="movingother" placeholder="City Name" hidden/>
+                        <table class="cityoptions">
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label></td>
+                                    <td><input type="radio" id="moving_to_2" name="movingboston" class="regular-radio" value="Boston"/><label for="movingboston">Boston</label></td>
+                                    <td><input type="radio" id="moving_to_3" name="movingdc" class="regular-radio" value="Washington D.C."/><label for="movingdc">Washington, D.C.</label></td>
+                                    <td><input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
+                                    <td><input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label></td>
+                                    <td colspan="2"><input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label>
+                        <input id="cityname" type="text" name="movingother" placeholder="City Name" hidden/></td>
+                    </tr>
+                </tbody>
+            </table>
                         </div>
                     </div>
                 </div>
-            </div> <!-- End of holder -->     
-            
+             <!-- End of holder -->   
              <div class="holder">
                 <p>What is your gender?</p>
-                <div class="button-holder">
-                    <input type="radio" id="sex_1" name="sex" class="regular-radio" value="Male" checked="checked" /><label for="sex_1"></label><div class="radio-text">Male</div><br />
-                    <input type="radio" id="sex_2" name="sex" class="regular-radio" value="Female"/><label for="sex_2"></label><div class="radio-text">Female</div><br />
-                    <input type="radio" id="sex_3" name="sex" class="regular-radio" value="Other"/><label for="sex_3"></label><div class="radio-text">Other</div><br />
-                </div>
+                    <input type="radio" id="sex_1" name="sexguy" class="regular-radio" value="Male" checked="checked" /><label for="sexguy">Male</label>
+                    <input type="radio" id="sex_2" name="sexgirl" class="regular-radio" value="Female"/><label for="sexgirl">Female</label>
+                    <input type="radio" id="sex_3" name="sexother" class="regular-radio" value="Other"/><label for="sexother">Other</label>
             </div> 
-
             <div class="holder">
-                <label>Are you okay with co-ed housing?</label>
+                <p>Are you okay with co-ed housing?</p>
                 <div class="button-holder">
-                    <input type="radio" id="coed_1" name="coed" class="regular-radio" value="Yes"/><label for="coed_1"></label><div class="radio-text">Yes</div><br />
-                    <input type="radio" id="coed_2" name="coed" class="regular-radio" value="No" checked="checked" /><label for="coed_2"></label><div class="radio-text">No</div><br />
+                    <input type="radio" id="coed_1" name="coedyes" class="regular-radio" value="Yes"/><label for="coedyes">Yes</label>
+                    <input type="radio" id="coed_2" name="coedno" class="regular-radio" value="No" checked="checked" /><label for="coedno">No</label><br />
                     
                 </div>
-            </div> 
-
+            </div>
+            <br /> 
             <div class="holder">
                 <div>
-                    <label>How old are you?</label>
-                    <input class="short" type="text" name="age" placeholder="Age" required="required"/>
+                    <span>How old are you?</span><input class="short" type="text" name="age" placeholder="Age" required="required"/>
                 </div>
             </div>
 
                 <div class="holder">
-                <label class="housing_only">What type of housing are you looking for?</label>
-                <label class="roommates_only">What type of roommates are you looking for?</label>
-                <label class="both">What type of housing/roommates are you looking for?</label>
+                <p class="housing_only">What type of housing are you looking for?</p>
+                <p class="roommates_only">What type of roommates are you looking for?</p>
+                <p class="both">What type of housing/roommates are you looking for?</p>
                     <div class="button-holder">
-                        <input type="radio" id="housing_type_1" name="housing_type" class="regular-radio" value="Postgraduate" checked="checked"/><label for="housing_type_1"></label><div class="radio-text">Postgraduate (long-term)</div><br />
-                        <input type="radio" id="housing_type_2" name="housing_type" class="regular-radio" value="Summer"/><label for="housing_type_2"></label><div class="radio-text">Summer (short-term, summer)</div><br />
+                        <input type="radio" id="housing_type_1" name="postgrad" class="regular-radio" value="Postgraduate" checked="checked"/><label for="postgrad">Postgraduate (long-term)</label>
+                        <input type="radio" id="housing_type_2" name="summer" class="regular-radio" value="Summer"/><label for="summer">Summer (short-term, summer)</label><br />
                     </div>
                 </div>
-
             <div class="holder">
                  <div>
-                    <label class="roommates_both">How many roommates would you like?</label>
-                    <label class="housing_only">How many roommates will be living with you?</label>
+                    <p class="roommates_both">How many roommates would you like?</p>
+                    <p class="housing_only">How many roommates will be living with you?</p>
                     <div class="button-holder">
-                        <input type="radio" id="roommates_num_1" name="roommates_num" class="regular-radio" value="1" checked="checked"/><label for="roommates_num_1"></label><div class="radio-text">1</div><br />
-                        <input type="radio" id="roommates_num_2" name="roommates_num" class="regular-radio" value="2"/><label for="roommates_num_2"></label><div class="radio-text">2</div><br />
-                        <input type="radio" id="roommates_num_3" name="roommates_num" class="regular-radio" value="3"/><label for="roommates_num_3"></label><div class="radio-text">3</div><br />
-                        <input type="radio" id="roommates_num_4" name="roommates_num" class="regular-radio" value="4"/><label for="roommates_num_4"></label><div class="radio-text">4</div><br />
-                        <div class="roommates_both">
-                        <input type="radio" id="roommates_num_5" name="roommates_num" class="regular-radio" value="Do not care"/><label for="roommates_num_5"></label><div class="radio-text">Don't care</div><br />
-                        </div>
-                        <div class="housing_only">
-                            <input type="radio" id="roommates_num_6" name="roommates_num" class="regular-radio" value="Other"/><label for="roommates_num_6"></label><div class="radio-text">5 or more, specify</div><br />
+                        <input type="radio" id="roommates_num_1" name="roommatesone" class="regular-radio" value="1" checked="checked"/><label for="roommatesone">1</label>
+                        <input type="radio" id="roommatestwo" name="roommatestwo" class="regular-radio" value="2"/><label for="roommatestwo">2</label>
+                        <input type="radio" id="roommates_num_3" name="roommatesthree" class="regular-radio" value="3"/><label for="roommatesthree">3</label>
+                        <input type="radio" id="roommates_num_4" name="roommatesfour" class="regular-radio" value="4"/><label for="roommatesfour">4</label>
+                        <input type="radio" id="roommates_num_5" name="roommatesfive" class="regular-radio" value="Do not care"/><label for="roommatesfive">5</label>
+                        <input type="radio" id="roommates_num_5" name="roommatesdc" class="regular-radio" value="Do not care"/><label for="roommatesdc">Don't care</label>
+                        <!-- </div>-->
+                        <!--<div class="housing_only">-->
+                            <input type="radio" id="roommates_num_6" name="roommatesplus" class="regular-radio" value="Other"/><label for="roommatesplus">5 or more, specify</label>
                             <input class="short_other" type="text" name="roommates_num_other" placeholder=""/>
-                        </div>
+                       </div> 
                     </div>
-                </div>
-            </div> <!-- End of holder -->
-
+                 <!-- End of holder -->
             <div class="holder">
                 <div class="roommates_both">
-                    <label >Have you already formed a roommate group of two or more to which you are looking to add roommates?</label>
+                    <p>Have you already formed a roommate group of two or more to which you are looking to add roommates?</p>
                     <div class="button-holder">
-                        <input type="radio" id="formed_group_1" name="formed_group" class="regular-radio" value="Yes"/><label for="formed_group_1"></label><div class="radio-text">Yes</div><br />
-                        <input type="radio" id="formed_group_2" name="formed_group" class="regular-radio" value="No" checked="checked" /><label for="formed_group_2"></label><div class="radio-text">No</div><br />
+                        <input type="radio" id="formed_group_1" name="formed_group_1" class="regular-radio" value="Yes"/><label for="formed_group_1">Yes</label>
+                        <input type="radio" id="formed_group_2" name="formed_group_2" class="regular-radio" value="No" checked="checked" /><label for="formed_group_2">No</label><br />
                     </div>
                 </div>
             </div>
 
             <div class="holder">
                 <div class="roommates_both other_roommates">
-                    <label> Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too.</label>
-                    <input id="long" type="text" name="names_other_roommates" placeholder="Other roommates"/>
+                    <p> Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too.</p>
+                    <input id="namelist" type="text" name="names_other_roommates" placeholder="Other roommates"/>
                 </div>
-            <div class="holder">
+            </div>
+            <span id="range"><div class="holder">
                 <div class="roommates_both">
-                    <span class="age_min">Age Min.</span>
-                    <select>
+                    <p class="agemin"><strong>Age Range:</strong>
+                    <select name="agemin">
+                        <option value="Age Min.">Age Min.</option>
                         <option value="18">18</option>
                         <option value="19">19</option>
                         <option value="20">20</option>
@@ -194,9 +195,8 @@
                         <option value="99">99</option>
                         <option value="100">100</option>
 
-                    </select>
-                    <span class="age_max">Age Max.</span>
-                    <select>
+                    </select> - <select name="age_max">
+                        <option value="Age Max.">Age Max.</option>
                         <option value="18">18</option>
                         <option value="19">19</option>
                         <option value="20">20</option>
@@ -281,63 +281,63 @@
                         <option value="99">99</option>
                         <option value="100">100</option>
 
-                    </select>
+                    </select></p>
                 </div>
-            </div>
-            </div>
-            <div class"holder">
-                <div class="housing_both">
-                    <p>
-                      <label for="amount">Min. rent:</label>
-                      <input type="text" name="min_rent" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-                      <label for="amount">Max. rent (per person):</label>
-                      <input type="text" name="max_rent" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-                    </p>
-                     
-                    <div id="slider"></div>
-                </div>
-            </div> <!-- End of holder -->
-            
-            <div class="holder">
-                <p>Move in date: <input type="text" name="move_in" id="datepicker-in" required="required"></p>
-                <p>Move out date (optional): <input type="text" name="move_out" id="datepicker-out"></p>
-            </div> <!-- End of holder -->
-
+            </div></span>
             <div class="holder">
                 <div class="housing_both">
-                    <label>How many bedrooms would you prefer to have in your apartment?</label>
+                      <p><strong>Max. Rent</strong> (per Person):
+                      <input type="text" name="maxrent" id="amount" required="required"></p>
+                </div>
+            </div> <!-- End of holder -->
+            <div class="holder">
+                <p><strong>Move in date:</strong> <input type="text" name="move_in" id="datepicker-in" required="required"></p>
+                <p><strong>Move out date</strong> (optional): <input type="text" name="move_out" id="datepicker-out"></p>
+            </div> <!-- End of holder -->
+            <div class="holder">
+                <!--<div class="housing_both">-->
+                    <p>How many bedrooms would you prefer to have in your apartment?</p>
                     <div class="button-holder">
-                        <input type="radio" id="bed_num_1" name="bed_num" class="regular-radio" value="Studio" checked="checked"/><label for="bed_num_1"></label><div class="radio-text">Studio</div><br />
-                        <input type="radio" id="bed_num_2" name="bed_num" class="regular-radio" value="1"/><label for="bed_num_2"></label><div class="radio-text">1 Bedroom</div><br />
-                        <input type="radio" id="bed_num_3" name="bed_num" class="regular-radio" value="2"/><label for="bed_num_3"></label><div class="radio-text">2 Bedrooms</div><br />
-                        <input type="radio" id="bed_num_4" name="bed_num" class="regular-radio" value="3"/><label for="bed_num_4"></label><div class="radio-text">3 Bedrooms</div><br />
-                        <input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bed_num_5"></label><div class="radio-text">4+ Bedrooms</div><br />
+                        <table>
+                        <tr>
+                            <td><input type="radio" id="bed_num_1" name="studio" class="regular-radio" value="Studio" checked="checked"/><label for="studio">Studio</label></td>
+                            <td><input type="radio" id="bed_num_2" name="bedtwo" class="regular-radio" value="1"/><label for="bedtwo">1 Bedroom</label></td>
+                            <td><input type="radio" id="bed_num_3" name="bedthree" class="regular-radio" value="2"/><label for="bedthree">2 Bedrooms</label></td>
+                            <td><input type="radio" id="bed_num_4" name="bedfour" class="regular-radio" value="3"/><label for="bedfour">3 Bedrooms</label></td>
+                        <td><input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bedfive">4+ Bedrooms</label></td></tr>
+
+                    <!--</div>-->
+                </table>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="housing_both">
+                    <p>What minimum amenities would you prefer to have in your apartment?</p>
+                    <div class="button-holder">
+                        <table>
+                            <tr>
+                        <td><input type="checkbox" id="amenities_1" name="balcony" class="regular-checkbox" value="Balcony" /><label for="balcony">Balcony</label></td>
+                        <td><input type="checkbox" id="amenities_2" name="dish" class="regular-checkbox" value="Dishwasher"/><label for="dish">Dishwasher</label></td>
+                        <td><input type="checkbox" id="amenities_3" name="doorman" class="regular-checkbox" value="Doorman"/><label for="doorman">Doorman</label></td>
+                        <td><input type="checkbox" id="amenities_4" name="elevator" class="regular-checkbox" value="Elevator"/><label for="elevator">Elevator</label></td>
+                        <td><input type="checkbox" id="amenities_5" name="furnished" class="regular-checkbox" value="Furnished"/><label for="furnished">Furnished</label></td>
+                        <td><input type="checkbox" id="amenities_6" name="garage" class="regular-checkbox" value="Garage"/><label for="garage">Garage</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="amenities_7" name="gym" class="regular-checkbox" value="Gym"/><label for="gym">Gym</label></td>
+                        <td><input type="checkbox" id="amenities_8" name="laundry" class="regular-checkbox" value="In-Unit Laundry"/><label for="laundry">In-Unit Laundry</label></td>
+                        <td><input type="checkbox" id="amenities_9" name="washroom" class="regular-checkbox" value="Laundry Room"/><label for="washroom">Laundry Room</label></td>
+                        <td><input type="checkbox" id="amenities_10" name="outdoor" class="regular-checkbox" value="Outdoor Space"/><label for="outdoor">Outdoor Space</label></td>
+                        <td><input type="checkbox" id="amenities_11" name="amenities[]" class="regular-checkbox" value="Parking Space"/><label for="parking">Parking</label></td>
+                        <td><input type="checkbox" id="amenities_12" name="terrace" class="regular-checkbox" value="Terrace"/><label for="terrace">Terrace</label></td>
+                    </tr>
+                    </table>
                     </div>
                 </div>
             </div>
-
-            <div class="holder">
-                <div class="housing_both">
-                    <label>What minimum amenities would you prefer to have in your apartment?</label>
-                    <div class="button-holder">
-                        <input type="checkbox" id="amenities_1" name="amenities[]" class="regular-checkbox" value="Balcony" /><label for="amenities_1"></label><div class="checkbox-text">Balcony</div><br />
-                        <input type="checkbox" id="amenities_2" name="amenities[]" class="regular-checkbox" value="Dishwasher"/><label for="amenities_2"></label><div class="checkbox-text">Dishwasher</div><br />
-                        <input type="checkbox" id="amenities_3" name="amenities[]" class="regular-checkbox" value="Doorman"/><label for="amenities_3"></label><div class="checkbox-text">Doorman</div><br />
-                        <input type="checkbox" id="amenities_4" name="amenities[]" class="regular-checkbox" value="Elevator"/><label for="amenities_4"></label><div class="checkbox-text">Elevator</div><br />
-                        <input type="checkbox" id="amenities_5" name="amenities[]" class="regular-checkbox" value="Furnished"/><label for="amenities_5"></label><div class="checkbox-text">Furnished</div><br />
-                        <input type="checkbox" id="amenities_6" name="amenities[]" class="regular-checkbox" value="Garage"/><label for="amenities_6"></label><div class="checkbox-text">Garage</div><br />
-                        <input type="checkbox" id="amenities_7" name="amenities[]" class="regular-checkbox" value="Gym"/><label for="amenities_7"></label><div class="checkbox-text">Gym</div><br />
-                        <input type="checkbox" id="amenities_8" name="amenities[]" class="regular-checkbox" value="In-Unit Laundry"/><label for="amenities_8"></label><div class="checkbox-text">In-Unit Laundry</div><br />
-                        <input type="checkbox" id="amenities_9" name="amenities[]" class="regular-checkbox" value="Laundry Room"/><label for="amenities_9"></label><div class="checkbox-text">Laundry Room</div><br />
-                        <input type="checkbox" id="amenities_10" name="amenities[]" class="regular-checkbox" value="Outdoor Space"/><label for="amenities_10"></label><div class="checkbox-text">Outdoor Space</div><br />
-                        <input type="checkbox" id="amenities_11" name="amenities[]" class="regular-checkbox" value="Parking Space"/><label for="amenities_11"></label><div class="checkbox-text">Parking</div><br />
-                        <input type="checkbox" id="amenities_12" name="amenities[]" class="regular-checkbox" value="Terrace"/><label for="amenities_12"></label><div class="checkbox-text">Terrace</div><br />
-                    </div>
-                </div>
-            </div>
-            <div class="holder">
-                <div class="housing_only">
-                    <span class="noise">What is your ideal noise level?</span>
+            <div id ="sound" class="holder">
+                <!--<div class="housing_only">-->
+                    <p class="noise">What is your ideal noise level?
                     <select>
                         <option value="Very Quiet">Very Quiet</option>
                         <option value="Moderately Quiet">Moderately Quiet</option>
@@ -345,13 +345,15 @@
                         <option value="Moderately Loud">Moderately Loud</option>
                         <option value="Very Loud">Very Loud</option>
                         <option value="Doesn't Matter">Doesn't Matter</option>
-                    </select>
+                    </select></p>
                 </div>
             </div>
             <div class="holder">
                  <div class="roommates_both">
-                    <span class="wakeup">Wake up time</span>
-                    <select class="morning">
+                    <table>
+                        <tr>
+                            <td>Wake up time</td>
+                    <td><select name="dawn" class="morning">
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -365,6 +367,7 @@
                         <option value="11">11</option>
                         <option value="12">12</option>
                     </select> : <select class="morning">
+                    <option value="00">00</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -378,7 +381,7 @@
                         <option value="11">11</option>
                         <option value="12">12</option>
                         <option value="13">13</option>
-                        <option value="14">14</option<option value="15">15</option>
+                        <option value="14">14</option><option value="15">15</option>
                         <option value="16">16</option>
                         <option value="17">17</option>
                         <option value="18">18</option>
@@ -422,11 +425,12 @@
                         <option value="56">56</option>
                         <option value="57">57</option>
                         <option value="58">58</option>
-                        <option value="59">59</option<option value="60">60</option>
+                        <option value="59">59</option><option value="60">60</option>
 
-                    </select>
-                    <span class="bedtime">Bed time</span>
-                    <select class="nighthour">
+                    </select></td>
+                    <tr>
+                    <td>Bed time</td>
+                    <td><select name="moon" class="nighthour">
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -440,6 +444,7 @@
                         <option value="11">11</option>
                         <option value="12">12</option>
                     </select> : <select class="night">
+                        <option value="00">00</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -453,7 +458,7 @@
                         <option value="11">11</option>
                         <option value="12">12</option>
                         <option value="13">13</option>
-                        <option value="14">14</option<option value="15">15</option>
+                        <option value="14">14</option><option value="15">15</option>
                         <option value="16">16</option>
                         <option value="17">17</option>
                         <option value="18">18</option>
@@ -497,184 +502,177 @@
                         <option value="56">56</option>
                         <option value="57">57</option>
                         <option value="58">58</option>
-                        <option value="59">59</option<option value="60">60</option>
+                        <option value="59">59</option><option value="60">60</option>
+                    </td>
+                </tr>
+            </table>
 
                     </select></div>
-
             <div class="holder">
                  <div>
-                    <label class="housing_only">Are you okay with pets in the apartment?</label>
-                    <label class="roommates_both">Would you be okay if your roommate had a pet?</label>
+                    <p class="housing_only">Are you okay with pets in the apartment?</p>
+                    <p class="roommates_both">Would you be okay if your roommate had a pet?</p>
                     <div class="button-holder">
-                        <input type="radio" id="pets_1" name="pets" class="regular-radio" value="Yes" checked="checked"/><label for="pets_1"></label><div class="radio-text">Yes</div><br />
-                        <input type="radio" id="pets_2" name="pets" class="regular-radio" value="No"/><label for="pets_2"></label><div class="radio-text">No</div><br />
-                        <input type="radio" id="pets_3" name="pets" class="regular-radio" value="Do not care"/><label for="pets_3"></label><div class="radio-text">Don&#39;t care</div><br />
+                        <input type="radio" id="pets_1" name="petsyes" class="regular-radio" value="Yes" checked="checked"/><label for="petsyes">Yes</label>
+                        <input type="radio" id="pets_2" name="petsno" class="regular-radio" value="No"/><label for="petsno">No</label>
+                        <input type="radio" id="pets_3" name="petsdc" class="regular-radio" value="Do not care"/><label for="petsdc">Don&#39;t care</label><br />
                     </div>
                 </div>
             </div>
             <div class="holder">
                 <div class="roommates_both">
-                    <label for="sociability">Describe your level of sociability:</label>
-                    <input id="long" type="text" name="sociability" placeholder="Sociability Level" />
-                    <label for="tidiness">Describe your level of tidiness:</label>
-                    <input id="long" type="text" name="tidiness" placeholder="Tidiness Level" />
+                    <p>Describe your level of sociability:
+                    <input id="long" type="text" name="sociability" placeholder="Sociability Level" /></p>
+                    <p>Describe your level of tidiness:
+                    <input id="long" type="text" name="tidiness" placeholder="Tidiness Level" /></p>
                 </div>
             </div>
             <div class="holder">
                 <div class="roommates_both">
-                    <label for="activities">List some of your interests and activites: (Separate each with a comma)</label>
-                    <input type="text" name="activities" placeholder="Interests & Activities" />
+                    <p class="hobby">List some of your interests and activites: (Separate each with a comma)
+                    <input type="text" name="activities" placeholder="Interests & Activities" /></p>
                 </div>
             </div>
             <div class="holder">
                 <div class="roommates_both">
-                    <label for="political">Describe your political views:</label>
-                    <input id="long" type="text" name="political" placeholder="Political Views" />
-                    <label for="politics_matter">Do the political views of your roommate matter to you?</label>
-                    <input type="radio" value="yes" name="politics_matter" />
-                    <input type="radio" value="no" name="politics_matter" />
-                    <label for="religion">Describe your religious views:</label>
-                    <input id="long" type="text" name="religion" placeholder="Religious Views" />
-                    <label for="religion_matters">Do the religious views of your roommate matter to you?</label>
-                    <input type="radio" value="yes" name="religion_matters" />
-                    <input type="radio" value="no" name="religion_matters" />
+                    <p>Describe your political views:
+                    <input id="long" type="text" name="political" placeholder="Political Views" /></p>
+                    <p>Do the political views of your roommate matter to you?
+                    <input type="radio" value="yes" name="politicyes" /><label for="politicyes">Yes</label>
+                    <input type="radio" value="no" name="politicno" /><label="politicno">No</label></p>
+                    <p>Describe your religious views:
+                    <input id="long" type="text" name="religion" placeholder="Religious Views" /></p>
+                    <p>Do the religious views of your roommate matter to you?
+                    <input type="radio" value="yes" name="religionyes" /><label for="religionyes">Yes</label>
+                    <input type="radio" value="no" name="religionno" /><label="religionno">No</label></p>
                 </div>
             </div>
             <div class="holder">
                 <div class="roommates_both">
-                    <label for="sexualactivity">How sexually active would you say that you are?</label>
+                    <p>How sexually active would you say that you are?
                     <select class="sexualactivity">
                         <option value="I do not care to disclose that information.">I do not care to disclose that information.</option>
                         <option value="Very Active">Very Active</option>
                         <option value="Moderately Active">Moderately Active</option>
                         <option value="Infrequently Active">Infrequently Active</option>
                         <option value="Inactive">Inactive</option>
-                    </select>
-                    <label for="sexprivate">I am private with sex.</label>
-                    <input type="checkbox" value="yes" name="sexprivate" />
-                    <label for="roommatesexprivate">I wish for my roommate to be private with sex.</label>
+                    </select></p>
+                    <p><input type="checkbox" value="yes" name="sexprivate" />
+                    I am private with sex.
                     <input type="checkbox" value="yes" name="roommmatesexprivate" />
-
+                    I wish for my roommate to be private with sex.</p>
                 </div>
             </div>
             <div class="holder">
                 <div class="roommates_both">
-                    <label for="smoke">Do you smoke?</label>
-                    <input type="radio" value="yes" name="smoke" />
-                    <input type="radio" value="no" name="smoke" />
-                    <label for="smokeoften">How often?</label>
+                    <table class="addictions">
+                        <tr>
+                    <td>Do you smoke?</td>
+                    <td><input type="radio" value="yes" name="smokeyes" /><label for="smokeyes">Yes</label></td>
+                    <td><input type="radio" value="no" name="smokeno" /><label="smokeno" class="smokeno">No</label></td>
+                    <td><label for="smokeoften">How often?</label>
                     <select class="smokeoften">
                         <option value="Regularly">Regularly</option>
                         <option value="Occasionally">Occasionally</option>
                         <option value="Every Now and Then">Every Now and Then</option>
-                    </select>
-                    <label for="smokesocially">Only Socially</label>
-                    <input type="checkbox" name="smokesocially" value="Yes" />
-                    <label for="smokequit">Trying to Quit</label>
-                    <input type="checkbox" name="smokequit" value="Yes" />
-                </div>
-            </div>
-            <div class="holder">
-                <div class="roommates_both">
-                    <label for="drink">Do you drink?</label>
-                    <input type="radio" value="yes" name="drink" />
-                    <input type="radio" value="no" name="drink" />
-                    <label for="drinkoften">How often?</label>
+                    </select></td>
+                    <td><label for="smokesocially">Only Socially</label>
+                    <input type="checkbox" name="smokesocially" value="Yes" /></td>
+                    <td><label for="smokequit">Trying to Quit</label>
+                    <input type="checkbox" name="smokequit" value="Yes" /></td>
+                </tr>
+                <tr>
+                <td>Do you drink?</td>
+                    <td><input type="radio" value="yes" name="drinkyes" /><label for="drinkyes">Yes</label></td>
+                    <td><input type="radio" value="no" name="drinkno" /><label="drinkno">No</label></td>
+                    <td><label for="drinkoften">How often?</label>
                     <select class="drinkoften">
                         <option value="Regularly">Regularly</option>
                         <option value="Occasionally">Occasionally</option>
                         <option value="Every Now and Then">Every Now and Then</option>
-                    </select>
-                    <label for="drinksocially">Only Socially</label>
-                    <input type="checkbox" name="drinksocially" value="Yes" />
-                    <label for="drinkquit">Trying to Quit</label>
-                    <input type="checkbox" name="drinkquit" value="Yes" />
-                </div>
-            </div>
-            <div class="holder">
-                <div class="roommates_both">
-                    <label for="drugs">Do you do drugs?</label>
-                    <input type="radio" value="yes" name="drugs" />
-                    <input type="radio" value="no" name="drugs" />
-                    <label for="drugsoften">How often?</label>
+                    </select></td>
+                    <td><label for="drinksocially">Only Socially</label>
+                    <input type="checkbox" name="drinksocially" value="Yes" /></td>
+                    <td><label for="drinkquit">Trying to Quit</label>
+                    <input type="checkbox" name="drinkquit" value="Yes" /></td>
+                </tr>
+                <tr>
+                    <td>Do you do drugs?</td>
+                    <td><input type="radio" value="yes" name="drugsyes" /><label for="drugsyes">Yes</label></td>
+                    <td><input type="radio" value="no" name="drugsno" /><label="drugsno">No</label></td>
+                    <td><label for="drugsoften">How often?</label>
                     <select class="drugsoften">
                         <option value="Regularly">Regularly</option>
                         <option value="Occasionally">Occasionally</option>
                         <option value="Every Now and Then">Every Now and Then</option>
-                    </select>
-                    <label for="drugssocially">Only Socially</label>
-                    <input type="checkbox" name="drugssocially" value="Yes" />
-                    <label for="drugsquit">Trying to Quit</label>
-                    <input type="checkbox" name="drugsquit" value="Yes" />
+                    </select></td>
+                    <td><label for="drugssocially">Only Socially</label>
+                    <input type="checkbox" name="drugssocially" value="Yes" /></td>
+                    <td><label for="drugsquit">Trying to Quit</label><input type="checkbox" name="drugsquit" value="Yes" /></td>
+                </tr>
+            </table>
                 </div>
             </div>
             <div class="holder">
                 <div class="roomates_both">
-                    <label for="overnight">Do you bring overnight guests?</label>
-                    <input type="radio" value="yes" name="overnight" />
-                    <input type="radio" value="no" name="overnight" />
+                    <p>Do you bring overnight guests?
+                    <input type="radio" value="yes" name="smokeyes" /><label for="smokeyes">Yes</label>
+                    <input type="radio" value="no" name="smokeno" /><label="smokeno">No</label>
                     <label for="overnightoften">How often?</label>
                     <select class="overnightoften">
                         <option value="Regularly">Regularly</option>
                         <option value="Occasionally">Occasionally</option>
                         <option value="Every Now and Then">Every Now and Then</option>
-                    </select>
-                    <label for="roommmateovernight">I am okay with my roommate bringing overnight guests.</label>
-                    <input type="checkbox" value="yes" name="roommateovernight" />
+                    </select></p>
+                    <p><input type="checkbox" value="yes" name="roommateovernight" />I am okay with my roommate bringing overnight guests.</p>
                 </div>
             </div>
             <div class="holder">
                 <div class="roommates_both">
-                    <label for="question">Question for Potential Roommate:</label>
-                    <input type="text" name="question" placeholder="Ask anything!" />
+                    <p>Question for Potential Roommate:
+                    <input type="text" name="question" placeholder="Ask anything!" /></p>
                 </div>
             </div>
-
             <div>
-                <label>Which state or country are you originally from?</label>
-                <input id="long" type="text" name="hometown" placeholder="Hometown" required="required"/>
+                <p>Which state or country are you originally from?
+                <input id="long" type="text" name="hometown" placeholder="Home" required="required"/></p>
             </div>
             <div>
-                <label>What school do you or did you most recently attend?</label>
+                <p>What school do you or did you most recently attend?
                 <select class="styled-select" name="school">
                   <option value="Harvard">Harvard</option>
                   <option value="Yale">Yale</option>
                   <option value="MIT">MIT</option>
-                </select>
+                </select></p>
             </div>
             <div>
-                <label>At what company or organization will you be working this summer or after graduation?</label>
-                <input id="long" type="text" name="work" placeholder="Company or organization" required="required"/>
+                <p>At what company or organization will you be working this summer or after graduation?
+                <input id="long" type="text" name="work" placeholder="Company or organization" required="required"/></p>
             </div>
-
-            <div class="housing_only">
-                <input type="checkbox" id="terms_1" name="terms" class="regular-checkbox terms_class" value="read"/><label for="terms_1"></label><div class="checkbox-text">I have read the <a href="/terms" target="_blank">Terms & Conditions</a></div><br />
-                <span class="terms_error">Please read the Terms & Conditions</span>
-            </div>
-            
+            <!--<div class="housing_only">-->
+                <p><span class="terms_error">Please read the <a href="/terms" target="_blank">Terms & Conditions</a></span></p>
+                <input type="checkbox" id="terms_1" name="terms" class="regular-checkbox terms_class" value="read"/><label for="terms_1">I have read the <a href="/terms" target="_blank">Terms & Conditions</a></label>
+            <!-----</div>---->
             <div class="circle_wrapper roommates_both">
                 <div class="dark_circle" ></div>
                 <div class="light_circle" ></div>
                 <div class="light_circle" ></div>
             </div>
-            <div class="roommates_both">
-                <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/>
-            </div>
+            
             <div class="housing_only">
                 <div class="submit_button">
                 <input id="submit_room_only" class="nextbutton one pages submitbutton" type="submit" name="submit" value="Submit!" disabled/>
                 </div>
-            </div>
+        </div>
         </form>
         <form action="FileUpload.php" method="post" enctype="multipart/form-data">
-    <label for="upload">File:</label>
+    <label for="upload">Upload your Profile Photo:</label><br />
     <input type="file" name="upload" id="upload"><br/>
     <input type="submit" name="submit" value="Upload">
+    <div class="roommates_both">
+                <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/>
+            </div>
 </form>
-
-        </div> <!-- End of page one -->
-        
-        
-        
-         
+ <!-- End of page one -->
+         </div>
     </div> <!-- End of wrapper -->

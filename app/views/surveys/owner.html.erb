@@ -1,0 +1,218 @@
+<div id="wrapper">
+                <div id="form_one_page" class="font one page link">
+        <form action="/form_db_1" method="post" name="quiz" id="quiz">
+                <h3 class="title">Owners' Questionnaire</h3>   <div class="schoolemail">
+                    <label for="email">Your school email address:</label>
+                    <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " />
+                    <br />
+                    <label class="nombre" for="fullname">Your name:</label>
+                    <input id="long" type="text" class="nombre" name="fullname" placeholder="Name"required="required" />
+                </div>             
+                <div class="holder">
+                    <div>
+                        <p><label for="housing">Type of housing:</label>
+                        <input type="radio" name="housing" value="Apartment">Apartment
+                        <input type="radio" name="housing" value="House">House
+                        <input type="radio" name="housing" value="Other">Other (Please specify): <input type="text" name="housing">
+                        </p>
+                        <p><label for="realty">What company do you represent?</label>
+                        <input type="text" name="realty" />
+                        <div class="button-holder">
+                            <label for="availability">Availability: </label>
+                            <span class="availability"><input type="radio" name="availabilityonly" class="regular-radio" value="Room only"/><label for="availabilityonly">Only a room</label>
+                            <input type="radio" id="survey_type_3" name="availabilityboth" class="regular-radio" value="Both" checked/><label for="availabilityboth">Both</label></span>
+                        </div></p>
+                    </div>
+                </div> 
+                <br />
+            <div class="holder">
+                 <div>
+                    <p class="move">Where are you located? (We will be expanding to more cities in the coming weeks!)</p>
+                    <div class="button-holder">
+                        <table class="cityoptions">
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label></td>
+                                    <td><input type="radio" id="moving_to_2" name="movingboston" class="regular-radio" value="Boston"/><label for="movingboston">Boston</label></td>
+                                    <td><input type="radio" id="moving_to_3" name="movingdc" class="regular-radio" value="Washington D.C."/><label for="movingdc">Washington, D.C.</label></td>
+                                    <td><input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
+                                    <td><input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label></td>
+                                    <td colspan="2"><input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label>
+                        <input id="cityname" type="text" name="movingother" placeholder="City Name" hidden/></td>
+                    </tr>
+                </tbody>
+            </table>
+                        </div>
+                    </div>
+                </div>
+                 <!-- End of holder -->     
+            
+             <div class="holder">
+                <p>What is your gender?</p>
+                <div class="button-holder">
+                    <input type="radio" id="sex_1" name="malesex" class="regular-radio" value="Male" checked="checked" /><label for="malesex">Male</label>
+                    <input type="radio" id="sex_2" name="femalesex" class="regular-radio" value="Female"/><label for="femalesex">Female</label>
+                    <input type="radio" id="sex_3" name="othersex" class="regular-radio" value="Other"/><label for="othersex">Other</label><br />
+                </div>
+            </div> 
+
+            <div class="holder">
+                <p>Are you okay with co-ed housing?</p>
+                <div class="button-holder">
+                    <input type="radio" id="coed_1" name="coedyes" class="regular-radio" value="Yes"/><label for="coedyes">Yes</label>
+                    <input type="radio" id="coed_2" name="coedno" class="regular-radio" value="No" checked="checked" /><label for="coedno">No</label><br />
+                    
+                </div>
+            </div> 
+
+            <div class="holder">
+                <div>
+                    <p>How old are you?
+                    <input class="short" type="text" name="age" placeholder="Age" required="required"/></p>
+                </div>
+            </div>
+
+                
+            <div class"holder">
+                <div class="housing_both">
+                    <p>Monthly Price of Rent (per Person):
+                      <input type="text" name="rentprice" id="amount"></p>
+                </div>
+            </div> <!-- End of holder -->
+            
+            <div class="holder">
+                <p>Move in date: <input type="text" name="move_in" id="datepicker-in" required="required"></p>
+                <p>Move out date (optional): <input type="text" name="move_out" id="datepicker-out"></p>
+            </div> <!-- End of holder -->
+
+            <div class="holder">
+                <!--<div class="housing_both">-->
+                    <p>How many bedrooms would you prefer to have in your apartment?</p>
+                    <div class="button-holder">
+                        <table>
+                        <tr>
+                            <td><input type="radio" id="bed_num_1" name="studio" class="regular-radio" value="Studio" checked="checked"/><label for="studio">Studio</label></td>
+                            <td><input type="radio" id="bed_num_2" name="bedtwo" class="regular-radio" value="1"/><label for="bedtwo">1 Bedroom</label></td>
+                            <td><input type="radio" id="bed_num_3" name="bedthree" class="regular-radio" value="2"/><label for="bedthree">2 Bedrooms</label></td>
+                            <td><input type="radio" id="bed_num_4" name="bedfour" class="regular-radio" value="3"/><label for="bedfour">3 Bedrooms</label></td>
+                        <td><input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bedfive">4+ Bedrooms</label></td></tr>
+
+                    <!--</div>-->
+                </table>
+                </div>
+            </div>
+                    
+                    <div class="button-holder">
+                        <p>How many bathrooms are in your pad?</p>
+                        <table>
+                            <tr>
+                        <td><input type="radio" id="bed_num_2" name="bedroomone" class="regular-radio" value="1"/><label for="bedroomone">1 Bathroom</label></td>
+                        <td><input type="radio" id="bed_num_15" name="bedroomonefive" class="regular-radio" value="1"/><label for="bedroomonefive">1.5 Bathrooms</label></td>
+                        <td><input type="radio" id="bed_num_3" name="bedroomtwo" class="regular-radio" value="2"/><label for="bedroom2">2 Bathrooms</label></td>
+                        <td><input type="radio" id="bed_num_3" name="bedroom25" class="regular-radio" value="2"/><label for="bedroom25">2.5 Bathrooms</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="bed_num_4" name="bedroomthree" class="regular-radio" value="3"/> 3 Bathrooms</td>
+                        <td><input type="radio" id="bed_num_4" name="bedroomthreefive" class="regular-radio" value="3"/> 3.5 Bathrooms</td>
+                        <td><input type="radio" id="bed_num_5" name="bedroomfour" class="regular-radio" value="4+"/> 4+ Bathrooms</td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <div class="holder">
+                <p>List all other rooms in your pad. (Separate each room with a comma)
+                <input type="text" name="roomlist" value="list" /></p>
+            </div>
+            <div class="holder">
+                <p class="residentrange">What is the age range of the residents in your building?</p>
+                <label for="age_min">Age Min.</label>
+                <input type="text" name="age_min" value="min" />
+                <label for="age_max">Age Max.</label>
+                <input type="text" name="age_max" value="max" />
+                <p>What is the age mode (the most common age) of the residents in your building
+                <input type="text" name="age_mode" value="max" /></p>
+            </div>
+
+            <div class="holder">
+                <div class="housing_both">
+                    <p>What minimum amenities would you prefer to have in your apartment?</p>
+                    <div class="button-holder">
+                        <table>
+                            <tr>
+                        <td><input type="checkbox" id="amenities_1" name="balcony" class="regular-checkbox" value="Balcony" /><label for="balcony">Balcony</label></td>
+                        <td><input type="checkbox" id="amenities_2" name="dish" class="regular-checkbox" value="Dishwasher"/><label for="dish">Dishwasher</label></td>
+                        <td><input type="checkbox" id="amenities_3" name="doorman" class="regular-checkbox" value="Doorman"/><label for="doorman">Doorman</label></td>
+                        <td><input type="checkbox" id="amenities_4" name="elevator" class="regular-checkbox" value="Elevator"/><label for="elevator">Elevator</label></td>
+                        <td><input type="checkbox" id="amenities_5" name="furnished" class="regular-checkbox" value="Furnished"/><label for="furnished">Furnished</label></td>
+                        <td><input type="checkbox" id="amenities_6" name="garage" class="regular-checkbox" value="Garage"/><label for="garage">Garage</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="amenities_7" name="gym" class="regular-checkbox" value="Gym"/><label for="gym">Gym</label></td>
+                        <td><input type="checkbox" id="amenities_8" name="laundry" class="regular-checkbox" value="In-Unit Laundry"/><label for="laundry">In-Unit Laundry</label></td>
+                        <td><input type="checkbox" id="amenities_9" name="washroom" class="regular-checkbox" value="Laundry Room"/><label for="washroom">Laundry Room</label></td>
+                        <td><input type="checkbox" id="amenities_10" name="outdoor" class="regular-checkbox" value="Outdoor Space"/><label for="outdoor">Outdoor Space</label></td>
+                        <td><input type="checkbox" id="amenities_11" name="amenities[]" class="regular-checkbox" value="Parking Space"/><label for="parking">Parking</label></td>
+                        <td><input type="checkbox" id="amenities_12" name="terrace" class="regular-checkbox" value="Terrace"/><label for="terrace">Terrace</label></td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                 <div>
+                    <p>Are pets allowed in your pad?</p>
+                    <div class="button-holder">
+                        <input type="radio" id="pets_1" name="petsyes" class="regular-radio" value="Yes" checked="checked"/><label for="petsyes">Yes</label>
+                        <input type="radio" id="pets_2" name="petsno" class="regular-radio" value="No"/><label for="petsno">No</label>
+                        <input type="radio" id="pets_3" name="petsdc" class="regular-radio" value="Do not care"/><label for="petsdc">Don&#39;t care</label><br />
+                    </div>
+                </div>
+            </div> 
+
+            <div>
+                <p>What is the address of your pad?</p>
+                <input id="long" type="text" name="address" placeholder="Address" required="required"/>
+            </div>
+
+            <div class="housing_only">
+                <input type="checkbox" id="terms_1" name="terms" class="regular-checkbox terms_class" value="read"/><label for="terms">I have read the <a href="/terms" target="_blank">Terms & Conditions</a></label><br />
+                <span class="terms_error">Please read the Terms & Conditions</span>
+            </div>
+            
+            <div class="circle_wrapper roommates_both">
+                <div class="dark_circle" ></div>
+                <div class="light_circle" ></div>
+                <div class="light_circle" ></div>
+            </div>
+            </div>
+            <div class="housing_only">
+                <div class="submit_button">
+                <input id="submit_room_only" class="nextbutton one pages submitbutton" type="submit" name="submit" value="Submit!" disabled/>
+                </div>
+            </div>
+
+        </form>
+        <form action="FileUpload.php" method="post" enctype="multipart/form-data">
+    <label for="upload">Upload your Profile Photo:</label><br />
+    <input type="file" name="upload" id="upload"><br/>
+    <input type="submit" name="submit" value="Upload">
+</form>
+<form action="FileUpload.php" method="post" enctype="multipart/form-data">
+    <label for="upload">Upload Photos of your Pad:</label><br />
+    <input type="file" name="upload" id="upload"><br/>
+    <input type="submit" name="submit" value="Upload">
+    <div class="roommates_both">
+                <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/>
+            </div>
+</form>
+        </div> <!-- End of page one -->
+        
+        
+        
+         
+    </div> <!-- End of wrapper -->

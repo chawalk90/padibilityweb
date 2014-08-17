@@ -11,6 +11,10 @@ Rails.application.routes.draw do
 
   get '/ownersurvey' => 'surveys#owner'
 
+  get '/browseseekers' => 'browse#seekers'
+
+  get '/browseowners' => 'browse#owners'
+
 
 
   devise_for :users
