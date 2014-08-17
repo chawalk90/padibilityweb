@@ -1,40 +1,57 @@
 <div id="wrapper">
+    <%= form_for(@survey, remote: true, format: :json, html: {class: :thing_form}) do |f| %>
                 <div id="form_one_page" class="font one page link">
         <form action="/form_db_1" method="post" name="quiz" id="quiz">
                 <h3 class="title">Padibility Questionnaire</h3>
                 <div class="schoolemail">
-                	<label for="email">Your school email address:</label>
-                    <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " />
+                    <%= f.label :email, "Your school email address:" %><br />
+                    <%= f.text_field :email %>
                     <br />
-                    <label for="fullname">Your name:</label>
+                    <%= f.label :name, 'Your name:' %><br />
+                    <%= f.text_field :name %>
                     <input id="long" type="text" name="fullname" placeholder="Name"required="required" />
                 </div>
                 <div class="holder">
                     <div>
                         <p>What are you looking for?</p>
-                            <span class="only"><input type="radio" id="survey_type_1" name="roommates" class="regular-radio" value="Roommates only" checked/><label for="roommates">Only roommates</label>
+                        <%= f.label :looking_for %>
+                            <span class="only">
+                                radio_button("survey", "looking_for", "Only Roommates")
+                                radio_button("survey", "looking_for", "Only a Room")
+                                radio_button("survey", "looking_for", "Both")
+                                <!---<input type="radio" id="survey_type_1" name="roommates" class="regular-radio" value="Roommates only" checked/><label for="roommates">Only roommates</label>
                             <input type="radio" id="survey_type_2" name="room" class="regular-radio" value="Room only"/><label for="room">Only a room</label>
-                            <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label></span></div><br />
+                            <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label>-->
+                            /span></div><br />
                         </div>
                     </div>
                 
             <div class="holder">
                  <div>
                     <p class="move">Where will you be moving to? (We will be expanding to more cities in the coming weeks!)</p>
+                    <%= f.label :moving_to %>
                     <div class="button-holder">
                         <table class="cityoptions">
                             <tbody>
                                 <tr>
-                                    <td><input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label></td>
+                                    <td>radio_button("survey", "moving_to", "New York City")</td>
+                                    <td>radio_button("survey", "moving_to", "Boston")</td>
+                                    <td>radio_button("survey", "moving_to", "Washington, D.C.")</td>
+                                    <td>radio_button("survey", "moving_to", "San Francisco")</td>
+                                    <!--<td><input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label></td>
                                     <td><input type="radio" id="moving_to_2" name="movingboston" class="regular-radio" value="Boston"/><label for="movingboston">Boston</label></td>
                                     <td><input type="radio" id="moving_to_3" name="movingdc" class="regular-radio" value="Washington D.C."/><label for="movingdc">Washington, D.C.</label></td>
-                                    <td><input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label></td>
+                                    <td><input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label></td>-->
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
+                                    <td>radio_button("survey", "moving_to", "Chicago")</td>
+                                    <td>radio_button("survey", "moving_to", "Los Angeles")</td>
+                                    <td>radio_button("survey", "moving_to", "Other")
+                                        <%= f.text_field :moving_to %></td>
+                                    <!--<td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
                                     <td><input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label></td>
                                     <td colspan="2"><input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label>
-                        <input id="cityname" type="text" name="movingother" placeholder="City Name" hidden/></td>
+                        <input id="cityname" type="text" name="movingother" placeholder="City Name" hidden/></td>-->
                     </tr>
                 </tbody>
             </table>
@@ -44,58 +61,79 @@
              <!-- End of holder -->   
              <div class="holder">
                 <p>What is your gender?</p>
-                    <input type="radio" id="sex_1" name="sexguy" class="regular-radio" value="Male" checked="checked" /><label for="sexguy">Male</label>
+                <%= f.label :gender %>
+                radio_button("survey", "gender", "Male")
+                radio_button("survey", "gender", "Female")
+                radio_button("survey", "gender", "Other")
+                    <!--<input type="radio" id="sex_1" name="sexguy" class="regular-radio" value="Male" checked="checked" /><label for="sexguy">Male</label>
                     <input type="radio" id="sex_2" name="sexgirl" class="regular-radio" value="Female"/><label for="sexgirl">Female</label>
-                    <input type="radio" id="sex_3" name="sexother" class="regular-radio" value="Other"/><label for="sexother">Other</label>
+                    <input type="radio" id="sex_3" name="sexother" class="regular-radio" value="Other"/><label for="sexother">Other</label>-->
             </div> 
             <div class="holder">
                 <p>Are you okay with co-ed housing?</p>
+                <%= f.label :coed %>
                 <div class="button-holder">
-                    <input type="radio" id="coed_1" name="coedyes" class="regular-radio" value="Yes"/><label for="coedyes">Yes</label>
-                    <input type="radio" id="coed_2" name="coedno" class="regular-radio" value="No" checked="checked" /><label for="coedno">No</label><br />
+                    radio_button("survey", "coed", "Yes")
+                    radio_button("survey", "coed", "No")
+                    <!--<input type="radio" id="coed_1" name="coedyes" class="regular-radio" value="Yes"/><label for="coedyes">Yes</label>
+                    <input type="radio" id="coed_2" name="coedno" class="regular-radio" value="No" checked="checked" /><label for="coedno">No</label><br />-->
                     
                 </div>
             </div>
             <br /> 
             <div class="holder">
                 <div>
-                    <span>How old are you?</span><input class="short" type="text" name="age" placeholder="Age" required="required"/>
+                    <span>How old are you?</span>
+                    <%= f.label :age %>
+                    <%= f.text_field :age %>
                 </div>
             </div>
 
                 <div class="holder">
-                <p class="housing_only">What type of housing are you looking for?</p>
-                <p class="roommates_only">What type of roommates are you looking for?</p>
-                <p class="both">What type of housing/roommates are you looking for?</p>
+                <p class="housing_only"><%= f.label :housing_type, "What type of housing are you looking for?" %></p>
+                <p class="roommates_only"><%= f.label :roommate_type, "What type of roommates are you looking for?" %></p>
+                <p class="both"><%= f.label :housing_type, "What type of housing/roommates are you looking for?" %></p>
                     <div class="button-holder">
-                        <input type="radio" id="housing_type_1" name="postgrad" class="regular-radio" value="Postgraduate" checked="checked"/><label for="postgrad">Postgraduate (long-term)</label>
-                        <input type="radio" id="housing_type_2" name="summer" class="regular-radio" value="Summer"/><label for="summer">Summer (short-term, summer)</label><br />
+                        radio_button("survey", "housing_type", "Postgraduate (long-term)")
+                        radio_button("survey", "housing_type", "Summer (short-term, summer)")
+                        <!--<input type="radio" id="housing_type_1" name="postgrad" class="regular-radio" value="Postgraduate" checked="checked"/><label for="postgrad">Postgraduate (long-term)</label>
+                        <input type="radio" id="housing_type_2" name="summer" class="regular-radio" value="Summer"/><label for="summer">Summer (short-term, summer)</label><br />-->
                     </div>
                 </div>
             <div class="holder">
                  <div>
-                    <p class="roommates_both">How many roommates would you like?</p>
-                    <p class="housing_only">How many roommates will be living with you?</p>
+                    <p class="roommates_both"><%= f.label :roommates_estimate, "How many roommates would you like?" %></p>
+                    <p class="housing_only"><%= f.label :roommates_amount, "How many roommates will be living with you?" %></p>
                     <div class="button-holder">
-                        <input type="radio" id="roommates_num_1" name="roommatesone" class="regular-radio" value="1" checked="checked"/><label for="roommatesone">1</label>
+                        radio_button("survey", "roommates_amount", "1")
+                        radio_button("survey", "roommates_amount", "2")
+                        radio_button("survey", "roommates_amount", "3")
+                        radio_button("survey", "roommates_amount", "4")
+                        radio_button("survey", "roommates_amount", "5")
+                        radio_button("survey", "roommates_amount", "5 or more, specify")
+                        <%= f.text_field :roommates_amount %>
+                        radio_button("survey", "roommates_amount", "Don't care")
+                        <!--<input type="radio" id="roommates_num_1" name="roommatesone" class="regular-radio" value="1" checked="checked"/><label for="roommatesone">1</label>
                         <input type="radio" id="roommatestwo" name="roommatestwo" class="regular-radio" value="2"/><label for="roommatestwo">2</label>
                         <input type="radio" id="roommates_num_3" name="roommatesthree" class="regular-radio" value="3"/><label for="roommatesthree">3</label>
                         <input type="radio" id="roommates_num_4" name="roommatesfour" class="regular-radio" value="4"/><label for="roommatesfour">4</label>
                         <input type="radio" id="roommates_num_5" name="roommatesfive" class="regular-radio" value="Do not care"/><label for="roommatesfive">5</label>
-                        <input type="radio" id="roommates_num_5" name="roommatesdc" class="regular-radio" value="Do not care"/><label for="roommatesdc">Don't care</label>
+                        <input type="radio" id="roommates_num_5" name="roommatesdc" class="regular-radio" value="Do not care"/><label for="roommatesdc">Don't care</label>-->
                         <!-- </div>-->
                         <!--<div class="housing_only">-->
-                            <input type="radio" id="roommates_num_6" name="roommatesplus" class="regular-radio" value="Other"/><label for="roommatesplus">5 or more, specify</label>
-                            <input class="short_other" type="text" name="roommates_num_other" placeholder=""/>
+                            <!--<input type="radio" id="roommates_num_6" name="roommatesplus" class="regular-radio" value="Other"/><label for="roommatesplus">5 or more, specify</label>
+                            <input class="short_other" type="text" name="roommates_num_other" placeholder=""/>-->
                        </div> 
                     </div>
                  <!-- End of holder -->
             <div class="holder">
                 <div class="roommates_both">
-                    <p>Have you already formed a roommate group of two or more to which you are looking to add roommates?</p>
+                    <p><%= f.label :roommates_group, "Have you already formed a roommate group of two or more to which you are looking to add roommates?" %></p>
                     <div class="button-holder">
-                        <input type="radio" id="formed_group_1" name="formed_group_1" class="regular-radio" value="Yes"/><label for="formed_group_1">Yes</label>
-                        <input type="radio" id="formed_group_2" name="formed_group_2" class="regular-radio" value="No" checked="checked" /><label for="formed_group_2">No</label><br />
+                        radio_button("survey", "roommates_group", "Yes")
+                        radio_button("survey", "roommates_group", "No")
+                        <!--<input type="radio" id="formed_group_1" name="formed_group_1" class="regular-radio" value="Yes"/><label for="formed_group_1">Yes</label>
+                        <input type="radio" id="formed_group_2" name="formed_group_2" class="regular-radio" value="No" checked="checked" /><label for="formed_group_2">No</label><br />-->
                     </div>
                 </div>
             </div>
@@ -103,201 +141,29 @@
             <div class="holder">
                 <div class="roommates_both other_roommates">
                     <p> Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too.</p>
-                    <input id="namelist" type="text" name="names_other_roommates" placeholder="Other roommates"/>
+                    <%= f.text_field :roommates_names %>
                 </div>
             </div>
             <span id="range"><div class="holder">
                 <div class="roommates_both">
-                    <p class="agemin"><strong>Age Range:</strong>
-                    <select name="agemin">
-                        <option value="Age Min.">Age Min.</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="75">75</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85">85</option>
-                        <option value="86">86</option>
-                        <option value="87">87</option>
-                        <option value="88">88</option>
-                        <option value="89">89</option>
-                        <option value="90">90</option>
-                        <option value="91">91</option>
-                        <option value="92">92</option>
-                        <option value="93">93</option>
-                        <option value="94">94</option>
-                        <option value="95">95</option>
-                        <option value="96">96</option>
-                        <option value="97">97</option>
-                        <option value="98">98</option>
-                        <option value="99">99</option>
-                        <option value="100">100</option>
-
-                    </select> - <select name="age_max">
-                        <option value="Age Max.">Age Max.</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="75">75</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85">85</option>
-                        <option value="86">86</option>
-                        <option value="87">87</option>
-                        <option value="88">88</option>
-                        <option value="89">89</option>
-                        <option value="90">90</option>
-                        <option value="91">91</option>
-                        <option value="92">92</option>
-                        <option value="93">93</option>
-                        <option value="94">94</option>
-                        <option value="95">95</option>
-                        <option value="96">96</option>
-                        <option value="97">97</option>
-                        <option value="98">98</option>
-                        <option value="99">99</option>
-                        <option value="100">100</option>
-
-                    </select></p>
+                    <%= f.label :age_min, "Age Min." %>
+                    <%= f.text_field :age_min %>
+                    <%= f.label :age_max, "Age Max." %>
+                    <%= f.text_field :age_max %>
                 </div>
             </div></span>
             <div class="holder">
-                <div class="housing_both">
-                      <p><strong>Max. Rent</strong> (per Person):
-                      <input type="text" name="maxrent" id="amount" required="required"></p>
-                </div>
-            </div> <!-- End of holder -->
-            <div class="holder">
-                <p><strong>Move in date:</strong> <input type="text" name="move_in" id="datepicker-in" required="required"></p>
-                <p><strong>Move out date</strong> (optional): <input type="text" name="move_out" id="datepicker-out"></p>
+                <p><%= f.label :move_in, "Move in date:" %>
+                    <%= f.text_field :move_in %>
+                    <%= f.label :move_out, "Move out date: (optional)" %>
+                    <%= f.text_field :move_out %>
+
+                    </p>
             </div> <!-- End of holder -->
             <div class="holder">
                 <!--<div class="housing_both">-->
-                    <p>How many bedrooms would you prefer to have in your apartment?</p>
-                    <div class="button-holder">
+                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %><%= f.text_field :bedrooms %></p>
+                    <!--<div class="button-holder">
                         <table>
                         <tr>
                             <td><input type="radio" id="bed_num_1" name="studio" class="regular-radio" value="Studio" checked="checked"/><label for="studio">Studio</label></td>
@@ -306,9 +172,9 @@
                             <td><input type="radio" id="bed_num_4" name="bedfour" class="regular-radio" value="3"/><label for="bedfour">3 Bedrooms</label></td>
                         <td><input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bedfive">4+ Bedrooms</label></td></tr>
 
-                    <!--</div>-->
+                    </div>
                 </table>
-                </div>
+                </div>-->
             </div>
             <div class="holder">
                 <div class="housing_both">
