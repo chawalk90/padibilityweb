@@ -186,6 +186,9 @@ header {
 	font-size:20px;
 	text-align:center;
 }
+.glow {
+	text-align:center;
+}
 .intro {
 	background:black;
 	height:690px;
