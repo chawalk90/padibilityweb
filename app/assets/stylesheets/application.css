@@ -207,12 +207,13 @@ header {
 	margin-right:auto;
 }
 #copyright {
-	padding-top:12px;
+	padding-top:11px;
 	padding-left:10px;
 	width:100%;
 }
-#copyright .pad_contact span {
-	text-align:right;
+#copyright .pad_contact {
+	float:right;
+	padding-right:17px;
 }
 .intro {
 	position:relative;
