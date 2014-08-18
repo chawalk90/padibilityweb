@@ -206,6 +206,9 @@ header {
 	margin-left:auto;
 	margin-right:auto;
 }
+#copyright .pad_contact {
+	padding-top:15px;
+}
 #copyright .pad_contact span {
 	text-align:right;
 }
