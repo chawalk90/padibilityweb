@@ -274,17 +274,15 @@
                 </tr>
                 <tr>
                 <td><%= f.label :drink, "Do you drink?" %></td>
-                        <td><%= radio_button_tag(:drink) %>
-                        <%= label_tag(:drink, "Yes") %>
-                        <%= label_tag(:drink, "No") %></td>
+                        <td><%= radio_button_tag(:drink, "Yes") %>
+                        <%= radio_button_tag(:drink, "No") %></td>
                     <td><%= f.label :drink_often, "How often?" %>
                         <%= f.text_field :drink_often %></td>
                 </tr>
                 <tr>
                     <td><%= f.label :overnight, "Do you bring overnight guests?" %></td>
-                        <td><%= radio_button_tag(:overnight) %>
-                        <%= label_tag(:overnight, "Yes") %>
-                        <%= label_tag(:overnight, "No") %></td>
+                        <td><%= radio_button_tag(:overnight, "Yes") %>
+                        <%= radio_button_tag(:overnight, "No") %></td>
                         <td><%= f.label :overnight_often, "How often?" %>
                         <%= f.text_field :overnight_often %></td>
                 </tr>
