@@ -267,9 +267,8 @@
                     <table class="addictions">
                         <tr>
                     <td><%= f.label :smoke, "Do you smoke?" %></td>
-                        <td><%= radio_button_tag(:smoke) %>
-                        <%= label_tag(:smoke, "Yes") %>
-                        <%= label_tag(:smoke, "No") %></td>
+                        <td><%= radio_button_tag(:smoke, "Yes") %>
+                        <%= radio_button_tag(:smoke, "No") %></td>
                     <td><%= f.label :smoke_often, "How often?" %>
                         <%= f.text_field :smoke_often %></td>
                 </tr>
