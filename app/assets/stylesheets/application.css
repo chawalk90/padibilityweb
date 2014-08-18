@@ -207,7 +207,7 @@ header {
 	margin-right:auto;
 }
 #copyright .pad_contact span {
-	float:right;
+	text-align:right;
 }
 .intro {
 	position:relative;
