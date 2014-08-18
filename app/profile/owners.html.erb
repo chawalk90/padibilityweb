@@ -1,0 +1,33 @@
+<div id="profile">
+		<div class="general">
+		<img src="images/charlie_thumb.jpg" height="200" width="200" />
+		<span class="basics"><h2><%= @survey.name %></h2>
+		<p><strong><%= @survey.user_status %></strong><br />
+			Selling <strong><%= @survey.housing_type %></strong> in <strong><%= @survey.location %></strong>roommates ages <strong><%= @survey.age_min %></strong> - <strong><%= @survey.age_max %></strong>for <strong><%= @survey.roommates_amount %></strong> residents at <strong><%= @survey.rent %></strong><br />
+			Property Address: <strong><%= @survey.address %></strong><br />
+			Currently lives in <strong><%= @survey.hometown %></strong><br />
+			Works for <strong><%= @survey.realty %></strong></p></span>
+		</div>
+		<p><strong><%= @survey.bedrooms %></strong> bedrooms<br />
+			<strong><%= @survey.bathrooms %></strong> bathrooms<br />
+			<strong><%= @survey.list_rooms %></strong><br />
+			<strong><%= @survey.laundry %></strong><br />
+			Noise Level: <strong><%= @survey.noise %></strong><br />
+			Neighbors' Age Range: <strong><%= @survey.age_min %></strong> - <strong><%= @survey.age_max %></strong><br />
+			Neighbors' Age Mode: <strong><%= @survey.age_mode %></strong></p>
+			<p class="amenities_include">Amenities Include: <span>Balcony, </span><span>Dishwasher, </span><span>Doorman, </span><span>Elevator, </span><span>Furnished, </span><span>Garage, </span><span>Gym, </span><span>In-Unit Laundry, </span><span>Laundry Room, </span><span>Outdoor Space, </span><span>Parking, </span><span>Terrace</span></p>
+			Availability Date: <strong>9/1/2014</strong></p>
+			<p class="gallery"><a href="images/home1.jpg" target="_blank"><img src="images/home1_thumb.jpg" /></a>
+				<a href="images/home2.jpg" target="_blank"><img src="images/home2_thumb.jpg" /></a>
+				<a href="images/home3.jpg" target="_blank"><img src="images/home3_thumb.jpg" /></a>
+				<a href="images/home4.jpg"  target="_blank"><img src="images/home4_thumb.jpg" /></a>
+			</p>
+			<collapsible heading="Current Residents">
+		</collapsible>
+		<collapsible heading="Future Residents">
+	</collapsible>
+	<collapsible heading="Resident Complaints">
+	</collapsible>
+			</p>
+			<p class="edit">Edit Profile</p>
+	</div>

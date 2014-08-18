@@ -1,0 +1,30 @@
+<div id="profile">
+		<div class="general">
+		<img src="images/charlie_thumb.jpg" height="200" width="200" />
+		<span class="basics"><h2><%= @survey.name %></h2>
+		<p><%= @survey.user_status %><br />
+			Seeking <strong><%= @survey.roommates_estimate %><%= @survey.coed %></strong> roommates ages <strong><%=  @survey.age_min %> - <%=  @survey.age_min %></strong><br />
+			Currently lives in <strong><%= @survey.hometown %></strong><br />
+			Seeking to live in <strong><%= @survey.housing_type %></strong> in <strong><%= @survey.moving_to %></strong><br />
+			Seeking to spend up to <strong><%= @survey.max_rent %></strong></p></span>
+		</div>
+		<p>Goes to sleep at <strong><%= @survey.bedtime %></strong><br />
+			Wakes up at <strong><%=  @survey.wake_up %></strong><br />
+			Sociability: <strong><%=  @survey.sociability %></strong><br />
+			Tidiness: <strong><%=  @survey.tidiness %></strong><br />
+			Question for Potential Roommate: <strong><%=  @survey.question %></strong> <span class="answer">Answer</span><br />
+			Ideal Noise Level: <strong><%=  @survey.noise %></strong><br />
+			Political Views: <strong><%= @survey.political %></strong><br />
+			Religious Views: <strong><%=  @survey.religion %></strong><br />
+			Activities & Interests: <strong><%=  @survey.interest %></strong><br />
+			<span class="nosmoke">Doesn't smoke</span><span class="smoking">Smokes <%=  @survey.smokeoften %><%=  @survey.smokesocially %></span><br />
+			<span class="nodrink">Doesn't drink</span><span class="drinking">Drinks <%=  @survey.drinkoften %><%=  @survey.drinksocially %></span><br />
+			<span class="nodrugs">Doesn't do drugs</span><span class="druggie">Does drugs <%=  @survey.drugsoften %><%=  @survey.drugssocially %></span><br />
+			<span class="sexlife"><%=  @survey.sexualactivity %>
+			</span>
+			<strong><%=  @survey.sexprivacy %></strong> with <strong>sex</strong><br />
+			<strong><%=  @survey.overnight %><%=  @survey.overnightoften %></strong><br />
+			<strong><%=  @survey.roommate_pet %><%=  @survey.apartment_pet %></strong></p>
+			<hr />
+			<p class="edit">Edit Profile</p>
+	</div>
