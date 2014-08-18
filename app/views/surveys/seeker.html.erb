@@ -251,9 +251,8 @@
                         <p><%= f.label :religion, "Describe your religious views:" %>
                             <%= f.text_field :religion %></p>
                     <p><%= f.label :roommate_religion, "Do the religious views of your roommate matter to you?" %>
-                        <%= radio_button_tag(:roommate_religion) %>
-                        <%= label_tag(:roommate_political, "Yes") %>
-                        <%= label_tag(:roommate_political, "No") %></p>
+                        <%= radio_button_tag(:roommate_political, "Yes") %>
+                        <%= radio_button_tag(:roommate_political, "No") %></p>
                 </div>
             </div>
             <div class="holder">
