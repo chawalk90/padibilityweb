@@ -220,10 +220,8 @@
                     <p class="housing_only"><%= f.label :apartment_pet, "Are you okay with pets in the apartment?" %></p>
                     <p class="roommates_both"><%= f.label :roommate_pet, "Would you be okay if your roommate had a pet?" %></p>
                     <div class="button-holder">
-                        <%= radio_button_tag(:apartment_pet) %>
-                        <%= label_tag(:apartment_pet, "Yes") %>
-                        <%= radio_button_tag(:apartment_pet) %>
-                        <%= label_tag(:apartment_pet, "No") %>
+                        <%= radio_button_tag(:apartment_pet, "Yes") %>
+                        <%= radio_button_tag(:apartment_pet, "No") %>
                         <br />
                     </div>
                 </div>
