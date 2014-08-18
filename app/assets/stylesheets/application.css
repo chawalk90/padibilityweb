@@ -207,8 +207,9 @@ header {
 	margin-right:auto;
 }
 #copyright {
-	padding-top:15px;
-	padding-bottom:30px;
+	padding-top:12px;
+	padding-left:10px;
+	width:100%;
 }
 #copyright .pad_contact span {
 	text-align:right;
