@@ -186,9 +186,6 @@ header {
 	font-size:20px;
 	text-align:center;
 }
-.glow {
-	text-align:center;
-}
 .intro {
 	background:black;
 	height:690px;
@@ -208,6 +205,9 @@ header {
 .signin #popup.center {
 	margin-left:auto;
 	margin-right:auto;
+}
+#copyright .pad_contact span {
+	float:right;
 }
 .intro {
 	position:relative;
