@@ -17,7 +17,7 @@ class SurveysController < ApplicationController
     end
     def seeker
     	@survey = Survey.new
-        @survey.user_id=current_user.id
+        #@survey.user_id=current_user.id
     	@survey.save
     end
 
