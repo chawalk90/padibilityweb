@@ -1,47 +1,50 @@
 <div id="wrapper">
                 <div id="form_one_page" class="font one page link">
-        <form action="/form_db_1" method="post" name="quiz" id="quiz">
-                <h3 class="title">Owners' Questionnaire</h3>   <div class="schoolemail">
-                    <label for="email">Your school email address:</label>
-                    <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " />
+        <%= form_for(@survey, remote: true, format: :json, html: {class: :thing_form}) do |f| %>
+                <h3 class="title">Owners' Questionnaire</h3>
+                <div class="schoolemail">
+                    <%= f.label :email, "Your school email address:" %><br />
+                    <%= f.text_field :email %>
                     <br />
-                    <label class="nombre" for="fullname">Your name:</label>
-                    <input id="long" type="text" class="nombre" name="fullname" placeholder="Name"required="required" />
-                </div>             
+                    <%= f.label :name, 'Your name:' %><br />
+                    <%= f.text_field :name %>
+                    <input id="long" type="text" name="fullname" placeholder="Name"required="required" />
+                </div>
                 <div class="holder">
                     <div>
-                        <p><label for="housing">Type of housing:</label>
-                        <input type="radio" name="housing" value="Apartment">Apartment
-                        <input type="radio" name="housing" value="House">House
-                        <input type="radio" name="housing" value="Other">Other (Please specify): <input type="text" name="housing">
+                        <p><%= f.label :housing_type, "Type of housing:" %>
+                        <%= radio_button_tag(:housing_type, "Apartment") %>
+                        <%= radio_button_tag(:housing_type, "House") %>
+                        <%= radio_button_tag(:housing_type, "Other (Please specify") %>
                         </p>
-                        <p><label for="realty">What company do you represent?</label>
-                        <input type="text" name="realty" />
+                        <p><%= f.label :realty, "What company do you represent?" %>
+                        <%= f.text_field :realty %>
                         <div class="button-holder">
-                            <label for="availability">Availability: </label>
-                            <span class="availability"><input type="radio" name="availabilityonly" class="regular-radio" value="Room only"/><label for="availabilityonly">Only a room</label>
-                            <input type="radio" id="survey_type_3" name="availabilityboth" class="regular-radio" value="Both" checked/><label for="availabilityboth">Both</label></span>
+                            <%= f.label :availability, "Availability:" %>
+                            <%= radio_button_tag(:availability, "Only a room") %>
+                            <%= radio_button_tag(:availability, "Both") %>
                         </div></p>
                     </div>
                 </div> 
                 <br />
             <div class="holder">
                  <div>
-                    <p class="move">Where are you located? (We will be expanding to more cities in the coming weeks!)</p>
+                    <%= f.label :location, "Where are you located? (We will be expanding to more cities in the coming weeks!)" %></p>
                     <div class="button-holder">
                         <table class="cityoptions">
                             <tbody>
                                 <tr>
-                                    <td><input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label></td>
-                                    <td><input type="radio" id="moving_to_2" name="movingboston" class="regular-radio" value="Boston"/><label for="movingboston">Boston</label></td>
-                                    <td><input type="radio" id="moving_to_3" name="movingdc" class="regular-radio" value="Washington D.C."/><label for="movingdc">Washington, D.C.</label></td>
-                                    <td><input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label></td>
+                                    <td><%= radio_button_tag(:location, "New York City") %></td>
+                                    <td><%= radio_button_tag(:location, "Boston") %>
+                                    </td>
+                                    <td><%= radio_button_tag(:location, "Washington, D.C.") %></td>
+                                    <td><%= radio_button_tag(:location, "San Francisco") %></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
-                                    <td><input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label></td>
-                                    <td colspan="2"><input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label>
-                        <input id="cityname" type="text" name="movingother" placeholder="City Name" hidden/></td>
+                                    <td><%= radio_button_tag(:location, "Chicago") %></td>
+                                    <td><%= radio_button_tag(:location, "Los Angeles") %></td>
+                                    <td colspan="2"><%= radio_button_tag(:location, "Other") %>
+                        <%= f.text_field :location %></td>
                     </tr>
                 </tbody>
             </table>
@@ -51,112 +54,89 @@
                  <!-- End of holder -->     
             
              <div class="holder">
-                <p>What is your gender?</p>
-                <div class="button-holder">
-                    <input type="radio" id="sex_1" name="malesex" class="regular-radio" value="Male" checked="checked" /><label for="malesex">Male</label>
-                    <input type="radio" id="sex_2" name="femalesex" class="regular-radio" value="Female"/><label for="femalesex">Female</label>
-                    <input type="radio" id="sex_3" name="othersex" class="regular-radio" value="Other"/><label for="othersex">Other</label><br />
-                </div>
+                <p><%= f.label :gender, "What is your gender?" %>
+                    <%= radio_button_tag(:gender, "Male") %>
+                    <%= radio_button_tag(:gender, "Female") %>
+                    <%= radio_button_tag(:gender, "Other") %></p>
             </div> 
 
             <div class="holder">
-                <p>Are you okay with co-ed housing?</p>
-                <div class="button-holder">
-                    <input type="radio" id="coed_1" name="coedyes" class="regular-radio" value="Yes"/><label for="coedyes">Yes</label>
-                    <input type="radio" id="coed_2" name="coedno" class="regular-radio" value="No" checked="checked" /><label for="coedno">No</label><br />
-                    
-                </div>
+                <p><%= f.label :coed, "Are you okay with co-ed housing?" %>
+                <%= radio_button_tag(:coed, "Yes") %>
+                    <%= radio_button_tag(:coed, "No") %></p>
             </div> 
 
             <div class="holder">
                 <div>
-                    <p>How old are you?
-                    <input class="short" type="text" name="age" placeholder="Age" required="required"/></p>
+                    <p><%= f.label :age, "How old are you?" %>
+                        <%=f.text_field :age %></p>
                 </div>
             </div>
 
                 
             <div class"holder">
                 <div class="housing_both">
-                    <p>Monthly Price of Rent (per Person):
-                      <input type="text" name="rentprice" id="amount"></p>
+                    <p><%= f.label :rent, "Monthly Price of Rent (per Person):" %>
+                        <%= f.text_field :rent %></p>
                 </div>
             </div> <!-- End of holder -->
             
             <div class="holder">
-                <p>Move in date: <input type="text" name="move_in" id="datepicker-in" required="required"></p>
-                <p>Move out date (optional): <input type="text" name="move_out" id="datepicker-out"></p>
+                <p><%= f.label :move_in, "Move in date:" %>
+                    <%= f.text_field :move_in, "Move in date:" %></p>
+                <p><%= f.label :move_out, "Move out date (optional):" %><%= f.text_field :move_out %></p>
             </div> <!-- End of holder -->
 
             <div class="holder">
                 <!--<div class="housing_both">-->
-                    <p>How many bedrooms would you prefer to have in your apartment?</p>
-                    <div class="button-holder">
-                        <table>
-                        <tr>
-                            <td><input type="radio" id="bed_num_1" name="studio" class="regular-radio" value="Studio" checked="checked"/><label for="studio">Studio</label></td>
-                            <td><input type="radio" id="bed_num_2" name="bedtwo" class="regular-radio" value="1"/><label for="bedtwo">1 Bedroom</label></td>
-                            <td><input type="radio" id="bed_num_3" name="bedthree" class="regular-radio" value="2"/><label for="bedthree">2 Bedrooms</label></td>
-                            <td><input type="radio" id="bed_num_4" name="bedfour" class="regular-radio" value="3"/><label for="bedfour">3 Bedrooms</label></td>
-                        <td><input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bedfive">4+ Bedrooms</label></td></tr>
-
-                    <!--</div>-->
-                </table>
-                </div>
+                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %>
+                        <%= f.text_field :bedrooms %></p>
             </div>
                     
                     <div class="button-holder">
-                        <p>How many bathrooms are in your pad?</p>
+                        <p><%= f.label :bathrooms, "How many bathrooms are in your pad?" %></p>
                         <table>
                             <tr>
-                        <td><input type="radio" id="bed_num_2" name="bedroomone" class="regular-radio" value="1"/><label for="bedroomone">1 Bathroom</label></td>
-                        <td><input type="radio" id="bed_num_15" name="bedroomonefive" class="regular-radio" value="1"/><label for="bedroomonefive">1.5 Bathrooms</label></td>
-                        <td><input type="radio" id="bed_num_3" name="bedroomtwo" class="regular-radio" value="2"/><label for="bedroom2">2 Bathrooms</label></td>
-                        <td><input type="radio" id="bed_num_3" name="bedroom25" class="regular-radio" value="2"/><label for="bedroom25">2.5 Bathrooms</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" id="bed_num_4" name="bedroomthree" class="regular-radio" value="3"/> 3 Bathrooms</td>
-                        <td><input type="radio" id="bed_num_4" name="bedroomthreefive" class="regular-radio" value="3"/> 3.5 Bathrooms</td>
-                        <td><input type="radio" id="bed_num_5" name="bedroomfour" class="regular-radio" value="4+"/> 4+ Bathrooms</td>
+                        <td><%= f.text_field :bathrooms %></td>
                     </tr>
                     </table>
                     </div>
                 </div>
             </div>
             <div class="holder">
-                <p>List all other rooms in your pad. (Separate each room with a comma)
-                <input type="text" name="roomlist" value="list" /></p>
+                <p><%= f.label :list_rooms, "List all other rooms in your pad. (Separate each room with a comma)" %>
+                    <%= f.text_field :list_rooms %></p>
             </div>
             <div class="holder">
-                <p class="residentrange">What is the age range of the residents in your building?</p>
-                <label for="age_min">Age Min.</label>
-                <input type="text" name="age_min" value="min" />
-                <label for="age_max">Age Max.</label>
-                <input type="text" name="age_max" value="max" />
-                <p>What is the age mode (the most common age) of the residents in your building
-                <input type="text" name="age_mode" value="max" /></p>
+                <p class="residentrange">What is the age range of the residents in your building?" %></p>
+                <%= f.label :age_min, "Age Min." %>
+                <%= f.text_field :age_min %>
+                <%= f.label :age_max, "Age Max." %>
+                <%= f.text_field :age_max %>
+                <p><%= f.label :age_mode, "What is the age mode (the most common age) of the residents in your building?" %>
+                <%= f.text_field :age_mode %></p>
             </div>
 
             <div class="holder">
                 <div class="housing_both">
-                    <p>What minimum amenities would you prefer to have in your apartment?</p>
+                    <p><%= f.label :amenities, "What minimum amenities would you prefer to have in your apartment?" %></p>
                     <div class="button-holder">
                         <table>
                             <tr>
-                        <td><input type="checkbox" id="amenities_1" name="balcony" class="regular-checkbox" value="Balcony" /><label for="balcony">Balcony</label></td>
-                        <td><input type="checkbox" id="amenities_2" name="dish" class="regular-checkbox" value="Dishwasher"/><label for="dish">Dishwasher</label></td>
-                        <td><input type="checkbox" id="amenities_3" name="doorman" class="regular-checkbox" value="Doorman"/><label for="doorman">Doorman</label></td>
-                        <td><input type="checkbox" id="amenities_4" name="elevator" class="regular-checkbox" value="Elevator"/><label for="elevator">Elevator</label></td>
-                        <td><input type="checkbox" id="amenities_5" name="furnished" class="regular-checkbox" value="Furnished"/><label for="furnished">Furnished</label></td>
-                        <td><input type="checkbox" id="amenities_6" name="garage" class="regular-checkbox" value="Garage"/><label for="garage">Garage</label></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Balcony") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Dishwasher") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Doorman") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Elevator") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Furnished") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Garage") %></td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" id="amenities_7" name="gym" class="regular-checkbox" value="Gym"/><label for="gym">Gym</label></td>
-                        <td><input type="checkbox" id="amenities_8" name="laundry" class="regular-checkbox" value="In-Unit Laundry"/><label for="laundry">In-Unit Laundry</label></td>
-                        <td><input type="checkbox" id="amenities_9" name="washroom" class="regular-checkbox" value="Laundry Room"/><label for="washroom">Laundry Room</label></td>
-                        <td><input type="checkbox" id="amenities_10" name="outdoor" class="regular-checkbox" value="Outdoor Space"/><label for="outdoor">Outdoor Space</label></td>
-                        <td><input type="checkbox" id="amenities_11" name="amenities[]" class="regular-checkbox" value="Parking Space"/><label for="parking">Parking</label></td>
-                        <td><input type="checkbox" id="amenities_12" name="terrace" class="regular-checkbox" value="Terrace"/><label for="terrace">Terrace</label></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Gym") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "In-Unit Laundry") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Laundry Room") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Outdoor Space") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Parking") %></td>
+                        <td><%= check_box_tag(:amenities) %><%= label_tag(:amenities, "Terrace") %></td>
                     </tr>
                     </table>
                     </div>
@@ -165,23 +145,27 @@
 
             <div class="holder">
                  <div>
-                    <p>Are pets allowed in your pad?</p>
+                    <p><%= f.label :apartment_pet, "Are pets allowed in your pad?" %></p>
                     <div class="button-holder">
-                        <input type="radio" id="pets_1" name="petsyes" class="regular-radio" value="Yes" checked="checked"/><label for="petsyes">Yes</label>
-                        <input type="radio" id="pets_2" name="petsno" class="regular-radio" value="No"/><label for="petsno">No</label>
-                        <input type="radio" id="pets_3" name="petsdc" class="regular-radio" value="Do not care"/><label for="petsdc">Don&#39;t care</label><br />
+                        <%= radio_button_tag(:apartment_pet) %>
+                        <%= label_tag(:apartment_pet, "Yes") %>
+                        <%= radio_button_tag(:apartment_pet) %>
+                        <%= label_tag(:apartment_pet, "No") %>
+                        <%= radio_button_tag(:apartment_pet) %>
+                        <%= label_tag(:apartment_pet, "Don't care") %><br />
                     </div>
                 </div>
             </div> 
 
             <div>
-                <p>What is the address of your pad?</p>
-                <input id="long" type="text" name="address" placeholder="Address" required="required"/>
+                <%= f.label :address, "What is the address of your pad?" %>
+                <%= f.text_field :address %>
             </div>
 
             <div class="housing_only">
-                <input type="checkbox" id="terms_1" name="terms" class="regular-checkbox terms_class" value="read"/><label for="terms">I have read the <a href="/terms" target="_blank">Terms & Conditions</a></label><br />
-                <span class="terms_error">Please read the Terms & Conditions</span>
+                <span class="terms_error">Please read the <a href="/terms" target="_blank">Terms & Conditions</a></span>
+                <%= check_box_tag(:terms) &%>
+                <%= label_tag(:terms, "I have read the Terms & Conditions") %>
             </div>
             
             <div class="circle_wrapper roommates_both">
