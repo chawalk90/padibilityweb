@@ -4,6 +4,7 @@ class AddAvatarsToUsers < ActiveRecord::Migration
   		t.attachment :avatar
   	end
 	end
+end
 
 def self.down
 	drop_attached_file :users, :avatar
