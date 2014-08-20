@@ -1,5 +1,5 @@
 <div id="wrapper">
-    <%= form_for(@survey) do |f| %>
+    <%= form_for @survey, :html => { :multipart => true } do |f| %>
                 <div id="form_one_page" class="font one page link">
         <form action="/form_db_1" method="post" name="quiz" id="quiz">
                 <h3 class="title">Seekers' Questionnaire</h3>
@@ -8,9 +8,9 @@
                     <div>
                         <%= f.label :looking_for, "What are you looking for?" %>
                             <span class="only">
-                                <%= radio_button_tag(:looking_for, "Only Roommates") %>
-                                <%= radio_button_tag(:looking_for, "Only a Room") %>
-                                <%= radio_button_tag(:looking_for, "Both") %>
+                                <%= radio_button_tag(:looking_for, "Only Roommates") %> Only Roommates 
+                                <%= radio_button_tag(:looking_for, "Only a Room") %> Only a Room 
+                                <%= radio_button_tag(:looking_for, "Both") %> Both
                                 <!---<input type="radio" id="survey_type_1" name="roommates" class="regular-radio" value="Roommates only" checked/><label for="roommates">Only roommates</label>
                             <input type="radio" id="survey_type_2" name="room" class="regular-radio" value="Room only"/><label for="room">Only a room</label>
                             <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label>-->
@@ -309,35 +309,10 @@
             </div>
             <!--<div class="housing_only">-->
                 <p><span class="terms_error">Please read the <a href="/terms" target="_blank">Terms & Conditions</a></span></p>
-                <%= check_box_tag(:terms) %>
-                                    <%= label_tag(:terms, "I have read the Terms & Conditions") %>
-                                    <%= f.submit "Submit" %>
+                <p><%= check_box_tag(:terms) %>
+                                    <%= label_tag(:terms, "I have read the Terms & Conditions") %></p>
                                     
-            <!---</div>-->
-            <div class="circle_wrapper roommates_both">
-                <div class="dark_circle" ></div>
-                <div class="light_circle" ></div>
-                <div class="light_circle" ></div>
-            </div>
-            
-            <div class="housing_only">
-                <div class="submit_button">
-                <input id="submit_room_only" class="nextbutton one pages submitbutton" type="submit" name="submit" value="Submit!" disabled/>
-                </div>
-        </div>
-        </form>
-        <%= form_for @user, :url => users_path, :html => { :multipart => true } do |form| %>
-  <%= f.file_field :avatar %>
-<% end %>
-        <form action="FileUpload.php" method="post" enctype="multipart/form-data">
-    <label for="upload">Upload your Profile Photo:</label><br />
-    <input type="file" name="upload" id="upload"><br/>
-    <input type="submit" name="submit" value="Upload">
-    <div class="roommates_both">
-                <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/>
-            </div>
-</form>
  <!-- End of page one -->
          </div>
     </div> <!-- End of wrapper -->
-<% end %>
+    <% end %>

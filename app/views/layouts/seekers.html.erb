@@ -1,0 +1,680 @@
+<div id="wrapper">
+                <div id="form_one_page" class="font one page link">
+        <form action="/form_db_1" method="post" name="quiz" id="quiz">
+                <h3 class="title">Padibility Questionnaire</h3>
+ 
+                <div class="holder">
+                	<p>Your school email address:</p>
+                    <input id="long" type="text" name="email" id="email" placeholder="Email" required="required" value="TODO echo "\"".$email."\""; " hidden/>
+                </div>
+                
+                <div class="holder">
+                    <div>
+                        <p>What are you looking for?</p>
+                            <span class="only"><input type="radio" id="survey_type_1" name="roommates" class="regular-radio" value="Roommates only" checked/><label for="roommates">Only roommates</label>
+                            <input type="radio" id="survey_type_2" name="room" class="regular-radio" value="Room only"/><label for="room">Only a room</label>
+                            <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label></span></div><br />
+                        </div>
+                    </div>
+                </div> 
+                
+            <div class="holder">
+                 <div>
+                    <p>Where will you be moving to? (We will be expanding to more cities in the coming weeks!)</p>
+                    <div class="button-holder">
+                        <input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label><br />
+                        <input type="radio" id="moving_to_2" name="movingboston" class="regular-radio" value="Boston"/><label for="movingboston">Boston</label><br />
+                        <input type="radio" id="moving_to_3" name="movingdc" class="regular-radio" value="Washington D.C."/><label for="movingdc">Washington, D.C.</label><br />
+                        <div class="roommates_both">
+                        <input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label><br />
+                        <input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label><br />
+                        <input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label><br />
+                        <input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label><br />
+                        <input id="long" type="text" name="movingother" placeholder="City Name" hidden/>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of holder -->     
+            
+             <div class="holder">
+                <p>What is your gender?</p>
+                <div class="button-holder">
+                    <input type="radio" id="sex_1" name="sex" class="regular-radio" value="Male" checked="checked" /><label for="sex_1"></label><div class="radio-text">Male</div><br />
+                    <input type="radio" id="sex_2" name="sex" class="regular-radio" value="Female"/><label for="sex_2"></label><div class="radio-text">Female</div><br />
+                    <input type="radio" id="sex_3" name="sex" class="regular-radio" value="Other"/><label for="sex_3"></label><div class="radio-text">Other</div><br />
+                </div>
+            </div> 
+
+            <div class="holder">
+                <label>Are you okay with co-ed housing?</label>
+                <div class="button-holder">
+                    <input type="radio" id="coed_1" name="coed" class="regular-radio" value="Yes"/><label for="coed_1"></label><div class="radio-text">Yes</div><br />
+                    <input type="radio" id="coed_2" name="coed" class="regular-radio" value="No" checked="checked" /><label for="coed_2"></label><div class="radio-text">No</div><br />
+                    
+                </div>
+            </div> 
+
+            <div class="holder">
+                <div>
+                    <label>How old are you?</label>
+                    <input class="short" type="text" name="age" placeholder="Age" required="required"/>
+                </div>
+            </div>
+
+                <div class="holder">
+                <label class="housing_only">What type of housing are you looking for?</label>
+                <label class="roommates_only">What type of roommates are you looking for?</label>
+                <label class="both">What type of housing/roommates are you looking for?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="housing_type_1" name="housing_type" class="regular-radio" value="Postgraduate" checked="checked"/><label for="housing_type_1"></label><div class="radio-text">Postgraduate (long-term)</div><br />
+                        <input type="radio" id="housing_type_2" name="housing_type" class="regular-radio" value="Summer"/><label for="housing_type_2"></label><div class="radio-text">Summer (short-term, summer)</div><br />
+                    </div>
+                </div>
+
+            <div class="holder">
+                 <div>
+                    <label class="roommates_both">How many roommates would you like?</label>
+                    <label class="housing_only">How many roommates will be living with you?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="roommates_num_1" name="roommates_num" class="regular-radio" value="1" checked="checked"/><label for="roommates_num_1"></label><div class="radio-text">1</div><br />
+                        <input type="radio" id="roommates_num_2" name="roommates_num" class="regular-radio" value="2"/><label for="roommates_num_2"></label><div class="radio-text">2</div><br />
+                        <input type="radio" id="roommates_num_3" name="roommates_num" class="regular-radio" value="3"/><label for="roommates_num_3"></label><div class="radio-text">3</div><br />
+                        <input type="radio" id="roommates_num_4" name="roommates_num" class="regular-radio" value="4"/><label for="roommates_num_4"></label><div class="radio-text">4</div><br />
+                        <div class="roommates_both">
+                        <input type="radio" id="roommates_num_5" name="roommates_num" class="regular-radio" value="Do not care"/><label for="roommates_num_5"></label><div class="radio-text">Don't care</div><br />
+                        </div>
+                        <div class="housing_only">
+                            <input type="radio" id="roommates_num_6" name="roommates_num" class="regular-radio" value="Other"/><label for="roommates_num_6"></label><div class="radio-text">5 or more, specify</div><br />
+                            <input class="short_other" type="text" name="roommates_num_other" placeholder=""/>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of holder -->
+
+            <div class="holder">
+                <div class="roommates_both">
+                    <label >Have you already formed a roommate group of two or more to which you are looking to add roommates?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="formed_group_1" name="formed_group" class="regular-radio" value="Yes"/><label for="formed_group_1"></label><div class="radio-text">Yes</div><br />
+                        <input type="radio" id="formed_group_2" name="formed_group" class="regular-radio" value="No" checked="checked" /><label for="formed_group_2"></label><div class="radio-text">No</div><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                <div class="roommates_both other_roommates">
+                    <label> Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too.</label>
+                    <input id="long" type="text" name="names_other_roommates" placeholder="Other roommates"/>
+                </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <span class="age_min">Age Min.</span>
+                    <select>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                        <option value="61">61</option>
+                        <option value="62">62</option>
+                        <option value="63">63</option>
+                        <option value="64">64</option>
+                        <option value="65">65</option>
+                        <option value="66">66</option>
+                        <option value="67">67</option>
+                        <option value="68">68</option>
+                        <option value="69">69</option>
+                        <option value="70">70</option>
+                        <option value="71">71</option>
+                        <option value="72">72</option>
+                        <option value="73">73</option>
+                        <option value="74">74</option>
+                        <option value="75">75</option>
+                        <option value="76">76</option>
+                        <option value="77">77</option>
+                        <option value="78">78</option>
+                        <option value="79">79</option>
+                        <option value="80">80</option>
+                        <option value="81">81</option>
+                        <option value="82">82</option>
+                        <option value="83">83</option>
+                        <option value="84">84</option>
+                        <option value="85">85</option>
+                        <option value="86">86</option>
+                        <option value="87">87</option>
+                        <option value="88">88</option>
+                        <option value="89">89</option>
+                        <option value="90">90</option>
+                        <option value="91">91</option>
+                        <option value="92">92</option>
+                        <option value="93">93</option>
+                        <option value="94">94</option>
+                        <option value="95">95</option>
+                        <option value="96">96</option>
+                        <option value="97">97</option>
+                        <option value="98">98</option>
+                        <option value="99">99</option>
+                        <option value="100">100</option>
+
+                    </select>
+                    <span class="age_max">Age Max.</span>
+                    <select>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                        <option value="61">61</option>
+                        <option value="62">62</option>
+                        <option value="63">63</option>
+                        <option value="64">64</option>
+                        <option value="65">65</option>
+                        <option value="66">66</option>
+                        <option value="67">67</option>
+                        <option value="68">68</option>
+                        <option value="69">69</option>
+                        <option value="70">70</option>
+                        <option value="71">71</option>
+                        <option value="72">72</option>
+                        <option value="73">73</option>
+                        <option value="74">74</option>
+                        <option value="75">75</option>
+                        <option value="76">76</option>
+                        <option value="77">77</option>
+                        <option value="78">78</option>
+                        <option value="79">79</option>
+                        <option value="80">80</option>
+                        <option value="81">81</option>
+                        <option value="82">82</option>
+                        <option value="83">83</option>
+                        <option value="84">84</option>
+                        <option value="85">85</option>
+                        <option value="86">86</option>
+                        <option value="87">87</option>
+                        <option value="88">88</option>
+                        <option value="89">89</option>
+                        <option value="90">90</option>
+                        <option value="91">91</option>
+                        <option value="92">92</option>
+                        <option value="93">93</option>
+                        <option value="94">94</option>
+                        <option value="95">95</option>
+                        <option value="96">96</option>
+                        <option value="97">97</option>
+                        <option value="98">98</option>
+                        <option value="99">99</option>
+                        <option value="100">100</option>
+
+                    </select>
+                </div>
+            </div>
+            </div>
+            <div class"holder">
+                <div class="housing_both">
+                    <p>
+                      <label for="amount">Min. rent:</label>
+                      <input type="text" name="min_rent" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+                      <label for="amount">Max. rent (per person):</label>
+                      <input type="text" name="max_rent" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                     
+                    <div id="slider"></div>
+                </div>
+            </div> <!-- End of holder -->
+            
+            <div class="holder">
+                <p>Move in date: <input type="text" name="move_in" id="datepicker-in" required="required"></p>
+                <p>Move out date (optional): <input type="text" name="move_out" id="datepicker-out"></p>
+            </div> <!-- End of holder -->
+
+            <div class="holder">
+                <div class="housing_both">
+                    <label>How many bedrooms would you prefer to have in your apartment?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="bed_num_1" name="bed_num" class="regular-radio" value="Studio" checked="checked"/><label for="bed_num_1"></label><div class="radio-text">Studio</div><br />
+                        <input type="radio" id="bed_num_2" name="bed_num" class="regular-radio" value="1"/><label for="bed_num_2"></label><div class="radio-text">1 Bedroom</div><br />
+                        <input type="radio" id="bed_num_3" name="bed_num" class="regular-radio" value="2"/><label for="bed_num_3"></label><div class="radio-text">2 Bedrooms</div><br />
+                        <input type="radio" id="bed_num_4" name="bed_num" class="regular-radio" value="3"/><label for="bed_num_4"></label><div class="radio-text">3 Bedrooms</div><br />
+                        <input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bed_num_5"></label><div class="radio-text">4+ Bedrooms</div><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                <div class="housing_both">
+                    <label>What minimum amenities would you prefer to have in your apartment?</label>
+                    <div class="button-holder">
+                        <input type="checkbox" id="amenities_1" name="amenities[]" class="regular-checkbox" value="Balcony" /><label for="amenities_1"></label><div class="checkbox-text">Balcony</div><br />
+                        <input type="checkbox" id="amenities_2" name="amenities[]" class="regular-checkbox" value="Dishwasher"/><label for="amenities_2"></label><div class="checkbox-text">Dishwasher</div><br />
+                        <input type="checkbox" id="amenities_3" name="amenities[]" class="regular-checkbox" value="Doorman"/><label for="amenities_3"></label><div class="checkbox-text">Doorman</div><br />
+                        <input type="checkbox" id="amenities_4" name="amenities[]" class="regular-checkbox" value="Elevator"/><label for="amenities_4"></label><div class="checkbox-text">Elevator</div><br />
+                        <input type="checkbox" id="amenities_5" name="amenities[]" class="regular-checkbox" value="Furnished"/><label for="amenities_5"></label><div class="checkbox-text">Furnished</div><br />
+                        <input type="checkbox" id="amenities_6" name="amenities[]" class="regular-checkbox" value="Garage"/><label for="amenities_6"></label><div class="checkbox-text">Garage</div><br />
+                        <input type="checkbox" id="amenities_7" name="amenities[]" class="regular-checkbox" value="Gym"/><label for="amenities_7"></label><div class="checkbox-text">Gym</div><br />
+                        <input type="checkbox" id="amenities_8" name="amenities[]" class="regular-checkbox" value="In-Unit Laundry"/><label for="amenities_8"></label><div class="checkbox-text">In-Unit Laundry</div><br />
+                        <input type="checkbox" id="amenities_9" name="amenities[]" class="regular-checkbox" value="Laundry Room"/><label for="amenities_9"></label><div class="checkbox-text">Laundry Room</div><br />
+                        <input type="checkbox" id="amenities_10" name="amenities[]" class="regular-checkbox" value="Outdoor Space"/><label for="amenities_10"></label><div class="checkbox-text">Outdoor Space</div><br />
+                        <input type="checkbox" id="amenities_11" name="amenities[]" class="regular-checkbox" value="Parking Space"/><label for="amenities_11"></label><div class="checkbox-text">Parking</div><br />
+                        <input type="checkbox" id="amenities_12" name="amenities[]" class="regular-checkbox" value="Terrace"/><label for="amenities_12"></label><div class="checkbox-text">Terrace</div><br />
+                    </div>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="housing_only">
+                    <span class="noise">What is your ideal noise level?</span>
+                    <select>
+                        <option value="Very Quiet">Very Quiet</option>
+                        <option value="Moderately Quiet">Moderately Quiet</option>
+                        <option value="Average">Average</option>
+                        <option value="Moderately Loud">Moderately Loud</option>
+                        <option value="Very Loud">Very Loud</option>
+                        <option value="Doesn't Matter">Doesn't Matter</option>
+                    </select>
+                </div>
+            </div>
+            <div class="holder">
+                 <div class="roommates_both">
+                    <span class="wakeup">Wake up time</span>
+                    <select class="morning">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select> : <select class="morning">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option<option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option<option value="60">60</option>
+
+                    </select>
+                    <span class="bedtime">Bed time</span>
+                    <select class="nighthour">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select> : <select class="night">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option<option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option<option value="60">60</option>
+
+                    </select></div>
+
+            <div class="holder">
+                 <div>
+                    <label class="housing_only">Are you okay with pets in the apartment?</label>
+                    <label class="roommates_both">Would you be okay if your roommate had a pet?</label>
+                    <div class="button-holder">
+                        <input type="radio" id="pets_1" name="pets" class="regular-radio" value="Yes" checked="checked"/><label for="pets_1"></label><div class="radio-text">Yes</div><br />
+                        <input type="radio" id="pets_2" name="pets" class="regular-radio" value="No"/><label for="pets_2"></label><div class="radio-text">No</div><br />
+                        <input type="radio" id="pets_3" name="pets" class="regular-radio" value="Do not care"/><label for="pets_3"></label><div class="radio-text">Don&#39;t care</div><br />
+                    </div>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="sociability">Describe your level of sociability:</label>
+                    <input id="long" type="text" name="sociability" placeholder="Sociability Level" />
+                    <label for="tidiness">Describe your level of tidiness:</label>
+                    <input id="long" type="text" name="tidiness" placeholder="Tidiness Level" />
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="activities">List some of your interests and activites: (Separate each with a comma)</label>
+                    <input type="text" name="activities" placeholder="Interests & Activities" />
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="political">Describe your political views:</label>
+                    <input id="long" type="text" name="political" placeholder="Political Views" />
+                    <label for="politics_matter">Do the political views of your roommate matter to you?</label>
+                    <input type="radio" value="yes" name="politics_matter" />
+                    <input type="radio" value="no" name="politics_matter" />
+                    <label for="religion">Describe your religious views:</label>
+                    <input id="long" type="text" name="religion" placeholder="Religious Views" />
+                    <label for="religion_matters">Do the religious views of your roommate matter to you?</label>
+                    <input type="radio" value="yes" name="religion_matters" />
+                    <input type="radio" value="no" name="religion_matters" />
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="sexualactivity">How sexually active would you say that you are?</label>
+                    <select class="sexualactivity">
+                        <option value="I do not care to disclose that information.">I do not care to disclose that information.</option>
+                        <option value="Very Active">Very Active</option>
+                        <option value="Moderately Active">Moderately Active</option>
+                        <option value="Infrequently Active">Infrequently Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <label for="sexprivate">I am private with sex.</label>
+                    <input type="checkbox" value="yes" name="sexprivate" />
+                    <label for="roommatesexprivate">I wish for my roommate to be private with sex.</label>
+                    <input type="checkbox" value="yes" name="roommmatesexprivate" />
+
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="smoke">Do you smoke?</label>
+                    <input type="radio" value="yes" name="smoke" />
+                    <input type="radio" value="no" name="smoke" />
+                    <label for="smokeoften">How often?</label>
+                    <select class="smokeoften">
+                        <option value="Regularly">Regularly</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Every Now and Then">Every Now and Then</option>
+                    </select>
+                    <label for="smokesocially">Only Socially</label>
+                    <input type="checkbox" name="smokesocially" value="Yes" />
+                    <label for="smokequit">Trying to Quit</label>
+                    <input type="checkbox" name="smokequit" value="Yes" />
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="drink">Do you drink?</label>
+                    <input type="radio" value="yes" name="drink" />
+                    <input type="radio" value="no" name="drink" />
+                    <label for="drinkoften">How often?</label>
+                    <select class="drinkoften">
+                        <option value="Regularly">Regularly</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Every Now and Then">Every Now and Then</option>
+                    </select>
+                    <label for="drinksocially">Only Socially</label>
+                    <input type="checkbox" name="drinksocially" value="Yes" />
+                    <label for="drinkquit">Trying to Quit</label>
+                    <input type="checkbox" name="drinkquit" value="Yes" />
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="drugs">Do you do drugs?</label>
+                    <input type="radio" value="yes" name="drugs" />
+                    <input type="radio" value="no" name="drugs" />
+                    <label for="drugsoften">How often?</label>
+                    <select class="drugsoften">
+                        <option value="Regularly">Regularly</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Every Now and Then">Every Now and Then</option>
+                    </select>
+                    <label for="drugssocially">Only Socially</label>
+                    <input type="checkbox" name="drugssocially" value="Yes" />
+                    <label for="drugsquit">Trying to Quit</label>
+                    <input type="checkbox" name="drugsquit" value="Yes" />
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roomates_both">
+                    <label for="overnight">Do you bring overnight guests?</label>
+                    <input type="radio" value="yes" name="overnight" />
+                    <input type="radio" value="no" name="overnight" />
+                    <label for="overnightoften">How often?</label>
+                    <select class="overnightoften">
+                        <option value="Regularly">Regularly</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Every Now and Then">Every Now and Then</option>
+                    </select>
+                    <label for="roommmateovernight">I am okay with my roommate bringing overnight guests.</label>
+                    <input type="checkbox" value="yes" name="roommateovernight" />
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <label for="question">Question for Potential Roommate:</label>
+                    <input type="text" name="question" placeholder="Ask anything!" />
+                </div>
+            </div>
+
+            <div>
+                <label>Which state or country are you originally from?</label>
+                <input id="long" type="text" name="hometown" placeholder="Hometown" required="required"/>
+            </div>
+            <div>
+                <label>What school do you or did you most recently attend?</label>
+                <select class="styled-select" name="school">
+                  <option value="Harvard">Harvard</option>
+                  <option value="Yale">Yale</option>
+                  <option value="MIT">MIT</option>
+                </select>
+            </div>
+            <div>
+                <label>At what company or organization will you be working this summer or after graduation?</label>
+                <input id="long" type="text" name="work" placeholder="Company or organization" required="required"/>
+            </div>
+
+            <div class="housing_only">
+                <input type="checkbox" id="terms_1" name="terms" class="regular-checkbox terms_class" value="read"/><label for="terms_1"></label><div class="checkbox-text">I have read the <a href="/terms" target="_blank">Terms & Conditions</a></div><br />
+                <span class="terms_error">Please read the Terms & Conditions</span>
+            </div>
+            
+            <div class="circle_wrapper roommates_both">
+                <div class="dark_circle" ></div>
+                <div class="light_circle" ></div>
+                <div class="light_circle" ></div>
+            </div>
+            <div class="roommates_both">
+                <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/>
+            </div>
+            <div class="housing_only">
+                <div class="submit_button">
+                <input id="submit_room_only" class="nextbutton one pages submitbutton" type="submit" name="submit" value="Submit!" disabled/>
+                </div>
+            </div>
+        </form>
+        <form action="FileUpload.php" method="post" enctype="multipart/form-data">
+    <label for="upload">File:</label>
+    <input type="file" name="upload" id="upload"><br/>
+    <input type="submit" name="submit" value="Upload">
+</form>
+
+        </div> <!-- End of page one -->
+        
+        
+        
+         
+    </div> <!-- End of wrapper -->

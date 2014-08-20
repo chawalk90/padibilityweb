@@ -22,11 +22,11 @@ module Padibilityweb
     config.paperclip_defaults = {:storage => :fog, :fog_credentials => {:provider => "Local", :local_root => "#{Rails.root}/public"}, :fog_directory => "", :fog_host => "localhost"}
   end
 end
-#class Staples < Paperclip::Processor
- #   def has_attached_file 
-  #      :styles => [ :text => [ :quality => :better ] ],
-   #                      :processors => [:ocr]
-    #                 end
-   # has_attached_file :avatar, :styles => { :thumb => ["60x60#", :jpg] }
-#end
+class Staples < Paperclip::Processor
+    has_attached_file 
+        :styles => { :text => { :quality => :better } },
+                         :processors => {:ocr}
+                     end
+    has_attached_file :avatar, :styles => { :thumb => ["60x60#", :jpg] }
+end
 
