@@ -131,7 +131,7 @@
             <div class="holder">
                 <div class="roommates_both other_roommates">
                     <p><%= f.label :roommates_names, "Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too." %>
-                    <br /><%= f.text_field :roommates_names, "size" => 50 %></p>
+                    </p><%= f.text_field :roommates_names, "size" => 50 %>
                 </div>
             </div>
             <span id="range"><div class="holder">
@@ -217,12 +217,12 @@
                     </div>
             <div class="holder">
                  <div>
-                    <p class="housing_only"><%= f.label :apartment_pet, "Are you okay with pets in the apartment?" %></p>
-                    <p class="roommates_both"><%= f.label :roommate_pet, "Would you be okay if your roommate had a pet?" %></p>
+                    <p class="housing_only"><%= f.label :apartment_pet, "Are you okay with pets in the apartment?" %>
+                    <span class="roommates_both"><%= f.label :roommate_pet, "Would you be okay if your roommate had a pet?" %>
                     <div class="button-holder">
                         <%= radio_button_tag(:apartment_pet, "Yes") %> Yes 
                         <%= radio_button_tag(:apartment_pet, "No") %> No 
-                        <br />
+                        </p>
                     </div>
                 </div>
             </div>

@@ -492,7 +492,7 @@ table .dos {
 }
 .maximum {
 	position:relative;
-	left:165px;
+	left:170px;
 }
 #moveout {
 	position:relative;
@@ -500,13 +500,13 @@ table .dos {
 }
 .ear {
 	position:relative;
-	left:35px;
+	left:43px;
 }
 #wake {
 	position:relative;
-	left:110px;
+	left:150px;
 }
 #sleep {
 	position:relative;
-	left:120px;
+	left:160px;
 }
