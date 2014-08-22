@@ -488,25 +488,29 @@ table .dos {
 }
 .mature {
 	position:relative;
-	left:169px;
+	left:168px;
 }
 .maximum {
 	position:relative;
-	left:178px;
+	left:183px;
 }
 #moveout {
 	position:relative;
-	left:90px;
+	left:95px;
 }
 .ear {
 	position:relative;
-	left:43px;
+	left:53px;
 }
 #wake {
 	position:relative;
-	left:170px;
+	left:178px;
 }
 #sleep {
 	position:relative;
-	left:190px;
+	left:205px;
+}
+#social {
+	position:relative;
+	left:15px;
 }
