@@ -408,7 +408,10 @@ table .dos {
 	padding-bottom:10px;
 }
 .cityoptions td:not(#other) {
-	width:150px;
+	width:170px;
+}
+.cityoptions #other {
+	width:400px;
 }
 .wakeup {
 	font-weight:bold;
