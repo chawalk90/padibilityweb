@@ -448,6 +448,9 @@ table .dos {
 	margin-top:-20px;
 	padding:0;
 }
+#gender {
+
+}
 .owner {
 	margin-bottom:15px;
 }
@@ -472,6 +475,10 @@ table .dos {
 .look {
 	display:inline-block;
 	margin-bottom:-10px;
+	position:relative;
+	left:100px;
+}
+#gender {
 	position:relative;
 	left:100px;
 }
