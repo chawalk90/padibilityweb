@@ -244,8 +244,7 @@
             <div class="holder">
                 <div class="roommates_both">
                     <p><%= f.label :political, "Describe your political views:" %>
-                        <%= f.text_field :political %>
-                    <input id="long" type="text" name="political" placeholder="Political Views" /></p>
+                        <%= f.text_field :political %></p>
                     <p><%= f.label :roommate_political, "Do the political views of your roommate matter to you?" %>
                         <%= radio_button_tag(:roommate_political, "Yes") %> Yes 
                         <%= radio_button_tag(:roommate_political, "No") %> No </p>
@@ -260,7 +259,7 @@
                 <div class="roommates_both">
                     <p><%= f.label :sex_privacy, "How private are you with sex? (Optional)" %>
                         <%= f.text_field :sex_privacy %>
-                    <%= check_box_tag(:sex_privacy, "I choose not to answer that question.") %></p>
+                    <%= check_box_tag(:sex_privacy, "I choose not to answer that question.") %> I choose not to answer that question. </p>
                 </div>
             </div>
             <div class="holder">
@@ -270,21 +269,21 @@
                     <td><%= f.label :smoke, "Do you smoke?" %></td>
                         <td><%= radio_button_tag(:smoke, "Yes") %> Yes 
                         <%= radio_button_tag(:smoke, "No") %> No </td>
-                    <td><%= f.label :smoke_often, "How often?" %>
+                    <td class="habits"><%= f.label :smoke_often, "How often?" %>
                         <%= f.text_field :smoke_often %></td>
                 </tr>
                 <tr>
                 <td><%= f.label :drink, "Do you drink?" %></td>
                         <td><%= radio_button_tag(:drink, "Yes") %> Yes 
                         <%= radio_button_tag(:drink, "No") %> No </td>
-                    <td><%= f.label :drink_often, "How often?" %>
+                    <td class ="habits"><%= f.label :drink_often, "How often?" %>
                         <%= f.text_field :drink_often %></td>
                 </tr>
                 <tr>
                     <td><%= f.label :overnight, "Do you bring overnight guests?" %></td>
                         <td><%= radio_button_tag(:overnight, "Yes") %> Yes 
                         <%= radio_button_tag(:overnight, "No") %> No </td>
-                        <td><%= f.label :overnight_often, "How often?" %>
+                        <td class="habits"><%= f.label :overnight_often, "How often?" %>
                         <%= f.text_field :overnight_often %></td>
                 </tr>
             </table>

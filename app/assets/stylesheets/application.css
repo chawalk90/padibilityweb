@@ -137,13 +137,16 @@ header {
 	font-size:22px;
 }
 #amenities {
-	padding-bottom:15px;
+	padding-bottom:16px;
 }
 #namelist {
 	margin-bottom:18px;
 	width:300px;
 }
 #questionnaire {
+	margin-left:20px;
+}
+.habits {
 	margin-left:20px;
 }
 #nav .mypad {
