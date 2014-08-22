@@ -480,5 +480,9 @@ table .dos {
 }
 #gender {
 	position:relative;
-	left:100px;
+	left:110px;
+}
+#coed {
+	position:relative;
+	left:110px;
 }
