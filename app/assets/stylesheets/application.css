@@ -492,23 +492,23 @@ table .dos {
 }
 .maximum {
 	position:relative;
-	left:178px;
+	left:177px;
 }
 #moveout {
 	position:relative;
-	left:103px;
+	left:102px;
 }
 .ear {
 	position:relative;
-	left:58px;
+	left:54px;
 }
 #wake {
 	position:relative;
-	left:191px;
+	left:189px;
 }
 #sleep {
 	position:relative;
-	left:229px;
+	left:227px;
 }
 #social {
 	position:relative;
@@ -516,13 +516,17 @@ table .dos {
 }
 #tidy {
 	position:relative;
-	left:45px;
+	left:47px;
 }
 #politic {
 	position:relative;
-	left:30px;
+	left:42px;
 }
 #faith {
 	position:relative;
-	left:40px;
+	left:45px;
+}
+#ask {
+	position:relative;
+	left:5px;
 }
