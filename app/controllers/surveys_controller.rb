@@ -11,7 +11,7 @@ class SurveysController < ApplicationController
     end
 
     def owners
-    	@survey = Survey.new(survey_params)
+    	@survey = Survey.new#(survey_params)
     	#@survey.user_id=current_user.id
         @survey.save
     end
