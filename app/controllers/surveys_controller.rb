@@ -10,9 +10,9 @@ class SurveysController < ApplicationController
       params.require(:survey).permit(:name, :email, :password)
     end
 
-    def owners
-    	@survey = Survey.new#(survey_params)
-    	#@survey.user_id=current_user.id
+    def owner
+    	@survey = Survey.new(survey_params)
+    	@survey.user_id=current_user.id
         @survey.save
     end
     def seeker
