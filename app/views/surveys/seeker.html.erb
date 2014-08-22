@@ -74,7 +74,7 @@
             <div class="holder">
                 <div>
                     <%= f.label :age, "How old are you?" %>
-                    <span class="mature"><%= f.text_field :age, "size" => 7 %></span>
+                    <span class="mature"><%= f.text_field :age, "size" => 5 %></span>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                         <%= radio_button_tag(:roommates_amount, "4") %> 4 
                         <%= radio_button_tag(:roommates_amount, "5") %> 5 
                         <%= radio_button_tag(:roommates_amount, "5 or more, specify") %> 5 or more, specify 
-                        <%= f.text_field :roommates_amount, "size" => 7 %>
+                        <%= f.text_field :roommates_amount, "size" => 5 %>
                         <%= radio_button_tag(:roommates_amount, "Don't care") %> Don't care 
                         <!--<input type="radio" id="roommates_num_1" name="roommatesone" class="regular-radio" value="1" checked="checked"/><label for="roommatesone">1</label>
                         <input type="radio" id="roommatestwo" name="roommatestwo" class="regular-radio" value="2"/><label for="roommatestwo">2</label>
