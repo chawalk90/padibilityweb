@@ -136,6 +136,9 @@ header {
 	color:#ed9c28;
 	font-size:22px;
 }
+#amenities {
+	padding-bottom:15px;
+}
 #namelist {
 	margin-bottom:18px;
 	width:300px;
