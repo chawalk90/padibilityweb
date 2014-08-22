@@ -112,7 +112,7 @@ header {
 	margin-left:-15px;
 	list-style-type:none;
 }
-.schoolemail {
+.schoolemail #send {
 	position:relative;
 	left:50px;
 }
