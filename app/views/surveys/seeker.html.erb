@@ -277,14 +277,14 @@
                         <td><%= radio_button_tag(:drink, "Yes") %> Yes 
                         <%= radio_button_tag(:drink, "No") %> No </td>
                     <td class ="habits"><%= f.label :drink_often, "How often?" %>
-                        <%= f.text_field :drink_often, size => 50 %></td>
+                        <%= f.text_field :drink_often, "size" => 50 %></td>
                 </tr>
                 <tr>
                     <td><%= f.label :overnight, "Do you bring overnight guests?" %></td>
                         <td><%= radio_button_tag(:overnight, "Yes") %> Yes 
                         <%= radio_button_tag(:overnight, "No") %> No </td>
                         <td class="habits"><%= f.label :overnight_often, "How often?" %>
-                        <%= f.text_field :overnight_often, size => 50 %></td>
+                        <%= f.text_field :overnight_often, "size" => 50 %></td>
                 </tr>
             </table>
                 </div>
@@ -292,7 +292,7 @@
             <div class="holder">
                 <div class="roommates_both">
                     <p><%= f.label :question, "Question for Potential Roommate:" %>
-                    <%= f.text_field :question, size => 70 %></p>
+                    <%= f.text_field :question, "size" => 70 %></p>
                 </div>
                 <div><p><%= f.label :hometown, "Which state or country are you originally from?" %>
                     <%= f.text_field :hometown %></p>
