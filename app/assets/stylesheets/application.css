@@ -220,6 +220,9 @@ header {
 	padding-left:15px;
 	width:100%;
 }
+#popup:first-child {
+	padding-bottom:10px;
+}
 #copyright .pad_contact {
 	float:right;
 	padding-right:22px;
