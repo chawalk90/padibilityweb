@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get '/browseseekers' => 'browse#seekers'
 
-  get '/browseowners' => 'browse#owner'
+  get '/browseowner' => 'browse#owner'
 
 
 
