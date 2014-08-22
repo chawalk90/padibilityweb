@@ -407,8 +407,8 @@ table .dos {
 	padding-top:15px;
 	padding-bottom:10px;
 }
-.cityoptions td {
-	width:100px;
+.cityoptions td:not(#other) {
+	width:150px;
 }
 .wakeup {
 	font-weight:bold;
