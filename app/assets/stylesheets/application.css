@@ -512,21 +512,24 @@ table .dos {
 }
 #tidy {
 	position:relative;
-	left:42px;
+	left:43px;
 }
 #politic {
 	position:relative;
-	left:54px;
+	left:52px;
 }
 #faith {
 	position:relative;
-	left:48px;
+	left:46px;
 }
 #ask {
 	position:relative;
-	left:19px;
+	left:17px;
 }
 #movein {
 	position:relative;
 	left:174px;
+}
+p .terms_error a {
+	text-decoration: none;
 }
