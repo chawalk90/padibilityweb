@@ -492,13 +492,17 @@ table .dos {
 }
 .names {
 	position:relative;
-	left:140px;
+	left:145px;
 }
 .maximum {
 	position:relative;
-	left:140px;
+	left:150px;
 }
 #moveout {
 	position:relative;
-	left:140px;
+	left:110px;
+}
+.ear {
+	position:relative;
+	left:15px;
 }
