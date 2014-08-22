@@ -114,11 +114,11 @@ header {
 }
 .schoolemail #send {
 	position:relative;
-	left:50px;
+	left:90px;
 }
 #writename {
 	position:relative;
-	left:100px;
+	left:180px;
 }
 .schoolemail .nombre {
 	margin-top:18px;
@@ -413,7 +413,7 @@ table .dos {
 	padding-bottom:10px;
 }
 .cityoptions td:not(#other) {
-	width:119px;
+	width:120px;
 }
 .cityoptions #other {
 	width:450px;
