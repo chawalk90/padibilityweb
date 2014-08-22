@@ -8,19 +8,19 @@
                     <p><%= f.label :email, "Your school email address:" %>
                     <span id="send"><%= f.text_field :email, "size" => 57 %></span></p>
                     <p><%= f.label :first_name, 'Your name:' %> 
-                    <span id="writename"><%= f.text_field :first_name, "size" => 25 %> <%= f.text_field :last_name, "size" => 25 %></span></p>
+                    <span id="writename"><%= f.text_field :first_name, "size" => 25 %>  <%= f.text_field :last_name, "size" => 25 %></span></p>
                 </div>
                 <div class="holder">
                     <div>
                         <%= f.label :looking_for, "What are you looking for?" %>
                             <span class="look">
                                 <%= radio_button_tag(:looking_for, "Only Roommates") %> Only Roommates        
-                                <%= radio_button_tag(:looking_for, "Only a Room") %> Only a Room 
+                                      <%= radio_button_tag(:looking_for, "Only a Room") %> Only a Room 
                                 <%= radio_button_tag(:looking_for, "Both") %> Both 
                                 <!---<input type="radio" id="survey_type_1" name="roommates" class="regular-radio" value="Roommates only" checked/><label for="roommates">Only roommates</label>
                             <input type="radio" id="survey_type_2" name="room" class="regular-radio" value="Room only"/><label for="room">Only a room</label>
                             <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label>-->
-                            </span></div><br />
+                            </span></div>
                         </div>
                     </div>
                 
