@@ -138,13 +138,13 @@
                 <div class="roommates_both">
                     <%= f.label :age_min, "Age Min." %>
                     <%= f.text_field :age_min, "size" => 3 %>
-                    <span class="maximum"><%= f.label :age_max, "Age Max." %>
-                    <%= f.text_field :age_max, "size" => 3 %></span>
+                    <%= f.label :move_in, "Move in date:" %>
+                    <%= f.text_field :move_in, "size" => 10 %>
                 </div>
             </div></span>
             <div class="holder">
-                <p><%= f.label :move_in, "Move in date:" %>
-                    <%= f.text_field :move_in, "size" => 10 %>
+                <p><%= f.label :age_max, "Age Max." %>
+                    <%= f.text_field :age_max, "size" => 3 %>
                     <span id="moveout"><%= f.label :move_out, "Move out date: (optional)" %>
                     <%= f.text_field :move_out, "size" => 10 %>
 </span>
