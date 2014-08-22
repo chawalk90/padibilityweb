@@ -39,7 +39,7 @@
                                     <td><%= radio_button_tag(:moving_to, "Chicago") %> Chicago </td>
                                     <td><%= radio_button_tag(:moving_to, "Los Angeles") %> Los Angeles </td>
                                     <td colspan="2"><%= radio_button_tag(:moving_to, "Other") %> Other 
-                                        <%= f.text_field :moving_to, "size" => 60 %></td>
+                                        <%= f.text_field :moving_to, "size" => 55 %></td>
                                     <!--<td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
                                     <td><input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label></td>
                                     <td colspan="2"><input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label>
@@ -74,7 +74,7 @@
             <div class="holder">
                 <div>
                     <%= f.label :age, "How old are you?" %>
-                    <span class="mature"><%= f.text_field :age, "size" => 10 %></span>
+                    <span class="mature"><%= f.text_field :age, "size" => 7 %></span>
                 </div>
             </div>
 
@@ -92,7 +92,7 @@
             <div class="holder">
                  <div>
                     <%= f.label :max_rent, "What is the most you are willing to pay (per person) for you next pad?" %>
-                    <%= f.text_field :max_rent %>
+                    <%= f.text_field :max_rent, "size" => 10 %>
                     <p class="roommates_both"><%= f.label :roommates_estimate, "How many roommates would you like?" %></p>
                     <p class="housing_only"><%= f.label :roommates_amount, "How many roommates will be living with you?" %></p>
                     <div class="button-holder">
@@ -102,7 +102,7 @@
                         <%= radio_button_tag(:roommates_amount, "4") %> 4 
                         <%= radio_button_tag(:roommates_amount, "5") %> 5 
                         <%= radio_button_tag(:roommates_amount, "5 or more, specify") %> 5 or more, specify 
-                        <%= f.text_field :roommates_amount %>
+                        <%= f.text_field :roommates_amount, "size" => 7 %>
                         <%= radio_button_tag(:roommates_amount, "Don't care") %> Don't care 
                         <!--<input type="radio" id="roommates_num_1" name="roommatesone" class="regular-radio" value="1" checked="checked"/><label for="roommatesone">1</label>
                         <input type="radio" id="roommatestwo" name="roommatestwo" class="regular-radio" value="2"/><label for="roommatestwo">2</label>
@@ -132,7 +132,7 @@
             <div class="holder">
                 <div class="roommates_both other_roommates">
                     <p><%= f.label :roommates_names, "Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too." %>
-                    <%= f.text_field :roommates_names, "size" => 50 %></p>
+                    <span class="names"><%= f.text_field :roommates_names, "size" => 50 %></span></p>
                 </div>
             </div>
             <span id="range"><div class="holder">

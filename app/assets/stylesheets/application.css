@@ -480,13 +480,17 @@ table .dos {
 }
 #gender {
 	position:relative;
-	left:126px;
+	left:130px;
 }
 #coed {
 	position:relative;
-	left:50px;
+	left:45px;
 }
 .mature {
+	position:relative;
+	left:115px;
+}
+.names {
 	position:relative;
 	left:100px;
 }
