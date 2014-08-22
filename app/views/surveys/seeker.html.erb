@@ -88,7 +88,7 @@
                 <p class="both"><%= f.label :housing_type, "What type of housing/roommates are you looking for?" %></p>
                     <div class="button-holder">
                         <p><%= radio_button_tag(:housing_type, "Postgraduate (long-term)") %> Postgraduate (long-term) 
-                        <%= radio_button_tag(:housing_type, "Summer (short-term, summer)") %> Summer (short-term, summer) </p>
+                        <span id="shortsummer"><%= radio_button_tag(:housing_type, "Summer (short-term, summer)") %> Summer (short-term, summer) </span></p>
                         <!--<input type="radio" id="housing_type_1" name="postgrad" class="regular-radio" value="Postgraduate" checked="checked"/><label for="postgrad">Postgraduate (long-term)</label>
                         <input type="radio" id="housing_type_2" name="summer" class="regular-radio" value="Summer"/><label for="summer">Summer (short-term, summer)</label><br />-->
                     </div>

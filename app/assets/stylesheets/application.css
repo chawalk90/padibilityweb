@@ -408,10 +408,14 @@ table .dos {
 	padding-bottom:10px;
 }
 .cityoptions td:not(#other) {
-	width:118px;
+	width:117px;
 }
 .cityoptions #other {
 	width:450px;
+}
+#shortsummer {
+	position:relative;
+	left:40px;
 }
 .wakeup {
 	font-weight:bold;
@@ -464,9 +468,6 @@ table .dos {
 	margin-top:-20px;
 	padding:0;
 }
-#gender {
-
-}
 .owner {
 	margin-bottom:15px;
 }
@@ -496,7 +497,7 @@ table .dos {
 }
 #gender {
 	position:relative;
-	left:135px;
+	left:136px;
 }
 #coed {
 	position:relative;
