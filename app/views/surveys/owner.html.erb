@@ -1,6 +1,6 @@
 <div id="wrapper">
                 <div id="form_one_page" class="font one page link">
-        <%= form_for(@survey, remote: true, format: :json, html: {class: :thing_form}) do |f| %>
+        <%= form_for(@survey) do |f| %>
                 <h3 class="title">Owners' Questionnaire</h3>
                 <div class="schoolemail">
                     <%= f.label :email, "Your school email address:" %><br />
