@@ -407,6 +407,9 @@ table .dos {
 	padding-top:15px;
 	padding-bottom:10px;
 }
+.cityoptions td {
+	width:100px;
+}
 .wakeup {
 	font-weight:bold;
 }
