@@ -130,7 +130,7 @@ header {
 .housing_only {
 	display:none;
 }
-.oneroom {
+.look .oneroom {
 	margin-left:15px;
 	margin-right:10px;
 }
