@@ -207,6 +207,10 @@ header {
 	margin-left:auto;
 	margin-right:auto;
 }
+.signin a {
+	text-decoration:none;
+	color:white;
+}
 .signin #popup.center {
 	margin-left:auto;
 	margin-right:auto;
