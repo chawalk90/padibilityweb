@@ -130,6 +130,10 @@ header {
 .housing_only {
 	display:none;
 }
+.oneroom {
+	margin-left:15px;
+	margin-right:10px;
+}
 .roommates_only {
 	display:none;
 }
