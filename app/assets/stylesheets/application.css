@@ -207,11 +207,14 @@ header {
 	margin-left:auto;
 	margin-right:auto;
 }
+.signin #popup {
+	font-size:12px;
+}
 .signin a {
 	text-decoration:none;
 	color:white;
 }
-.signin #popup.center {
+.signin #popup {
 	margin-left:auto;
 	margin-right:auto;
 }
