@@ -5,11 +5,10 @@
         <form action="/form_db_1" method="post" name="quiz" id="quiz">
                 <h3 class="title">Owners' Questionnaire</h3>
                 <div class="schoolemail">
-                    <%= f.label :email, "Your school email address:" %><br />
-                    <%= f.text_field :email %>
-                    <br />
-                    <%= f.label :first_name, 'Your name:' %><br />
-                    <%= f.text_field :first_name %> <%= f.text_field :last_name %>
+                    <p><%= f.label :email, "Your school email address:" %>
+                    <%= f.text_field :email %></p>
+                    <p><%= f.label :first_name, 'Your name:' %> 
+                    <%= f.text_field :first_name %> <%= f.text_field :last_name %></p>
                 </div>
                 <div class="holder">
                     <div>
