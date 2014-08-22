@@ -6,7 +6,7 @@ def browse_params
 		@browse = Browse.new(browse_params)
     	@browse.save
 	end
-	def owners
+	def owner
 		@browse = Browse.new(browse_params)
     	@browse.save
 	end
