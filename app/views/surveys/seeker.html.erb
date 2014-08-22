@@ -242,7 +242,7 @@
             <div class="holder">
                 <div class="roommates_both">
                     <p><%= f.label :political, "Describe your political views:" %>
-                        <%= f.text_field :political %></p>
+                        <span id="politic"><%= f.text_field :political %></span></p>
                     <p><%= f.label :roommate_political, "Do the political views of your roommate matter to you?" %>
                         <%= radio_button_tag(:roommate_political, "Yes") %> Yes 
                         <%= radio_button_tag(:roommate_political, "No") %> No </p>
