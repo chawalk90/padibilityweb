@@ -52,16 +52,16 @@
                 </div>
              <!-- End of holder -->   
              <div class="holder">
-                <%= f.label :gender, "What is your gender?" %>
+                <p><%= f.label :gender, "What is your gender?" %>
                 <%= radio_button_tag(:gender, "Male") %> Male 
                 <%= radio_button_tag(:gender, "Female") %> Female 
                 <%= radio_button_tag(:gender, "Other") %> Other 
                     <!--<input type="radio" id="sex_1" name="sexguy" class="regular-radio" value="Male" checked="checked" /><label for="sexguy">Male</label>
                     <input type="radio" id="sex_2" name="sexgirl" class="regular-radio" value="Female"/><label for="sexgirl">Female</label>
-                    <input type="radio" id="sex_3" name="sexother" class="regular-radio" value="Other"/><label for="sexother">Other</label>-->
+                    <input type="radio" id="sex_3" name="sexother" class="regular-radio" value="Other"/><label for="sexother">Other</label>--></p>
             </div> 
             <div class="holder">
-                <%= f.label :coed, "Are you okay with co-ed housing?" %>
+                <%= f.label :coed, "Are you okay with co-ed housing?" %><br />
                 <div class="button-holder">
                     <%= radio_button_tag(:coed, "Yes") %> Yes 
                     <%= radio_button_tag(:coed, "No") %> No 
