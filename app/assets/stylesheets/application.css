@@ -112,11 +112,19 @@ header {
 	margin-left:-15px;
 	list-style-type:none;
 }
+.schoolemail {
+	position:relative;
+	left:50px;
+}
+#writename {
+	position:relative;
+	left:100px;
+}
 .schoolemail .nombre {
-	margin-top:16px;
+	margin-top:18px;
 }
 .schoolemail label {
-	font-size:16px;
+	font-size:18px;
 	font-weight:bold;
 }
 .housing_only {
