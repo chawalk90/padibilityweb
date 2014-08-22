@@ -1,10 +1,16 @@
 <div id="wrapper">
     <div id="questionnaire">
-   <!-- <%= form_for(@survey) do |f| %>-->
+    <%= form_for(@survey) do |f| %>
                 <div id="form_one_page" class="font one page link">
         <form action="/form_db_1" method="post" name="quiz" id="quiz">
                 <h3 class="title">Seekers' Questionnaire</h3>
-                
+                <div class="schoolemail">
+                    <%= f.label :email, "Your school email address:" %><br />
+                    <%= f.text_field :email %>
+                    <br />
+                    <%= f.label :first_name, 'Your name:' %><br />
+                    <%= f.text_field :first_name %> <%= f.text_field :last_name %>
+                </div>
                 <div class="holder">
                     <div>
                         <%= f.label :looking_for, "What are you looking for?" %>
