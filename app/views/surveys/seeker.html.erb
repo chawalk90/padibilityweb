@@ -74,7 +74,7 @@
             <div class="holder">
                 <div>
                     <%= f.label :age, "How old are you?" %>
-                    <%= f.text_field :age, "size" => 70 %>
+                    <%= f.text_field :age, "size" => 15 %>
                 </div>
             </div>
 
@@ -132,28 +132,28 @@
             <div class="holder">
                 <div class="roommates_both other_roommates">
                     <p><%= f.label :roommates_names, "Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too." %>
-                    <%= f.text_field :roommates_names %></p>
+                    <%= f.text_field :roommates_names, size => 50 %></p>
                 </div>
             </div>
             <span id="range"><div class="holder">
                 <div class="roommates_both">
                     <%= f.label :age_min, "Age Min." %>
-                    <%= f.text_field :age_min %>
+                    <%= f.text_field :age_min, size => 15 %>
                     <%= f.label :age_max, "Age Max." %>
-                    <%= f.text_field :age_max %>
+                    <%= f.text_field :age_max, size => 15 %>
                 </div>
             </div></span>
             <div class="holder">
                 <p><%= f.label :move_in, "Move in date:" %>
-                    <%= f.text_field :move_in %>
+                    <%= f.text_field :move_in, size => 30 %>
                     <%= f.label :move_out, "Move out date: (optional)" %>
-                    <%= f.text_field :move_out %>
+                    <%= f.text_field :move_out, size => 30 %>
 
                     </p>
             </div> <!-- End of holder -->
             <div class="holder">
                 <!--<div class="housing_both">-->
-                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %><%= f.text_field :bedrooms %></p>
+                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %><%= f.text_field :bedrooms, size => 15 %></p>
                     <!--<div class="button-holder">
                         <table>
                         <tr>
@@ -207,13 +207,13 @@
             <div id ="sound" class="holder">
                 <!--<div class="housing_only">-->
                 <p><%= f.label :noise, "What is your ideal noise level?" %>
-                <%= f.text_field :noise %></p>
+                <%= f.text_field :noise, size => 50 %></p>
                 </div>
             </div>
             <div class="holder">
                  <div class="roommates_both">
-                    <p><%= f.label :wake_up, "Wake up time" %><%= f.text_field :wake_up %><br />
-                    <%= f.label :bedtime, "Bed time" %><%= f.text_field :bedtime %></p>
+                    <p><%= f.label :wake_up, "Wake up time" %><%= f.text_field :wake_up, size => 30 %><br />
+                    <%= f.label :bedtime, "Bed time" %><%= f.text_field :bedtime, size => 30 %></p>
                     </div>
                     </div>
             <div class="holder">
@@ -230,15 +230,15 @@
             <div class="holder">
                 <div class="roommates_both">
                     <p><%= f.label :sociability, "Describe your level of sociability." %>
-                        <%= f.text_field :sociability %></p>
+                        <%= f.text_field :sociability, size => 50 %></p>
                     <p><%= f.label :tidiness, "Describe your level of tidiness:" %>
-                        <%= f.text_field :tidiness %></p>
+                        <%= f.text_field :tidiness, size => 50 %></p>
                 </div>
             </div>
             <div class="holder">
                 <div class="roommates_both">
                     <p class="hobby"><%= f.label :interest, "List some of your interests and activites: (Separate each with a comma)" %>
-                        <%= f.text_field :interest %></p>
+                        <%= f.text_field :interest, size => 50 %></p>
                 </div>
             </div>
             <div class="holder">
@@ -258,7 +258,7 @@
             <div class="holder">
                 <div class="roommates_both">
                     <p><%= f.label :sex_privacy, "How private are you with sex? (Optional)" %>
-                        <%= f.text_field :sex_privacy %>
+                        <%= f.text_field :sex_privacy, size => 50 %>
                     <%= check_box_tag(:sex_privacy, "I choose not to answer that question.") %> I choose not to answer that question. </p>
                 </div>
             </div>
@@ -270,21 +270,21 @@
                         <td><%= radio_button_tag(:smoke, "Yes") %> Yes 
                         <%= radio_button_tag(:smoke, "No") %> No </td>
                     <td class="habits"><%= f.label :smoke_often, "How often?" %>
-                        <%= f.text_field :smoke_often %></td>
+                        <%= f.text_field :smoke_often, size => 50 %></td>
                 </tr>
                 <tr>
                 <td><%= f.label :drink, "Do you drink?" %></td>
                         <td><%= radio_button_tag(:drink, "Yes") %> Yes 
                         <%= radio_button_tag(:drink, "No") %> No </td>
                     <td class ="habits"><%= f.label :drink_often, "How often?" %>
-                        <%= f.text_field :drink_often %></td>
+                        <%= f.text_field :drink_often, size => 50 %></td>
                 </tr>
                 <tr>
                     <td><%= f.label :overnight, "Do you bring overnight guests?" %></td>
                         <td><%= radio_button_tag(:overnight, "Yes") %> Yes 
                         <%= radio_button_tag(:overnight, "No") %> No </td>
                         <td class="habits"><%= f.label :overnight_often, "How often?" %>
-                        <%= f.text_field :overnight_often %></td>
+                        <%= f.text_field :overnight_often, size => 50 %></td>
                 </tr>
             </table>
                 </div>
@@ -292,7 +292,7 @@
             <div class="holder">
                 <div class="roommates_both">
                     <p><%= f.label :question, "Question for Potential Roommate:" %>
-                    <%= f.text_field :question %></p>
+                    <%= f.text_field :question, size => 70 %></p>
                 </div>
                 <div><p><%= f.label :hometown, "Which state or country are you originally from?" %>
                     <%= f.text_field :hometown %></p>
