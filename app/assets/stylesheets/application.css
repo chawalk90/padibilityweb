@@ -488,9 +488,13 @@ table .dos {
 }
 .mature {
 	position:relative;
-	left:140px;
+	left:148px;
 }
 .names {
 	position:relative;
-	left:100px;
+	left:120px;
+}
+.maximum {
+	position:relative;
+	left:120px;
 }

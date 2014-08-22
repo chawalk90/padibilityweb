@@ -39,7 +39,7 @@
                                     <td><%= radio_button_tag(:moving_to, "Chicago") %> Chicago </td>
                                     <td><%= radio_button_tag(:moving_to, "Los Angeles") %> Los Angeles </td>
                                     <td colspan="2"><%= radio_button_tag(:moving_to, "Other") %> Other 
-                                        <%= f.text_field :moving_to, "size" => 55 %></td>
+                                        <%= f.text_field :moving_to, "size" => 50 %></td>
                                     <!--<td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
                                     <td><input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label></td>
                                     <td colspan="2"><input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label>
@@ -72,8 +72,8 @@
             </div>
             <div class="holder">
                 <div>
-                    <%= f.label :age, "How old are you?" %>
-                    <span class="mature"><%= f.text_field :age, "size" => 5 %></span>
+                    <p><%= f.label :age, "How old are you?" %>
+                    <span class="mature"><%= f.text_field :age, "size" => 5 %></span></p>
                 </div>
             </div>
 
@@ -137,22 +137,22 @@
             <span id="range"><div class="holder">
                 <div class="roommates_both">
                     <%= f.label :age_min, "Age Min." %>
-                    <%= f.text_field :age_min, "size" => 15 %>
-                    <%= f.label :age_max, "Age Max." %>
-                    <%= f.text_field :age_max, "size" => 15 %>
+                    <%= f.text_field :age_min, "size" => 5 %>
+                    <span class="maximum"><%= f.label :age_max, "Age Max." %>
+                    <%= f.text_field :age_max, "size" => 5 %></span>
                 </div>
             </div></span>
             <div class="holder">
                 <p><%= f.label :move_in, "Move in date:" %>
-                    <%= f.text_field :move_in, "size" => 30 %>
+                    <%= f.text_field :move_in, "size" => 15 %>
                     <%= f.label :move_out, "Move out date: (optional)" %>
-                    <%= f.text_field :move_out, "size" => 30 %>
+                    <%= f.text_field :move_out, "size" => 15 %>
 
                     </p>
             </div> <!-- End of holder -->
             <div class="holder">
                 <!--<div class="housing_both">-->
-                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %><%= f.text_field :bedrooms, "size" => 15 %></p>
+                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %><%= f.text_field :bedrooms, "size" => 5 %></p>
                     <!--<div class="button-holder">
                         <table>
                         <tr>
