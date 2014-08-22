@@ -12,7 +12,7 @@ class SurveysController < ApplicationController
 
     def owners
     	@survey = Survey.new(survey_params)
-    	@survey.user_id=current_user.id
+    	#@survey.user_id=current_user.id
         @survey.save
     end
     def seeker
