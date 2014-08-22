@@ -469,7 +469,8 @@ table .dos {
 	text-align:center;
 	float:right;
 }
-.only {
+.look {
 	display:inline-block;
 	margin-bottom:-10px;
+	margin-left:20px;
 }
