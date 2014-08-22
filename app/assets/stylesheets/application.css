@@ -492,11 +492,11 @@ table .dos {
 }
 .maximum {
 	position:relative;
-	left:183px;
+	left:181px;
 }
 #moveout {
 	position:relative;
-	left:94px;
+	left:98px;
 }
 .ear {
 	position:relative;
@@ -513,4 +513,8 @@ table .dos {
 #social {
 	position:relative;
 	left:15px;
+}
+#tidy {
+	position:relative;
+	left:20px;
 }
