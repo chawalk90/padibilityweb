@@ -408,10 +408,10 @@ table .dos {
 	padding-bottom:10px;
 }
 .cityoptions td:not(#other) {
-	width:120px;
+	width:118px;
 }
 .cityoptions #other {
-	width:420px;
+	width:450px;
 }
 .wakeup {
 	font-weight:bold;
@@ -496,7 +496,7 @@ table .dos {
 }
 #gender {
 	position:relative;
-	left:134px;
+	left:135px;
 }
 #coed {
 	position:relative;
