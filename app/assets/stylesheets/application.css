@@ -496,7 +496,7 @@ table .dos {
 }
 #moveout {
 	position:relative;
-	left:102px;
+	left:103px;
 }
 .ear {
 	position:relative;
@@ -504,21 +504,25 @@ table .dos {
 }
 #wake {
 	position:relative;
-	left:188px;
+	left:191px;
 }
 #sleep {
 	position:relative;
-	left:225px;
+	left:229px;
 }
 #social {
 	position:relative;
-	left:30px;
+	left:33px;
 }
 #tidy {
 	position:relative;
-	left:40px;
+	left:45px;
 }
 #politic {
 	position:relative;
-	left:20px;
+	left:30px;
+}
+#faith {
+	position:relative;
+	left:40px;
 }
