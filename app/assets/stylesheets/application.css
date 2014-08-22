@@ -207,6 +207,9 @@ header {
 	margin-left:auto;
 	margin-right:auto;
 }
+.signin h2 {
+	font-size:48px;
+}
 .signin a {
 	text-decoration:none;
 	color:white;
