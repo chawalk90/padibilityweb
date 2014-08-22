@@ -294,9 +294,7 @@
                     <p><%= f.label :question, "Question for Potential Roommate:" %>
                     <%= f.text_field :question %></p>
                 </div>
-            </div>
-            <div>
-                <p><%= f.label :hometown, "Which state or country are you originally from?" %>
+                <div><p><%= f.label :hometown, "Which state or country are you originally from?" %>
                     <%= f.text_field :hometown %></p>
             </div>
             <div>
@@ -307,6 +305,7 @@
                 <p><%= f.label :company, "At what company or organization will you be working this summer or after graduation?" %>
                     <%= f.text_field :company %></p>
             </div>
+        </div>
             <!--<div class="housing_only">-->
                 <p><span class="terms_error">Please read the <a href="/terms" target="_blank">Terms & Conditions</a></span></p>
                 <%= check_box_tag(:terms) %>
