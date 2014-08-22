@@ -408,14 +408,14 @@ table .dos {
 	padding-bottom:10px;
 }
 .cityoptions td:not(#other) {
-	width:117px;
+	width:118px;
 }
 .cityoptions #other {
 	width:450px;
 }
 #shortsummer {
 	position:relative;
-	left:40px;
+	left:68px;
 }
 .wakeup {
 	font-weight:bold;
@@ -493,7 +493,7 @@ table .dos {
 	display:inline-block;
 	margin-bottom:-10px;
 	position:relative;
-	left:100px;
+	left:102px;
 }
 #gender {
 	position:relative;
