@@ -29,21 +29,21 @@
                 <br />
             <div class="holder">
                  <div>
-                    <%= f.label :location, "Where are you located? (We will be expanding to more cities in the coming weeks!)" %></p>
+                    <%= f.label :hometown, "Where are you located? (We will be expanding to more cities in the coming weeks!)" %></p>
                     <div class="button-holder">
                         <table class="cityoptions">
                             <tbody>
                                 <tr>
-                                    <td><%= radio_button_tag(:hometown, "New York City") %></td>
-                                    <td><%= radio_button_tag(:hometown, "Boston") %>
+                                    <td><%= radio_button_tag(:hometown, "New York City") %> New York City </td>
+                                    <td><%= radio_button_tag(:hometown, "Boston") %> Boston 
                                     </td>
-                                    <td><%= radio_button_tag(:hometown, "Washington, D.C.") %></td>
-                                    <td><%= radio_button_tag(:hometown, "San Francisco") %></td>
+                                    <td><%= radio_button_tag(:hometown, "Washington, D.C.") %> Washington, D.C. </td>
+                                    <td><%= radio_button_tag(:hometown, "San Francisco") %> San Francisco </td>
                                 </tr>
                                 <tr>
-                                    <td><%= radio_button_tag(:hometown, "Chicago") %></td>
-                                    <td><%= radio_button_tag(:hometown, "Los Angeles") %></td>
-                                    <td colspan="2"><%= radio_button_tag(:hometown, "Other") %>
+                                    <td><%= radio_button_tag(:hometown, "Chicago") %> Chicago </td>
+                                    <td><%= radio_button_tag(:hometown, "Los Angeles") %> Los Angeles </td>
+                                    <td colspan="2"><%= radio_button_tag(:hometown, "Other") %> Other 
                         <%= f.text_field :hometown %></td>
                     </tr>
                 </tbody>
@@ -55,15 +55,15 @@
             <!--change hometown to location-->
              <div class="holder">
                 <p><%= f.label :gender, "What is your gender?" %>
-                    <%= radio_button_tag(:gender, "Male") %>
-                    <%= radio_button_tag(:gender, "Female") %>
-                    <%= radio_button_tag(:gender, "Other") %></p>
+                    <%= radio_button_tag(:gender, "Male") %> Male 
+                    <%= radio_button_tag(:gender, "Female") %> Female 
+                    <%= radio_button_tag(:gender, "Other") %> Other </p>
             </div> 
 
             <div class="holder">
                 <p><%= f.label :coed, "Are you okay with co-ed housing?" %>
-                <%= radio_button_tag(:coed, "Yes") %>
-                    <%= radio_button_tag(:coed, "No") %></p>
+                <%= radio_button_tag(:coed, "Yes") %> Yes 
+                    <%= radio_button_tag(:coed, "No") %> No </p>
             </div> 
 
             <div class="holder">
