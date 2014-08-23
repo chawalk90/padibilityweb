@@ -397,6 +397,9 @@ table .dos {
 	font-weight:bold;
 	display:inline;
 }
+.residentrange {
+	font-weight:bold;
+}
 #label {
 	font-weight:bold;
 	font-size:18px;
