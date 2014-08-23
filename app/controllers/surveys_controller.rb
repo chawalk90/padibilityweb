@@ -18,8 +18,6 @@ class SurveysController < ApplicationController
     survey_params = params.require(survey).permit(:avatar)
   end
 
-  private
-
   def owners
     @survey = Survey.new(survey_params)
     @survey.user_id=current_user.id
@@ -30,8 +28,6 @@ class SurveysController < ApplicationController
     @survey = Survey.new
     @survey.save
   end
-
-  private
 
   def idcheck
   end
