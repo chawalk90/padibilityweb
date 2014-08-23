@@ -52,7 +52,7 @@
                     </div>
                 </div>
                  <!-- End of holder -->     
-            
+            <!--change hometown to location-->
              <div class="holder">
                 <p><%= f.label :gender, "What is your gender?" %>
                     <%= radio_button_tag(:gender, "Male") %>
@@ -78,13 +78,17 @@
                 <div class="housing_both">
                     <p><%= f.label :max_rent, "Monthly Price of Rent (per Person):" %>
                         <%= f.text_field :max_rent %></p>
+                        <!--change max rent to rent-->
                 </div>
             </div> <!-- End of holder -->
             
             <div class="holder">
                 <p><%= f.label :move_in, "Move in date:" %>
+                    <!--insert move in field here-->
                     </p>
-                <p><%= f.label :move_out, "Move out date (optional):" %><%= f.text_field :move_out %></p>
+                <p><%= f.label :move_out, "Move out date (optional):" %><%= f.text_field :move_out %>
+                    <!--insert move out field here-->
+                </p>
             </div> <!-- End of holder -->
 
             <div class="holder">
@@ -95,11 +99,7 @@
                     
                     <div class="button-holder">
                         <p><%= f.label :bathrooms, "How many bathrooms are in your pad?" %></p>
-                        <table>
-                            <tr>
-                        <td><%= f.text_field :bathrooms %></td>
-                    </tr>
-                    </table>
+                        <!--insert bathrooms field here-->
                     </div>
                 </div>
             </div>
