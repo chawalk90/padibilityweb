@@ -1,7 +1,7 @@
 class SurveysController < ApplicationController
   before_filter :new, :create, :survey_params, :owners, :seeker, :survey_params, :idcheck
   def survey_params
-    survey_params = params.require(survey).permit(:avatar)
+    survey_params = params.require(:survey).permit(:avatar)
   end
 
   def new
