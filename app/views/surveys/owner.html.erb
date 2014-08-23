@@ -43,8 +43,8 @@
                                 <tr>
                                     <td><%= radio_button_tag(:hometown, "Chicago") %> Chicago </td>
                                     <td><%= radio_button_tag(:hometown, "Los Angeles") %> Los Angeles </td>
-                                    <td colspan="2"><%= radio_button_tag(:hometown, "Other") %> Other 
-                        <%= f.text_field :hometown %></td>
+                                    <td id="other" colspan="2"><%= radio_button_tag(:hometown, "Other") %> Other 
+                        <%= f.text_field :hometown, "size" => 45 %></td>
                     </tr>
                 </tbody>
             </table>
