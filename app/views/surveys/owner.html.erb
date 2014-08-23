@@ -75,14 +75,14 @@
                 
             <div class"holder">
                 <div class="housing_both">
-                    <p><%= f.label :max_rent, "Monthly Price of Rent (per Person):" %>
-                        <%= f.text_field :max_rent %></p>
+                    <%= f.label :max_rent, "Monthly Price of Rent (per Person):" %>
+                        <%= f.text_field :max_rent, "size" => 10 %>
                         <!--change max rent to rent-->
                 </div>
             </div> <!-- End of holder -->
             
             <div class="holder">
-                <p><%= f.label :move_in, "Move in date:" %>
+                <p><%= f.label :move_in, "Move in date:" %><%= f.text_field :move_in %>
                     <!--insert move in field here-->
                     </p>
                 <p><%= f.label :move_out, "Move out date (optional):" %><%= f.text_field :move_out %>
