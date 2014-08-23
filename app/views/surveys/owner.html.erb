@@ -54,21 +54,21 @@
             <!--change hometown to location-->
              <div class="holder">
                 <p><%= f.label :gender, "What is your gender?" %>
-                    <%= radio_button_tag(:gender, "Male") %> Male 
+                    <span id="gender"><%= radio_button_tag(:gender, "Male") %> Male 
                     <%= radio_button_tag(:gender, "Female") %> Female 
-                    <%= radio_button_tag(:gender, "Other") %> Other </p>
+                    <%= radio_button_tag(:gender, "Other") %> Other </span></p>
             </div> 
 
             <div class="holder">
-                <p><%= f.label :coed, "Are you okay with co-ed housing?" %>
-                <%= radio_button_tag(:coed, "Yes") %> Yes 
-                    <%= radio_button_tag(:coed, "No") %> No </p>
+                <p><%= f.label :coed, "Is co-ed housing allowed in your pad?" %>
+                <span id="coed"><%= radio_button_tag(:coed, "Yes") %> Yes 
+                    <%= radio_button_tag(:coed, "No") %> No </span></p>
             </div> 
 
             <div class="holder">
                 <div>
                     <p><%= f.label :age, "How old are you?" %>
-                        <%=f.text_field :age %></p>
+                        <span class="mature"><%=f.text_field :age %></span></p>
                 </div>
             </div>
 
