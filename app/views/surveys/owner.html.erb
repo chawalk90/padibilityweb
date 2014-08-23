@@ -34,17 +34,17 @@
                         <table class="cityoptions">
                             <tbody>
                                 <tr>
-                                    <td><%= radio_button_tag(:location, "New York City") %></td>
-                                    <td><%= radio_button_tag(:location, "Boston") %>
+                                    <td><%= radio_button_tag(:hometown, "New York City") %></td>
+                                    <td><%= radio_button_tag(:hometown, "Boston") %>
                                     </td>
-                                    <td><%= radio_button_tag(:location, "Washington, D.C.") %></td>
-                                    <td><%= radio_button_tag(:location, "San Francisco") %></td>
+                                    <td><%= radio_button_tag(:hometown, "Washington, D.C.") %></td>
+                                    <td><%= radio_button_tag(:hometown, "San Francisco") %></td>
                                 </tr>
                                 <tr>
-                                    <td><%= radio_button_tag(:location, "Chicago") %></td>
-                                    <td><%= radio_button_tag(:location, "Los Angeles") %></td>
-                                    <td colspan="2"><%= radio_button_tag(:location, "Other") %>
-                        <%= f.text_field :location %></td>
+                                    <td><%= radio_button_tag(:hometown, "Chicago") %></td>
+                                    <td><%= radio_button_tag(:hometown, "Los Angeles") %></td>
+                                    <td colspan="2"><%= radio_button_tag(:hometown, "Other") %>
+                        <%= f.text_field :hometown %></td>
                     </tr>
                 </tbody>
             </table>
