@@ -83,20 +83,18 @@
             
             <div class="holder">
                 <p><%= f.label :move_in, "Move in date:" %><%= f.text_field :move_in, "size" => 10 %>
-                    <!--insert move in field here-->
-                    </p>
-                <p><span id="moveout"><%= f.label :move_out, "Move out date (optional):" %><%= f.text_field :move_out, "size" => 10 %></span>
+                    <!--insert move in field here--><span id="moveout"><%= f.label :move_out, "Move out date (optional):" %><%= f.text_field :move_out, "size" => 10 %></span>
                     <!--insert move out field here-->
                 </p>
             </div> <!-- End of holder -->
 
-            <div class="holder">
+            <div>
                 <!--<div class="housing_both">-->
                     <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %>
                         <%= f.text_field :bedrooms %></p>
             </div>
                     
-                    <div class="button-holder">
+                    <div>
                         <p><%= f.label :bathrooms, "How many bathrooms are in your pad?" %></p>
                         <!--insert bathrooms field here-->
                     </div>
