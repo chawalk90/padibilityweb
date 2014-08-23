@@ -75,7 +75,7 @@
                 
             <div class"holder">
                 <div class="housing_both">
-                    <p><%= f.label :max_rent, "Monthly Price of Rent (per Person):" %>
+                    <p><span id="label"><%= f.label :max_rent, "Monthly Price of Rent (per Person):" %></span>
                         <%= f.text_field :max_rent, "size" => 10 %></p>
                         <!--change max rent to rent-->
                 </div>
@@ -90,12 +90,12 @@
 
             <div>
                 <!--<div class="housing_both">-->
-                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %>
+                    <p><span id="label"><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %></span>
                         <%= f.text_field :bedrooms %></p>
             </div>
                     
                     <div>
-                        <p><%= f.label :bathrooms, "How many bathrooms are in your pad?" %></p>
+                        <p><span id="label"><%= f.label :bathrooms, "How many bathrooms are in your pad?" %></span></p>
                         <!--insert bathrooms field here-->
                     </div>
             </div>
@@ -104,7 +104,7 @@
                     <!--add list rooms text field--></p>
             </div>
             <div class="holder">
-                <p class="residentrange">What is the age range of the residents in your building?" %></p>
+                <p class="residentrange">What is the age range of the residents in your building?</p>
                 <%= f.label :age_min, "Age Min." %>
                 <%= f.text_field :age_min %>
                 <%= f.label :age_max, "Age Max." %>
@@ -141,7 +141,7 @@
 
             <div class="holder">
                  <div>
-                    <p>Are pets allowed in your pad?</p>
+                    <p><span id="label">Are pets allowed in your pad?</span></p>
                     <div class="button-holder">
                         <!--insert radio button pet answers here-->
                     </div>
@@ -149,7 +149,7 @@
             </div> 
 
             <div>
-                <%= f.label :address, "What is the address of your pad?" %>
+                <span id="label"><%= f.label :address, "What is the address of your pad?" %></span>
                 <%= f.text_field :address %>
             </div>
 
