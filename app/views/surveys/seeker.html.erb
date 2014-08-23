@@ -1,6 +1,6 @@
 <div id="wrapper">
     <div id="questionnaire">
-    <%= form_for(@survey) do |f| %>
+    <%= form_for(Survey.new) do |f| %>
                 <div id="form_one_page" class="font one page link">
         <form action="/form_db_1" method="post" name="quiz" id="quiz">
                 <h3 class="title">Seekers' Questionnaire</h3>
