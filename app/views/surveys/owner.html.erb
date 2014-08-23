@@ -6,23 +6,23 @@
                 <h3 class="title">Owners' Questionnaire</h3>
                 <div class="schoolemail">
                     <p><%= f.label :email, "Your school email address:" %>
-                    <%= f.text_field :email %></p>
+                    <span id="send"><%= f.text_field :email, "size" => 57 %></span></p>
                     <p><%= f.label :first_name, 'Your name:' %> 
-                    <%= f.text_field :first_name %> <%= f.text_field :last_name %></p>
+                    <span id="writename"><%= f.text_field :first_name, "size" => 25 %>   <%= f.text_field :last_name, "size" => 25 %></span></p>
                 </div>
                 <div class="holder">
                     <div>
                         <p><%= f.label :housing_type, "Type of housing:" %>
-                        <%= radio_button_tag(:housing_type, "Apartment") %>
-                        <%= radio_button_tag(:housing_type, "House") %>
-                        <%= radio_button_tag(:housing_type, "Other (Please specify") %>
+                        <%= radio_button_tag(:housing_type, "Apartment") %> Apartment 
+                        <%= radio_button_tag(:housing_type, "House") %> House 
+                        <%= radio_button_tag(:housing_type, "Other (Please specify") %> Other <%= f.text_field :housing_type %>
                         </p>
                         <p><%= f.label :realty, "What company do you represent?" %>
                         <%= f.text_field :realty %>
                         <div class="button-holder">
                             <%= f.label :availability, "Availability:" %>
-                            <%= radio_button_tag(:availability, "Only a room") %>
-                            <%= radio_button_tag(:availability, "Both") %>
+                            <%= radio_button_tag(:availability, "Only a room") %> Only a room
+                            <%= radio_button_tag(:availability, "The whole pad") %> The whole pad 
                         </div></p>
                     </div>
                 </div> 
