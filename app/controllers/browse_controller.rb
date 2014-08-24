@@ -10,7 +10,7 @@ end
 		@survey.user_id=current_user.id
     	@browse.save
 	end
-	def seeker
+	def seekers
 		@browse = Browse.new(browse_params)
     	@browse.save
 	end
