@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get '/browseowner' => 'browse#owner'
 
+  get '/deviseshow' => 'devise#show'
+
 
 
   devise_for :users
