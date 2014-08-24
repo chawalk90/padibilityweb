@@ -415,10 +415,10 @@ table .dos {
 	margin-left:4px;
 }
 #available {
-	margin-left:50px;
+	margin-left:140px;
 }
 #type {
-	margin-left:50px;
+	margin-left:120px;
 }
 #sound .housing_only {
 	display:all;
@@ -444,10 +444,10 @@ table .dos {
 	left:76px;
 }
 #realty {
-	margin-left:20px;
+	margin-left:30px;
 }
 #monthly {
-	margin-left:15px;
+	margin-left:30px;
 }
 .wakeup {
 	font-weight:bold;
