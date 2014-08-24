@@ -24,7 +24,7 @@ class SurveysController < ApplicationController
     @survey.save
   end
 
-  def seekers
+  def seeker
     @survey = Survey.new
     @survey.save
   end

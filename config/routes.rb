@@ -7,13 +7,13 @@ Rails.application.routes.draw do
 
   get '/team' => 'static_pages#team'
 
-  get '/seekerssurvey' => 'surveys#seekers'
+  get '/seekerssurvey' => 'surveys#seeker'
 
-  get '/ownerssurvey' => 'surveys#owners'
+  get '/ownersurvey' => 'surveys#owner'
 
   get '/browseseekers' => 'browse#seekers'
 
-  get '/browseowners' => 'browse#owners'
+  get '/browseowner' => 'browse#owner'
 
 
 
