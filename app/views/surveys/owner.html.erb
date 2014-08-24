@@ -21,7 +21,7 @@
                         <span id="realty"><%= f.text_field :realty %></span>
                         <div class="button-holder">
                             <%= f.label :availability, "Availability:" %>
-                            <span class="availability"><%= radio_button_tag(:availability, "Only a room") %> Only a room
+                            <span id="available"><%= radio_button_tag(:availability, "Only a room") %> Only a room
                             <%= radio_button_tag(:availability, "The whole pad") %> The whole pad </span>
                         </div></p>
                     </div>

@@ -414,6 +414,12 @@ table .dos {
 #unisex {
 	margin-left:4px;
 }
+#available {
+	margin-left:50px;
+}
+#type {
+	margin-left:50px;
+}
 #sound .housing_only {
 	display:all;
 }
@@ -436,6 +442,12 @@ table .dos {
 #shortsummer {
 	position:relative;
 	left:76px;
+}
+#realty {
+	margin-left:20px;
+}
+#monthly {
+	margin-left:15px;
 }
 .wakeup {
 	font-weight:bold;
