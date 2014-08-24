@@ -412,7 +412,7 @@ table .dos {
 	padding-bottom:18px;
 }
 #unisex {
-	margin-left:9px;
+	margin-left:8px;
 }
 #available {
 	margin-left:214px;
@@ -447,7 +447,7 @@ table .dos {
 	margin-left:40px;
 }
 #monthly {
-	margin-left:30px;
+	margin-left:38px;
 }
 .wakeup {
 	font-weight:bold;
@@ -529,7 +529,7 @@ table .dos {
 }
 #gender {
 	position:relative;
-	left:141px;
+	left:140px;
 }
 #coed {
 	position:relative;
@@ -537,7 +537,7 @@ table .dos {
 }
 .mature {
 	position:relative;
-	left:168px;
+	left:174px;
 }
 #moveout {
 	position:relative;
