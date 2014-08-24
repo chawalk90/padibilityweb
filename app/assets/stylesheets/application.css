@@ -411,6 +411,9 @@ table .dos {
 #range {
 	padding-bottom:18px;
 }
+#unisex {
+	margin-left:4px;
+}
 #sound .housing_only {
 	display:all;
 }
