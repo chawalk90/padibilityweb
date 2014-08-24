@@ -10,12 +10,12 @@ class BrowseController < ApplicationController
 		@browse = Browse.new(browse_params)
 	end
 	private
-    def owners
+    def owner
 		@browse = Browse.new(browse_params)
 		@survey.user_id=current_user.id
     	@browse.save
 	end
-	def seeker
+	def seekers
 		@browse = Browse.new(browse_params)
     	@browse.save
 	end
