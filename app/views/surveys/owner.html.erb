@@ -13,16 +13,16 @@
                 <div class="holder">
                     <div>
                         <p><%= f.label :housing_type, "Type of housing:" %>
-                        <%= radio_button_tag(:housing_type, "Apartment") %> Apartment 
+                        <span id="type"><%= radio_button_tag(:housing_type, "Apartment") %> Apartment 
                         <%= radio_button_tag(:housing_type, "House") %> House 
-                        <%= radio_button_tag(:housing_type, "Other (Please specify") %> Other <%= f.text_field :housing_type %>
+                        <%= radio_button_tag(:housing_type, "Other (Please specify") %> Other <%= f.text_field :housing_type %></span>
                         </p>
                         <p><%= f.label :realty, "What company do you represent?" %>
-                        <%= f.text_field :realty %>
+                        <span id="realty"><%= f.text_field :realty %></span>
                         <div class="button-holder">
                             <%= f.label :availability, "Availability:" %>
-                            <%= radio_button_tag(:availability, "Only a room") %> Only a room
-                            <%= radio_button_tag(:availability, "The whole pad") %> The whole pad 
+                            <span class="availability"><%= radio_button_tag(:availability, "Only a room") %> Only a room
+                            <%= radio_button_tag(:availability, "The whole pad") %> The whole pad </span>
                         </div></p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
 
             <div class="holder">
                 <p><%= f.label :coed, "Is co-ed housing allowed in your pad?" %>
-                <span id="coed"><%= radio_button_tag(:coed, "Yes") %> Yes 
+                <span id="unisex"><%= radio_button_tag(:coed, "Yes") %> Yes 
                     <%= radio_button_tag(:coed, "No") %> No </span></p>
             </div> 
 
@@ -76,7 +76,7 @@
             <div class"holder">
                 <div class="housing_both">
                     <p><span id="label"><%= f.label :max_rent, "Monthly Price of Rent (per Person):" %></span>
-                        <%= f.text_field :max_rent, "size" => 10 %></p>
+                        <span id="monthly"><%= f.text_field :max_rent, "size" => 10 %></span></p>
                         <!--change max rent to rent-->
                 </div>
             </div> <!-- End of holder -->
