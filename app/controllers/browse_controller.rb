@@ -1,7 +1,7 @@
 class BrowseController < ApplicationController
 	#before_filter :new, :create, :survey_params, :owners, :seeker, :survey_params, :idcheck
 	def browse_params
-      browse_params.require(:browse).permit(:name)
+      browse_params.require(:browse).permit(:first_name, :last_name)
 	end
 	def new
 		@browse = Browse.new
