@@ -11,7 +11,7 @@ end
     	@browse.save
 	end
 	def seekers
-		@browse = Browse.new(browse_params)
+		@browse = Browse.new
     	@browse.save
 	end
 
