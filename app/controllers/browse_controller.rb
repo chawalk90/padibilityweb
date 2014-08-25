@@ -19,7 +19,6 @@ class BrowseController < ApplicationController
 		@browse = Browse.new(browse_params)
     	@browse.save
 	end
-
 	def idcheck
 	end
 end
