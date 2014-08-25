@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20140818225210) do
     t.integer  "move_in"
     t.integer  "move_out"
     t.integer  "bedrooms"
+    t.string   "bathrooms"
     t.boolean  "amenities"
     t.boolean  "apartment_pet"
     t.boolean  "roommate_pet"
