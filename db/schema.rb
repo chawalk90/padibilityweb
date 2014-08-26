@@ -107,6 +107,11 @@ ActiveRecord::Schema.define(version: 20140825184039) do
     t.datetime "avatar_updated_at"
   end
 
+  create_table "browses", force: true do |t|
+    t.string    "first_name"
+    t.string    "last_name"
+  end
+
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
