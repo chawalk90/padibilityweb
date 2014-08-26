@@ -9,7 +9,7 @@ class BrowseController < ApplicationController
 	def create
 		@browse = Browse.new(browse_params)
 	end
-	#private
+	private
     def owner
 		@browse = Browse.new(browse_params)
 		@survey.user_id=current_user.id
