@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/ownerssurvey' => 'surveys#owners'
 
-  get '/browsesseekers' => 'browse#seekers'
+  get '/browseseekers' => 'browse#seekers'
 
   get '/browseowners' => 'browse#owners'
 
