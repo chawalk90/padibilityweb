@@ -5,4 +5,5 @@ class BrowseController < ApplicationController
 	end
 	def seekers
 		@surveys = Survey.where("user_status = seeker", 0)
+	end
 end
