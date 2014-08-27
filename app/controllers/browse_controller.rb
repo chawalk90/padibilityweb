@@ -1,24 +1,9 @@
 class BrowseController < ApplicationController
 	#before_filter :new, :create, :survey_params, :owners, :seeker, :survey_params, :idcheck
-	def browse_params
-      browse_params.require(:browse).permit(:first_name, :last_name)
+    def owners
+		@surveys = Survey.where("user_status = seeker", 1)
 	end
-	def new
-		@browse = Browse.new
-	end
-	def create
-		@browse = Browse.new(browse_params)
-	end
-	private
-    def owner
-		@browse = Browse.new(browse_params)
-		@survey.user_id=current_user.id
-    	@browse.save
-	end
-	def seeker
-		@browse = Browse.new(browse_params)
-    	@browse.save
-	end
-	def idcheck
+	def seekers
+		@surveys = Survey.where("user_status = owner", 0)
 	end
 end
