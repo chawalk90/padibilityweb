@@ -18,3 +18,4 @@ ActiveSupport::Inflector.inflections do |inflect|
  inflect.irregular 'seeker', 'seekers'
  inflect.irregular 'owner', 'owners'
 end
+

@@ -9,9 +9,15 @@ Rails.application.routes.draw do
 
   get '/seekerssurvey' => 'surveys#seekers'
 
+<<<<<<< HEAD
   get '/ownersurvey' => 'surveys#owners'
 
   get '/browseseekers' => 'browse#seekers'
+=======
+  get '/ownerssurvey' => 'surveys#owners'
+
+  get '/browsesseekers' => 'browse#seekers'
+>>>>>>> 597dbdaa0e6ad969fc1a90e6c3b95b1352327a5a
 
   get '/browseowners' => 'browse#owners'
 
