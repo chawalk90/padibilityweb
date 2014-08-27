@@ -1,0 +1,343 @@
+<div id="wrapper">
+    <div id="questionnaire">
+    <%= form_for(Survey.new) do |f| %>
+                <div id="form_one_page" class="font one page link">
+        <form action="/form_db_1" method="post" name="quiz" id="quiz">
+                <h3 class="title">Seekers' Questionnaire</h3>
+                <div class="schoolemail">
+                    <p><%= f.label :email, "Your school email address:" %>
+                    <span id="send"><%= f.text_field :email, "size" => 57 %></span></p>
+                    <p><%= f.label :first_name, 'Your name:' %> 
+                    <span id="writename"><%= f.text_field :first_name, "size" => 25 %>   <%= f.text_field :last_name, "size" => 25 %></span></p>
+                </div>
+                <div class="holder">
+                    <div>
+                        <%= f.label :looking_for, "What are you looking for?" %>
+                            <span class="look">
+                                <%= radio_button_tag(:looking_for, "Only Roommates") %> Only Roommates        
+                                <%= radio_button_tag(:looking_for, "Only a Room") %> Only a Room 
+                                <%= radio_button_tag(:looking_for, "Both") %> Both 
+                                <!---<input type="radio" id="survey_type_1" name="roommates" class="regular-radio" value="Roommates only" checked/><label for="roommates">Only roommates</label>
+                            <input type="radio" id="survey_type_2" name="room" class="regular-radio" value="Room only"/><label for="room">Only a room</label>
+                            <input type="radio" id="survey_type_3" name="both" class="regular-radio" value="Both" /><label for="both">Both</label>-->
+                            </span></div><br />
+                        </div>
+                    </div>
+                
+            <div class="holder">
+                 <div>
+                    <%= f.label :moving_to, "Where will you be moving to? (We will be expanding to more cities in the coming weeks!)" %>
+                    <div class="button-holder">
+                        <table class="cityoptions">
+                            <tbody>
+                                <tr>
+                                    <td><%= radio_button_tag(:moving_to, "New York City") %> New York City </td>
+                                    <td><%= radio_button_tag(:moving_to, "Boston") %> Boston </td>
+                                    <td><%= radio_button_tag(:moving_to, "Washington, D.C.") %> Washington, D.C. </td>
+                                    <td><%= radio_button_tag(:moving_to, "San Francisco") %> San Francisco </td>
+                                    <!--<td><input type="radio" id="moving_to_1" name="movingnyc" class="regular-radio" value="New York City" checked="checked"/><label for="movingnyc">New York City</label></td>
+                                    <td><input type="radio" id="moving_to_2" name="movingboston" class="regular-radio" value="Boston"/><label for="movingboston">Boston</label></td>
+                                    <td><input type="radio" id="moving_to_3" name="movingdc" class="regular-radio" value="Washington D.C."/><label for="movingdc">Washington, D.C.</label></td>
+                                    <td><input type="radio" id="moving_to_4" name="movingsf" class="regular-radio" value="San Francisco"/><label for="movingsf">San Francisco</label></td>-->
+                                </tr>
+                                <tr>
+                                    <td><%= radio_button_tag(:moving_to, "Chicago") %> Chicago </td>
+                                    <td><%= radio_button_tag(:moving_to, "Los Angeles") %> Los Angeles </td>
+                                    <td id="other" colspan="2"><%= radio_button_tag(:moving_to, "Other") %> Other 
+                                        <%= f.text_field :moving_to, "size" => 45 %></td>
+                                    <!--<td><input type="radio" id="moving_to_5" name="movingchi" class="regular-radio" value="Chicago"/><label for="movingchi">Chicago</label></td>
+                                    <td><input type="radio" id="movingla" name="moving_to" class="regular-radio" value="Los Angeles"/><label for="movingla">Los Angeles</label></td>
+                                    <td colspan="2"><input type="radio" id="moving_to_7" name="movingother" class="regular-radio" value="Other"/><label for="movingother">Other</label>
+                        <input id="cityname" type="text" name="movingother" placeholder="City Name" hidden/></td>-->
+                    </tr>
+                </tbody>
+            </table>
+                        </div>
+                    </div>
+                </div>
+             <!-- End of holder -->   
+             <div class="holder">
+                <p><%= f.label :gender, "What is your gender?" %>
+                <span id="gender"><%= radio_button_tag(:gender, "Male") %> Male 
+                <%= radio_button_tag(:gender, "Female") %> Female 
+                <%= radio_button_tag(:gender, "Other") %> Other</span> 
+                    <!--<input type="radio" id="sex_1" name="sexguy" class="regular-radio" value="Male" checked="checked" /><label for="sexguy">Male</label>
+                    <input type="radio" id="sex_2" name="sexgirl" class="regular-radio" value="Female"/><label for="sexgirl">Female</label>
+                    <input type="radio" id="sex_3" name="sexother" class="regular-radio" value="Other"/><label for="sexother">Other</label>--></p>
+            </div> 
+            <div class="holder">
+                <div class="button-holder">
+                    <%= f.label :coed, "Are you okay with co-ed housing?" %>
+                    <span id="coed"><%= radio_button_tag(:coed, "Yes") %> Yes   
+                    <%= radio_button_tag(:coed, "No") %> No 
+                    <!--<input type="radio" id="coed_1" name="coedyes" class="regular-radio" value="Yes"/><label for="coedyes">Yes</label>
+                    <input type="radio" id="coed_2" name="coedno" class="regular-radio" value="No" checked="checked" /><label for="coedno">No</label><br />--></span>
+                    
+                </div>
+            </div>
+            <div class="holder">
+                <div>
+                    <p><%= f.label :age, "How old are you?" %>
+                    <span class="mature"><%= f.text_field :age, "size" => 3 %></span></p>
+                </div>
+            </div>
+
+                <div class="holder">
+                <p class="housing_only"><%= f.label :housing_type, "What type of housing are you looking for?" %></p>
+                <p class="roommates_only"><%= f.label :roommate_type, "What type of roommates are you looking for?" %></p>
+                <p class="both"><%= f.label :housing_type, "What type of housing/roommates are you looking for?" %></p>
+                    <div class="button-holder">
+                        <p><%= radio_button_tag(:housing_type, "Postgraduate (long-term)") %> Postgraduate (long-term) 
+                        <span id="shortsummer"><%= radio_button_tag(:housing_type, "Summer (short-term, summer)") %> Summer (short-term, summer) </span></p>
+                        <!--<input type="radio" id="housing_type_1" name="postgrad" class="regular-radio" value="Postgraduate" checked="checked"/><label for="postgrad">Postgraduate (long-term)</label>
+                        <input type="radio" id="housing_type_2" name="summer" class="regular-radio" value="Summer"/><label for="summer">Summer (short-term, summer)</label><br />-->
+                    </div>
+                </div>
+            <div class="holder">
+                 <div>
+                    <%= f.label :max_rent, "What is the most you are willing to pay (per person) for you next pad?" %>
+                    <%= f.text_field :max_rent, "size" => 10 %>
+                    <p class="roommates_both"><%= f.label :roommates_estimate, "How many roommates would you like?" %></p>
+                    <p class="housing_only"><%= f.label :roommates_amount, "How many roommates will be living with you?" %></p>
+                    <div class="button-holder">
+                        <%= radio_button_tag(:roommates_amount, "1") %> 1 
+                        <%= radio_button_tag(:roommates_amount, "2") %> 2 
+                        <%= radio_button_tag(:roommates_amount, "3") %> 3 
+                        <%= radio_button_tag(:roommates_amount, "4") %> 4 
+                        <%= radio_button_tag(:roommates_amount, "5") %> 5 
+                        <%= radio_button_tag(:roommates_amount, "5 or more, specify") %> 5 or more, specify 
+                        <%= f.text_field :roommates_amount, "size" => 5 %>
+                        <%= radio_button_tag(:roommates_amount, "Don't care") %> Don't care 
+                        <!--<input type="radio" id="roommates_num_1" name="roommatesone" class="regular-radio" value="1" checked="checked"/><label for="roommatesone">1</label>
+                        <input type="radio" id="roommatestwo" name="roommatestwo" class="regular-radio" value="2"/><label for="roommatestwo">2</label>
+                        <input type="radio" id="roommates_num_3" name="roommatesthree" class="regular-radio" value="3"/><label for="roommatesthree">3</label>
+                        <input type="radio" id="roommates_num_4" name="roommatesfour" class="regular-radio" value="4"/><label for="roommatesfour">4</label>
+                        <input type="radio" id="roommates_num_5" name="roommatesfive" class="regular-radio" value="Do not care"/><label for="roommatesfive">5</label>
+                        <input type="radio" id="roommates_num_5" name="roommatesdc" class="regular-radio" value="Do not care"/><label for="roommatesdc">Don't care</label>-->
+                        <!-- </div>-->
+                        <!--<div class="housing_only">-->
+                            <!--<input type="radio" id="roommates_num_6" name="roommatesplus" class="regular-radio" value="Other"/><label for="roommatesplus">5 or more, specify</label>
+                            <input class="short_other" type="text" name="roommates_num_other" placeholder=""/>-->
+                       </div> 
+                    </div>
+                 <!-- End of holder -->
+            <div class="holder">
+                <div class="roommates_both">
+                    <p><%= f.label :roommates_group, "Have you already formed a roommate group of two or more to which you are looking to add roommates?" %></p>
+                    <div class="button-holder">
+                        <%= radio_button_tag(:roommates_group, "Yes") %> Yes 
+                        <%= radio_button_tag(:roommates_group, "No") %> No 
+                        <!--<input type="radio" id="formed_group_1" name="formed_group_1" class="regular-radio" value="Yes"/><label for="formed_group_1">Yes</label>
+                        <input type="radio" id="formed_group_2" name="formed_group_2" class="regular-radio" value="No" checked="checked" /><label for="formed_group_2">No</label><br />-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="holder">
+                <div class="roommates_both other_roommates">
+                    <p><%= f.label :roommates_names, "Great! We can help with that too. List the names of all others in your rooming group (seperated by a comma) and make sure they fill out the Padibility Questionnaire too." %></p>
+                    <p><%= f.text_field :roommates_names, "size" => 50 %></p>
+                </div>
+            </div>
+            <span id="range"><div class="holder">
+                <div class="roommates_both">
+                    <%= f.label :age_min, "Age Min." %> 
+                    &nbsp;<%= f.text_field :age_min, "size" => 3 %>
+                    <span id="movein"><%= f.label :move_in, "Move in date:" %>
+                    <%= f.text_field :move_in, "size" => 10 %></span>
+                </div>
+            </div></span>
+            <div class="holder">
+                <p><%= f.label :age_max, "Age Max." %>
+                    <%= f.text_field :age_max, "size" => 3 %>
+                    <span id="moveout"><%= f.label :move_out, "Move out date: (optional)" %>
+                    <%= f.text_field :move_out, "size" => 10 %>
+</span>
+                    </p>
+            </div> <!-- End of holder -->
+            <div class="holder">
+                <!--<div class="housing_both">-->
+                    <p><%= f.label :bedrooms, "How many bedrooms would you prefer to have in your apartment?" %><%= f.text_field :bedrooms, "size" => 3 %></p>
+                    <!--<div class="button-holder">
+                        <table>
+                        <tr>
+                            <td><input type="radio" id="bed_num_1" name="studio" class="regular-radio" value="Studio" checked="checked"/><label for="studio">Studio</label></td>
+                            <td><input type="radio" id="bed_num_2" name="bedtwo" class="regular-radio" value="1"/><label for="bedtwo">1 Bedroom</label></td>
+                            <td><input type="radio" id="bed_num_3" name="bedthree" class="regular-radio" value="2"/><label for="bedthree">2 Bedrooms</label></td>
+                            <td><input type="radio" id="bed_num_4" name="bedfour" class="regular-radio" value="3"/><label for="bedfour">3 Bedrooms</label></td>
+                        <td><input type="radio" id="bed_num_5" name="bed_num" class="regular-radio" value="4+"/><label for="bedfive">4+ Bedrooms</label></td></tr>
+
+                    </div>
+                </table>
+                </div>-->
+            </div>
+            <div class="holder">
+                <div class="housing_both">
+                    <p><%= f.label :amenities, "What minimum amenities would you prefer to have in your apartment?" %></p>
+                    <div class="button-holder">
+                        <table id="amenities">
+                            <tr>
+                                <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Balcony") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Dishwasher") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Doorman") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Elevator") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Furnished") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Garage") %></td>
+                    </tr>
+                    <tr>
+                        <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Gym") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "In-Unit Laundry") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Laundry Room") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Outdoor Space") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Parking") %></td>
+                                    <td><%= check_box_tag(:amenities) %>
+                                    <%= label_tag(:amenities, "Terrace") %></td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <div id ="sound" class="holder">
+                <!--<div class="housing_only">-->
+                <p><%= f.label :noise, "What is your ideal noise level?" %>
+                <span class="ear"><%= f.text_field :noise, "size" => 50 %></span></p>
+                </div>
+            </div>
+            <div class="holder">
+                 <div class="roommates_both">
+                    <p><%= f.label :wake_up, "Wake up time" %><span id="wake"><%= f.text_field :wake_up, "size" => 15 %></span></p>
+                    <p><%= f.label :bedtime, "Bed time" %><span id="sleep"><%= f.text_field :bedtime, "size" => 15 %></span></p>
+                    </div>
+                    </div>
+            <div class="holder">
+                 <div>
+                    <p><span class="housing_only"><%= f.label :apartment_pet, "Are you okay with pets in the apartment?" %></span>
+                    <span class="roommates_both"><%= f.label :roommate_pet, "Would you be okay if your roommate had a pet?" %></span>
+                    <span class="button-holder">
+                        <%= radio_button_tag(:apartment_pet, "Yes") %> Yes 
+                        <%= radio_button_tag(:apartment_pet, "No") %> No 
+                        </p>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <p><%= f.label :sociability, "Describe your level of sociability." %>
+                        <span id="social"><%= f.text_field :sociability, "size" => 50 %></span></p>
+                    <p><%= f.label :tidiness, "Describe your level of tidiness:" %>
+                        <span id="tidy"><%= f.text_field :tidiness, "size" => 50 %></span></p>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <p><%= f.label :interest, "List some of your interests and activites: (Separate each with a comma)" %></p>
+                        <p><%= f.text_field :interest, "size" => 50 %></p>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <p><%= f.label :political, "Describe your political views:" %>
+                        <span id="politic"><%= f.text_field :political %></span></p>
+                    <p><%= f.label :roommate_political, "Do the political views of your roommate matter to you?" %>
+                        <%= radio_button_tag(:roommate_political, "Yes") %> Yes 
+                        <%= radio_button_tag(:roommate_political, "No") %> No </p>
+                        <p><%= f.label :religion, "Describe your religious views:" %>
+                            <span id="faith"><%= f.text_field :religion %></span></p>
+                    <p><%= f.label :roommate_religion, "Do the religious views of your roommate matter to you?" %>
+                        <%= radio_button_tag(:roommate_political, "Yes") %> Yes 
+                        <%= radio_button_tag(:roommate_political, "No") %> No </p>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <p><%= f.label :sex_privacy, "How private are you with sex? (Optional)" %>
+                        <%= f.text_field :sex_privacy, "size" => 50 %>
+                    <%= check_box_tag(:sex_privacy, "I choose not to answer that question.") %> I choose not to answer that question. </p>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <table class="addictions">
+                        <tr>
+                    <td><%= f.label :smoke, "Do you smoke?" %></td>
+                        <td><%= radio_button_tag(:smoke, "Yes") %> Yes 
+                        <%= radio_button_tag(:smoke, "No") %> No </td>
+                    <td class="habits"><%= f.label :smoke_often, "How often?" %>
+                        <%= f.text_field :smoke_often, "size" => 50 %></td>
+                </tr>
+                <tr>
+                <td><%= f.label :drink, "Do you drink?" %></td>
+                        <td><%= radio_button_tag(:drink, "Yes") %> Yes 
+                        <%= radio_button_tag(:drink, "No") %> No </td>
+                    <td class ="habits"><%= f.label :drink_often, "How often?" %>
+                        <%= f.text_field :drink_often, "size" => 50 %></td>
+                </tr>
+                <tr>
+                    <td><%= f.label :overnight, "Do you bring overnight guests?" %></td>
+                        <td><%= radio_button_tag(:overnight, "Yes") %> Yes 
+                        <%= radio_button_tag(:overnight, "No") %> No </td>
+                        <td class="habits"><%= f.label :overnight_often, "How often?" %>
+                        <%= f.text_field :overnight_often, "size" => 50 %></td>
+                </tr>
+            </table>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="roommates_both">
+                    <p><%= f.label :question, "Question for Potential Roommate:" %>
+                    <span id="ask"><%= f.text_field :question, "size" => 70 %></span></p>
+                </div>
+                <div><p><%= f.label :hometown, "Which state or country are you originally from?" %>
+                    <%= f.text_field :hometown %></p>
+            </div>
+            <div>
+                <p><%= f.label :school, "What school do you or did you most recently attend?" %>
+                    <%= f.text_field :school %></p>
+            </div>
+            <div>
+                <p><%= f.label :company, "At what company or organization will you be working this summer or after graduation?" %>
+                    <%= f.text_field :company %></p>
+            </div>
+            <!--<div class="housing_only">-->
+                <p><span class="terms_error">Please read the <a href="/terms" target="_blank">Terms & Conditions</a></span></p>
+                <%= check_box_tag(:terms) %>
+                                    <%= label_tag(:terms, "I have read the Terms & Conditions") %>
+                                    <%= f.submit "Submit" %>
+                                </div> 
+                                    
+            <!---</div>-->
+            <div class="circle_wrapper roommates_both">
+                <div class="dark_circle" ></div>
+                <div class="light_circle" ></div>
+                <div class="light_circle" ></div>
+            </div>
+            
+            <div class="housing_only">
+                <div class="submit_button">
+                <input id="submit_room_only" class="nextbutton one pages submitbutton" type="submit" name="submit" value="Submit!" disabled/>
+                </div>
+        </div>
+        </form>
+        <form action="FileUpload.php" method="post" enctype="multipart/form-data"><p>
+    <label for="upload">Upload your Profile Photo:</label><br />
+    <input type="file" name="upload" id="upload"><br/>
+    <input type="submit" name="submit" value="Upload">
+    <div class="roommates_both">
+                <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/></p>
+            </div>
+</form>
+ <!-- End of page one -->
+</div>
+         </div>
+    </div> <!-- End of wrapper -->
+<% end %>
