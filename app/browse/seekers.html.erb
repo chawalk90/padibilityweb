@@ -1,4 +1,4 @@
-<!---<h2>Browse Seekers</h2>
+<h2>Browse Seekers</h2>
 	<h4>SORT BY:</h4><select class="sort">
 		<option value="Compatibility">Compatibility</option>
 		<option value="Update Recency">Update Recency</option>
@@ -7,56 +7,67 @@
 		<option value="Register Date">Register Date</option>
 	</select>
 	<table id="seekers">
-		<tr>
-			<td><div class="cell"><%= @survey.avatar %>
-				<p class="fullname"><%= @survey.name %></p>
-				<p class="percent">78%</p></div>
-			</td>
-			<td><div class="cell"><%= @survey.avatar %>
-				<p class="fullname"><%= @survey.name %></p>
+<% @surveys.each do |survey| %>
+  <tr>
+     <td><div class="cell">
+       <p class="fullname"><%= survey.first_name %> <%= survey.last_name %></p>
+       <p class="percent">78%</p></div>
+   </td>
+ </tr>
+
+			<td><div class="cell">
+				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p><
 				<p class="percent">51%</p></div>
 				</td>
-				<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+				<td><div class="cell">
+				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p>
 				<p class="percent">75%</p></div></td>
 		</tr>
 		<tr>
-			<td><div class="cell"><%= @survey.avatar %>
-				<p class="fullname"><%= @survey.name %></p>
+			<td><div class="cell">
 				<p class="percent">67%</p></div>
 			</td>
-			<td><div class="cell"><%= @survey.avatar %>
-				<p class="fullname"><%= @survey.name %></p>
+			<td><div class="cell">
+				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p></p>
 				<p class="percent">44%</p></div>
 			</td>
-			<td><div class="cell"><%= @survey.avatar %>
-				<p class="fullname"><%= @survey.name %></p>
+			<td><div class="cell">
+				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p>
 				<p class="percent">56%</p></div></td>
 		</tr>
 		<tr>
-			<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+			<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 				<p class="percent">59%</p></div></td>
-					<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+			<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 						<p class="percent">76%</p></div></td>
-						<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+						<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 							<p class="percent">60%</p></div>
 		</tr>
 		<tr>
-			<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+			<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 				<p class="percent">82%</p></div></td>
-				<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+				<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 					<p class="percent">35%</p></div></td>
-						<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+						<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 							<p class="percent">82%</p></div></td>
 		</tr>
 		<tr>
-			<td><div class="cell"><%= @survey.avatar %>
-					<p class="fullname"><%= @survey.name %></p>
+			<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 					<p class="percent">84%</p></div>
 				</td>
-				<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+				<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 					<p class="percent">54%</p></div></td>
-					<td><div class="cell"><%= @survey.avatar %><p class="fullname"><%= @survey.name %></p>
+					<td><div class="cell">
+				<p class="fullname"><%= @browse.first_name %> <%= @survey.last_name %></p>
 						<p class="percent">71%</p></div></td>
 		</tr>
-
-	</table>->
+<% end %>
+	</table>
