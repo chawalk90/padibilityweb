@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140828004106) do
+ActiveRecord::Schema.define(version: 20140827230909) do
 
   create_table "surveys", force: true do |t|
+    t.string   "first_name"
     t.string   "last_name"
     t.boolean  "user_status"
     t.string   "email"
@@ -31,7 +32,6 @@ ActiveRecord::Schema.define(version: 20140828004106) do
     t.integer  "wake_up"
     t.integer  "bedtime"
     t.integer  "max_rent"
-    t.integer  "min_rent"
     t.integer  "move_in"
     t.integer  "move_out"
     t.integer  "bedrooms"
@@ -44,29 +44,14 @@ ActiveRecord::Schema.define(version: 20140828004106) do
     t.boolean  "terms"
     t.string   "avatar"
     t.boolean  "smoke"
-    t.string   "smokeoften"
-    t.boolean  "smokesocially"
-    t.boolean  "smokequit"
     t.boolean  "drink"
-    t.string   "drinkoften"
-    t.boolean  "drinksocially"
-    t.boolean  "drinkquit"
-    t.boolean  "drugs"
-    t.string   "drugsoften"
-    t.boolean  "drugssocially"
-    t.boolean  "drugsquit"
     t.string   "interest"
-    t.string   "sexualactivity"
-    t.boolean  "sexprivacy"
-    t.boolean  "roommatesexprivacy"
     t.boolean  "overnight"
-    t.string   "overnightoften"
-    t.boolean  "roommateovernight"
     t.string   "realty"
     t.boolean  "availability"
-    t.integer  "rentprice"
+    t.integer  "rent"
     t.string   "address"
-    t.string   "otherroom"
+    t.string   "list_rooms"
     t.integer  "age_min"
     t.integer  "age_max"
     t.integer  "age_mode"
