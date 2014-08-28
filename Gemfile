@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "paperclip", "~> 4.1"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 gem 'aws-sdk', '~> 1.5.7'
 
