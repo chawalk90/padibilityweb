@@ -181,6 +181,7 @@
                                     <%= label_tag(:amenities, "Balcony") %></td>
                                     <td><%= check_box_tag(:amenities) %>
                                     <%= label_tag(:amenities, "Dishwasher") %></td>
+                                   
                                     <td><%= check_box_tag(:amenities) %>
                                     <%= label_tag(:amenities, "Doorman") %></td>
                                     <td><%= check_box_tag(:amenities) %>
@@ -335,6 +336,10 @@
     <div class="roommates_both">
                 <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/></p>
             </div>
+            <div class="field">
+  <%= f.label :avatar %><br />
+  <%= f.file_field :avatar %>
+</div>
 </form>
  <!-- End of page one -->
 </div>
