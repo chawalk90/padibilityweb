@@ -7,7 +7,7 @@ Rails.application.configure do
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
-    :bucket => ENV['UPLOADER'],
+    :bucket => ENV['DOMAIN-STYLE'],
     :access_key_id => ENV['ATTACH'],
     :secret_access_key => ENV['STAPLE']
   }
