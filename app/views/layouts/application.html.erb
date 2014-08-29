@@ -26,10 +26,14 @@
 			<%= link_to ("<span>Log In</span>").html_safe, new_user_session_path %></li>
 			<% end %>
 			<% if user_signed_in? %>
-			<li class="glow">
-				<!--insert avatar here-->
-			</li>
+				<%= link_to 'edit account', edit_user_registration_path %>
+				<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
 			<% else %>
+				<%= link_to 'sign in', new_user_session_path %>
+		 	<li class="glow">
+				<!-- insert avatar here -->
+			 </li> 
+
 			<li class="glow">
 				<%= link_to ("<span>Sign Up</span>").html_safe, new_user_registration_path %>
 			</li>
