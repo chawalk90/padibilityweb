@@ -37,6 +37,7 @@
 			<li class="glow">
 				<%= link_to ("<span>Sign Up</span>").html_safe, new_user_registration_path %>
 			</li>
+			<li><%= image_tag user.avatar.url(:square) %> <%= @survey.first_name %> <%= @survey.first_name %></li>
 			<% end %>
 	</ul>
 

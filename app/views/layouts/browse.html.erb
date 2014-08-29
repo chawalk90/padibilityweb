@@ -9,29 +9,29 @@
 	<table id="seekers">
 <% @surveys.each do |survey| %>
   <tr>
-     <td><div class="cell">
+     <td><div class="cell"><%= image_tag user.avatar.url(:square) %>
        <p class="fullname"><%= survey.first_name %> <%= survey.last_name %></p>
        <p class="percent">78%</p></div>
    </td>
  </tr>
 
-			<td><div class="cell">
+			<td><div class="cell"><%= image_tag user.avatar.url(:square) %>
 				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p><
 				<p class="percent">51%</p></div>
 				</td>
-				<td><div class="cell">
+				<td><div class="cell"><%= image_tag user.avatar.url(:square) %>
 				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p>
 				<p class="percent">75%</p></div></td>
 		</tr>
 		<tr>
-			<td><div class="cell">
+			<td><div class="cell"><%= image_tag user.avatar.url(:square) %>
 				<p class="percent">67%</p></div>
 			</td>
-			<td><div class="cell">
+			<td><div class="cell"><%= image_tag user.avatar.url(:square) %>
 				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p></p>
 				<p class="percent">44%</p></div>
 			</td>
-			<td><div class="cell">
+			<td><div class="cell"><%= image_tag user.avatar.url(:square) %>
 				<p class="fullname"><%= @survey.first_name %> <%= @survey.last_name %></p>
 				<p class="percent">56%</p></div></td>
 		</tr>
