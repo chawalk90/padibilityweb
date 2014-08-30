@@ -364,6 +364,9 @@ h2 {
 	padding-left:30px;
 	padding-right:30px;
 }
+#lineup h2 {
+	margin-top:0;
+}
 #lineup table td {
 	width:300px;
 	padding-right:5px;
