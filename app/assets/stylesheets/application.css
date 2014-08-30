@@ -141,7 +141,7 @@ header {
 	display:none;
 }
 .clearfix {
-	margin:0;
+	margin:auto;
 	height:75px;
 }
 .highlight {
