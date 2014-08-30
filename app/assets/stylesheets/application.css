@@ -191,14 +191,18 @@ header {
 	text-decoration:none;
 	font-size:20px;
 }
-.learn, .signin p {
+.signin p {
 	background-color:#ed9c28;
 	height:60px;
 	width:300px;
 	font-size:36px;
 }
+.learn p {
+	margin-top:auto;
+	margin-bottom:auto;
+}
 .learn {
-	margin-top:20px;
+	margin-top:18px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
