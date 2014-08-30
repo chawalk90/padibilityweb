@@ -249,8 +249,7 @@ header {
 	color:#ed9c28;
 }
 .intro img {
-	padding-left:auto;
-	padding-right:auto;
+	text-align:center;
 }
 .intro p {
 	text-align:center;
