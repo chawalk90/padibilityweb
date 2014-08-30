@@ -374,8 +374,7 @@ h2 {
 }
 table .dos {
 	width:650px;
-	position:relative;
-	left:120px;
+	margin-left:120px;
 }
 #manual p, #manual li {
 	font-size:18px;
