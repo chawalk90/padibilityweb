@@ -26,8 +26,6 @@ header, footer {
 	color:white;
 	width:100%;
 	overflow:hidden;
-	margin-left:-7px;
-	margin-top:-7px;
 }
 footer {
 	position:fixed;
@@ -249,16 +247,12 @@ header {
 	color:#ed9c28;
 }
 .intro img {
-	top:-23px;
 	margin-left:auto;
 	margin-right:auto;
 }
 .intro p {
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:15px;
-	position:relative;
-	top:-45px;
 }
 .info {
 	position:relative;
