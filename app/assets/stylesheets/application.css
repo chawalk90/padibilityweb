@@ -112,6 +112,10 @@ header {
 	margin-left:-15px;
 	list-style-type:none;
 }
+.entrance .pad {
+	color:white;
+	text-decoration:none;
+}
 .schoolemail #send {
 	position:relative;
 	left:108px;
