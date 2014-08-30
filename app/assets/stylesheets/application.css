@@ -115,6 +115,7 @@ header {
 .entrance a {
 	color:black;
 	text-decoration:none;
+	font-weight:bold;
 }
 .schoolemail #send {
 	position:relative;
