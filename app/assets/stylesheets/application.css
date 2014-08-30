@@ -249,12 +249,11 @@ header {
 	color:#ed9c28;
 }
 .intro img {
-	margin-left:30%;
-	margin-right:30%;
+	margin-left:25%;
+	margin-right:25%;
 }
 .intro p {
-	margin-left:auto;
-	margin-right:auto;
+	text-align:center;
 }
 .info {
 	position:relative;
