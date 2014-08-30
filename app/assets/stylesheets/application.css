@@ -30,10 +30,8 @@ header, footer {
 	margin-top:-7px;
 }
 footer {
-	position:relative;
-	top:20px;
-	left:-3px;
-	height:45px;
+	position:absolute;
+	bottom:0;
 }
 footer p {
 	margin-left:12px;
