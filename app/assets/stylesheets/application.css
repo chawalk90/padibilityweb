@@ -249,13 +249,13 @@ header {
 	color:#ed9c28;
 }
 .intro img {
-	overflow:hidden;
 	top:-23px;
 	margin-left:auto;
 	margin-right:auto;
 }
 .intro p {
-	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
 	margin-bottom:15px;
 	position:relative;
 	top:-45px;
