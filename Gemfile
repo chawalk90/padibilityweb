@@ -30,6 +30,8 @@ gem 'spring',        group: :development
 
 gem 'rmagick'
 
+gem 'fog'
+
 
 
 # Use ActiveModel has_secure_password
