@@ -337,8 +337,8 @@
                 <input id="next1" class="nextbutton one pages" type="submit" name="submit" value="Save and continue >"/></p>
             </div>
             <div class="field">
-  <%= f.label :avatar %><br />
-  <%= f.file_field :avatar %>
+        <%= form_for(@image, remote: true, html: {id: 'uploadForm', multipart: true }) do |f| %>
+  Upload a file: <%= f.file_field :sharedimg, label: false %>
 </div>
 </form>
  <!-- End of page one -->
