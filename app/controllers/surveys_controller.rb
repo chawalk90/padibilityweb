@@ -3,11 +3,11 @@ class SurveysController < ApplicationController
   def survey_params
     survey_params = params.require(:survey).permit(:avatar)
   end
-
+  before_action :authenticate_user!
   def new
     @survey = Survey.new
   end
-
+  before_action :authenticate_user!
   def create
     @survey = Survey.new(survey_params)
     #if @survey.save
@@ -17,13 +17,13 @@ class SurveysController < ApplicationController
     #end
   end
   private
-
+  before_action :authenticate_user!
   def owners
     @survey = Survey.new(survey_params)
     @survey.user_id=current_user.id
     @survey.save
   end
-
+  before_action :authenticate_user!
   def seeker
     @survey = Survey.new
     @survey.save
