@@ -8,12 +8,12 @@ class User < ActiveRecord::Base
 		}
 		# , :default_url => "/images/:style/missing.png"
 	validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
-	attr_accessible :name, :email, :password, :password_confirmation,
-                  :avatar,
-                  :avatar_file_name,
-                  :avatar_content_type,
-                  :avatar_file_size,
-                  :avatar_updated_at
+	#attr_accessible :name, :email, :password, #:password_confirmation,
+    #              :avatar,
+    #              :avatar_file_name,
+    #              :avatar_content_type,
+    #              :avatar_file_size,
+    #              :avatar_updated_at
   	has_secure_password
   	before_save { |user| user.email = email.downcase }
  	validates :first_name, :last_name, presence: true, length: { maximum: 50 }
