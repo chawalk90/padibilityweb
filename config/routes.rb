@@ -20,9 +20,7 @@ Rails.application.routes.draw do
   get '/usercreate' =>  'users#create'
 
   devise_for :users
-  resources :users
-  resources :surveys
-  resources :browses
+  resources :users, :surveys, :browses
 
   root to: 'static_pages#home'
   match '/signup',  to: 'users#new'
