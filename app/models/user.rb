@@ -1,4 +1,13 @@
 class User < ActiveRecord::Base
+	devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
+
+	has_attached_file :avatar, styles: { 
+		thumb: '100x100>',
+    	square: '200x200#',
+    	medium: '300x300>'
+		}
+		# , :default_url => "/images/:style/missing.png"
+	validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 	attr_accessible :name, :email, :password, :password_confirmation,
                   :avatar,
                   :avatar_file_name,
@@ -6,9 +15,8 @@ class User < ActiveRecord::Base
                   :avatar_file_size,
                   :avatar_updated_at
   	has_secure_password
-  	has_attached_file :avatar, :styles => { :large => "120x120>", :medium => "48x48>", :thumb => "26x26>" }
   	before_save { |user| user.email = email.downcase }
- 	validates :name,  presence: true, length: { maximum: 50 }
+ 	validates :first_name, :last_name, presence: true, length: { maximum: 50 }
   	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i  
   	validates :email, presence: true,
                     format: { with: VALID_EMAIL_REGEX },
