@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   get '/deviseshow' => 'devise#show'
 
-  get '/usercreate' =>  'users#create'
+  get '/userscreate' =>  'users#create'
 
   devise_for :users
   resources :users, :surveys, :browses
