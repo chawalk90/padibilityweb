@@ -2,6 +2,9 @@
 
     private
 
+    def create
+    end
+
     def sign_up_params
       user_params
     end
