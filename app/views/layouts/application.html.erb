@@ -29,12 +29,12 @@
 				<li><%= link_to 'Edit', edit_user_registration_path %></li>
 				<li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
 
-				<li><%= image_tag current_user.avatar.url(:square) %></li>
+				<li><%= image_tag current_user.avatar.url(:thumb) %></li>
 			<% else %>
 				<li><%= link_to 'Sign In', new_user_session_path %></li>
 		 	<li class="glow">
 				<!-- insert avatar here -->
-			 </li> 
+			 </li>
 
 			<li class="glow">
 				<%= link_to ("<span>Sign Up</span>").html_safe, new_user_registration_path %>
