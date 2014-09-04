@@ -2,7 +2,8 @@
 
     private
 
-    def create(user)
+    def create("user")
+      @user = User.new(user_params)
     end
 
     def sign_up_params
