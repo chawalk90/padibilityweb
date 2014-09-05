@@ -21,7 +21,7 @@ body {
 	overflow:auto;
 	font-size:22px;
 }
-header, footer {
+header {
 	background:black;
 	color:white;
 	width:100%;
@@ -32,6 +32,10 @@ header, footer {
 footer {
 	position:fixed;
 	bottom:0;
+	background:black;
+	color:white;
+	width:100%;
+	margin-left:-7px;
 }
 footer p {
 	margin-left:12px;
