@@ -84,6 +84,7 @@ header {
 .nav #house {
 	float:left;
 	margin-top:-10px;
+	margin-right:10;
 }
 .nav li a {
 	display:inline;
