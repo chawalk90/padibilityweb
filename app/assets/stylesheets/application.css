@@ -140,7 +140,8 @@ header {
 }
 .clearfix {
 	height:75px;
-	margin-bottom:110px;
+	position:relative;
+	bottom:60px;
 }
 .highlight {
 	color:#ed9c28;
