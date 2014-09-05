@@ -11,7 +11,7 @@
 	<div class="nav">
 	<ul class="clearfix">
 		<span id="leftfloat"><li class="glow" id="house"><%= link_to "#{image_tag("home.png")}".html_safe, root_path %></li></span>
-		<span id="rightfloat"><li class="glow"><%= link_to 'How It Works', howitworks_path %></li>
+		<span id="rightfloat"><li class="glow"><%= link_to ("<span>How It Works</span>").html_safe, howitworks_path %></li>
 		<li class="glow"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
 		<li class="glow"><%= link_to ("<span>Contact Us</span>").html_safe %></li>
 		<% if user_signed_in? %>
