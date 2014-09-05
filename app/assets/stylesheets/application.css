@@ -139,8 +139,8 @@ header {
 	display:none;
 }
 .clearfix {
-	margin:auto;
 	height:75px;
+	padding:0;
 }
 .highlight {
 	color:#ed9c28;
