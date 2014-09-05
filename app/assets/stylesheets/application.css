@@ -148,9 +148,7 @@ header {
 }
 .clearfix {
 	height:75px;
-	position:relative;
 	bottom:22px;
-	left:-43px;
 	width:100%;
 }
 .highlight {
