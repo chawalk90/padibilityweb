@@ -260,8 +260,8 @@ header {
 	text-decoration:none;
 	color:#ed9c28;
 }
-.intro #kanga {
-	margin:auto;
+.intro img {
+	margin-left:27%;
 }
 .intro p {
 	text-align:center;
