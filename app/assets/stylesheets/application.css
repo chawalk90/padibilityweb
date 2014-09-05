@@ -163,7 +163,6 @@ header {
 }
 .clearfix #rightfloat {
 	float:right;
-	width:80%;
 }
 .nav .clearfix span {
 	display:inline;
