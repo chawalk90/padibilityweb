@@ -111,7 +111,7 @@ header {
 	text-decoration:none;
 	display:inline;
 }
-.nav #leftfloat li:not(:first-child):hover {
+.nav li:not(:first-child):hover {
 	background-color:#ed9c28;
 	height:60px;
 	width:100px;
