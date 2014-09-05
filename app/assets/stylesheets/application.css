@@ -141,7 +141,7 @@ header {
 .clearfix {
 	height:75px;
 	position:relative;
-	bottom:60px;
+	bottom:30px;
 }
 .highlight {
 	color:#ed9c28;
