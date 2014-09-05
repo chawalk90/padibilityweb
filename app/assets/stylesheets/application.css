@@ -84,7 +84,6 @@ header {
 	display:inline;
 	color:white;
 	font-size:22px;
-	margin-right:50px;
 	text-align:center;
 	line-height:80px;
 	padding: 15px 15px 15px 15px;
@@ -142,7 +141,7 @@ header {
 	height:75px;
 	position:relative;
 	bottom:22px;
-	left:-45px;
+	left:-43px;
 }
 .highlight {
 	color:#ed9c28;
