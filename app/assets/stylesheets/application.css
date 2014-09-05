@@ -85,6 +85,7 @@ header {
 	float:left;
 	margin-top:-10px;
 	margin-right:10px;
+	margin-left:10px;
 }
 .nav li a {
 	display:inline;
@@ -158,22 +159,6 @@ header {
 	padding-left:0;
 }
 .clearfix #leftfloat {
-	float:left;
-}
-.clearfix #rightfloat {
-	float:right;
-}
-.nav .clearfix span {
-	display:inline;
-}
-.clearfix #username {
-	margin-right:8px;
-}
-.highlight {
-	color:#ed9c28;
-	font-size:22px;
-}
-#amenities {
 	padding-bottom:16px;
 }
 #namelist {
