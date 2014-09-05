@@ -158,6 +158,22 @@ header {
 	padding-left:0;
 }
 .clearfix #leftfloat {
+	float:left;
+}
+.clearfix #rightfloat {
+	float:right;
+}
+.nav .clearfix span {
+	display:inline;
+}
+.clearfix #username {
+	margin-right:8px;
+}
+.highlight {
+	color:#ed9c28;
+	font-size:22px;
+}
+#amenities {
 	padding-bottom:16px;
 }
 #namelist {
