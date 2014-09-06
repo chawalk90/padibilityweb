@@ -19,6 +19,12 @@ module Padibilityweb
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    AWS::S3::DEFAULT_HOST.replace "s3-us-east-1.amazonaws.com"
+
+    AWS::S3::Base.establish_connection!(
+        :access_key_id    => ENV['AWS_ACCESS_KEY_ID'],
+        :secret_access_key=> ENV['AWS_SECRET_ACCESS_KEY']
+      )
     config.paperclip_defaults = {:storage => :fog, :fog_credentials => {:provider => "Local", :local_root => "#{Rails.root}/public"}, :fog_directory => "", :fog_host => "localhost"}
   end
 end
