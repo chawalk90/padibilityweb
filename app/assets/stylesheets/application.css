@@ -30,7 +30,7 @@ header {
 	margin-left:-7px;
 }
 footer {
-	position:fixed;
+	position:absolute;
 	bottom:0;
 	background:black;
 	color:white;
