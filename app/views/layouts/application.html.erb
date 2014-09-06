@@ -14,22 +14,14 @@
 		<span id="rightfloat"><li class="glow"><%= link_to ("<span>How it Works</span>").html_safe, howitworks_path %></li>
 			<li class="glow"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
 			<li class="glow"><%= link_to ("<span>Contact Us</span>").html_safe %></li>
-			<% if user_signed_in? %>
-			<li class="glow">
-				<%= link_to ("<span>Log Out</span>").html_safe, destroy_user_session_path, :method=>'delete' %>
-			</li>
-			<li class="glow">
-					<%= link_to ("<span>I'm All Set!</span>").html_safe, "#" %>
-				</li>
-				<% else %>
-				<li class="glow">
-				<%= link_to ("<span>Log In</span>").html_safe, new_user_session_path %></li>
-				<% end %>
 				<% if user_signed_in? %>
+				<li class="glow"><%= link_to ("<span>I'm All Set!</span>").html_safe, "#" %></li>
 					<li class="glow"><%= link_to 'Edit', edit_user_registration_path %></li>
 					<li class="glow"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
 
 					<li class="glow"><%= image_tag current_user.avatar.url(:thumb) %></li>
+					<li class="glow"><%= current_user.email%></li>
+
 				<% else %>
 					<li class="glow"><%= link_to 'Sign In', new_user_session_path %></li>
 			 	<li class="glow">
@@ -39,7 +31,7 @@
 				<li class="glow">
 					<%= link_to ("<span>Sign Up</span>").html_safe, new_user_registration_path %>
 				</li>
-				<li class="glow" id="username"><%= @user.first_name %> <%= @user.last_name %></li>
+				<li class="glow" id="username"> </li>
 			</span>
 				<% end %>
 		</ul>
