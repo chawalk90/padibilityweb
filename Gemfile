@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "paperclip", "~> 4.1"
-gem 'aws-sdk', '~> 1.5.7'
+gem 'aws-s3'. :require => 'aws/s3'
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
