@@ -86,7 +86,7 @@ header {
 	margin-right:10px;
 	margin-left:10px;
 	position:relative;
-	top:-15px;
+	top:-22px;
 }
 .nav li a {
 	display:inline;
@@ -163,7 +163,7 @@ header {
 .nav .clearfix span {
 	display:inline-block;
 }
-.clearfix #username {
+#username {
 	margin-right:8px;
 }
 .highlight {
