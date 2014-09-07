@@ -19,7 +19,7 @@ body {
 	color:white;
 	width:100%;
 	overflow:auto;
-	font-size:22px;
+	font-size:18px;
 	margin-bottom:0;
 }
 header {
@@ -91,7 +91,7 @@ header {
 .nav li a {
 	display:inline;
 	color:white;
-	font-size:20px;
+	font-size:18px;
 	text-align:center;
 	line-height:80px;
 	padding-left:0.8%;
