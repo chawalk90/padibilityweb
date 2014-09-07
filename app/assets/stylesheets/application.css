@@ -114,8 +114,8 @@ header {
 }
 .nav #rightfloat > li:hover {
 	background-color:#ed9c28;
-	height:100%;
-	width:80%;
+	height:10%;
+	width:85%;
 	display:inline;
 }
 .entrance {
