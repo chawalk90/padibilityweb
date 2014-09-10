@@ -145,7 +145,7 @@ header {
 	display:none;
 }
 .clearfix {
-	height:100%;
+	height:60%;
 	padding-left:0;
 }
 .clearfix #leftfloat {
@@ -154,7 +154,6 @@ header {
 .clearfix #rightfloat {
 	float:right;
 	overflow:hidden;
-	height:100%;
 }
 .nav .clearfix span {
 	display:inline-block;
