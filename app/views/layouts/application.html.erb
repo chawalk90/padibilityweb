@@ -6,11 +6,11 @@
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
 	</head>
-	<header>
+	<header class="navbar-fixed-top">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
 		<span class="menu-trigger">MENU</span>
 		<div class="nav">
-		<ul class="clearfix navbar-fixed-top">
+		<ul class="clearfix">
 			<span id="leftfloat"><li class="glow-active" id="house"><%= link_to "#{image_tag("home.png")}".html_safe, root_path %></li></span>
 		<span id="rightfloat"><li class="glow"><%= link_to ("<span>How it Works</span>").html_safe, howitworks_path %></li>
 			<li class="glow"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
