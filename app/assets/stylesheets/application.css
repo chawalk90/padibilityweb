@@ -147,6 +147,7 @@ header {
 .clearfix {
 	height:60%;
 	padding-left:0;
+	padding-bottom:0;
 }
 .clearfix #leftfloat {
 	float:left;
