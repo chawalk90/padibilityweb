@@ -73,8 +73,6 @@ header {
 	color:white;
 	padding-top:2%;
 	padding-bottom:2%;
-	position:relative;
-	top:30px;
 }
 .nav .logout {
 	display:none;
