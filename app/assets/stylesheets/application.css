@@ -69,8 +69,6 @@ header {
 	display:inline;
 	width:7%;
 	color:white;
-	padding-top:2%;
-	padding-bottom:2%;
 }
 .nav .logout {
 	display:none;
@@ -146,8 +144,8 @@ header {
 	display:none;
 }
 .clearfix {
-	height:100%;
-	padding-left:0;
+	height:50px;
+	margin-top:2%;
 }
 .clearfix #rightfloat {
 	float:right;
