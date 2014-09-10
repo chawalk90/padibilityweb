@@ -64,14 +64,12 @@ header {
 }
 .nav li {
 	list-style-type:none;
-	height:100%;
 	text-align:center;
 	margin-right:0px;
 	display:inline;
-	height:80px;
 	width:7%;
 	color:white;
-	padding-top:1.5%;
+	padding-top:2%;
 	padding-bottom:2%;
 }
 .nav .logout {
