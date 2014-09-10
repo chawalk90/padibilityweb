@@ -145,9 +145,8 @@ header {
 	display:none;
 }
 .clearfix {
-	height:100%;
-	padding-left:0;
-	padding-bottom:0;
+	height:50px;
+	margin-top:2%;
 }
 .clearfix #leftfloat {
 	float:left;
