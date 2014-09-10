@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
-<body>
+		<html>
+		<head>
+		  <title>Padibilityweb</title>
+		  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		  <%= csrf_meta_tags %>
+		</head>
+		<body>
 	<div class="intro">
-	<img src="images/padibility_kangaroo.png" height="240" width="360" />
-	<p>Finding Room For People</p>
-	<ul>
-		<li class="pad"><%= link_to 'Need a Pad?', seekerssurvey_path %></li>
-		<li class="pad"><%= link_to 'Got a Pad?', ownersurvey_path %></li>
-		<a href="browse_seekers.html"><li class="pad">Browse Pad Seekers</li></a>
-		<a href="browse_owners.html"><li class="pad">Browse Pad Owners</li></a>
-		<a href="how_it_works.html"><li class="learn">Learn More</li></a>
-	</div>
-	<footer><p>Copyright Padibility 2014</p> <p class="info">Contact us: <a href="info@padibility.com">info@padibility.com</a></p>
-	</footer>
-	</body>
-	</html>
+		<%= image_tag("padibility_kangaroo.png") %>
+		<p>Finding Room For People</p>
+			
+		<ul class="entrance">
+			<li class="pad"><%= link_to 'Need a Pad?', seekerssurvey_path %></li>
+			<li class="pad"><%= link_to 'Got a Pad?', ownerssurvey_path %></li>
+			<li class="pad"><%= link_to 'Browse Pad Seekers', browseseekers_path %></li>
+			<li class="pad"><%= link_to 'Browse Pad Owners', browseowners_path %></li>
+			<li class="learn">Learn More</li></a>
+		</ul>
+		</div>
+		<%= yield %>
+
+		<footer><div id="copyright">Copyright Padibility 2014 <span class="pad_contact">Contact us: <a href="info@padibility.com">info@padibility.com</a></span></div>
+			</footer>
+			<script src="js/bootstrap.js"></script>
+		</body>
+		</html>
