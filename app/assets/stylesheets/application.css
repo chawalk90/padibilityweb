@@ -151,9 +151,6 @@ header {
 	height:100%;
 	padding-left:0;
 }
-.clearfix #leftfloat {
-	float:left;
-}
 .clearfix #rightfloat {
 	float:right;
 	overflow:hidden;
