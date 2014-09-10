@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'static_pages/contact'
 
+  get '/index' => 'static_pages#index'
+
   get '/howitworks' => 'static_pages#howitworks'
 
   get '/team' => 'static_pages#team'
