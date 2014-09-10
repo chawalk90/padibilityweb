@@ -6,34 +6,6 @@
 		  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		  <%= csrf_meta_tags %>
 		</head>
-		<header>
-			<span class="menu-trigger">MENU</span>
-			<div class="nav">
-			<ul class="clearfix">
-				<span id="leftfloat"><li class="glow" id="house"><%= link_to "#{image_tag("home.png")}".html_safe, root_path %></li></span>
-			<span id="rightfloat"><li class="glow"><%= link_to ("<span>How it Works</span>").html_safe, howitworks_path %></li>
-				<li class="glow"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
-				<li class="glow"><%= link_to ("<span>Contact Us</span>").html_safe %></li>
-					<% if user_signed_in? %>
-					<li class="glow"><%= link_to ("<span>I'm All Set!</span>").html_safe, "#" %></li>
-						<li class="glow"><%= link_to 'Edit', edit_user_registration_path %></li>
-						<li class="glow"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
-
-						<li class="glow"><%= image_tag current_user.avatar.url(:thumb) %></li>
-						<li class="glow"><%= current_user.email%></li>
-
-					<% else %>
-						<li class="glow"><%= link_to 'Sign In', new_user_session_path %></li>
-					<li class="glow">
-						<%= link_to ("<span>Sign Up</span>").html_safe, new_user_registration_path %>
-					</li>
-					<li class="glow" id="username"> </li>
-				</span>
-					<% end %>
-			</ul>
-
-		</div>
-		</header>
 		<body>
 	<div class="intro">
 		<%= image_tag("padibility_kangaroo.png") %>
