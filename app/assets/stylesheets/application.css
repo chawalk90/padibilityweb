@@ -45,7 +45,11 @@ body {
 .dropdown-menu {
 	background-color:#ed9c28;
 	list-style-type:none;
-	margin-right:auto;
+	text-align:right;
+}
+.dropdown-menu li {
+	text-align:right;
+	width:100%;
 }
 header {
 	background:black;
@@ -235,6 +239,9 @@ header {
 	font-size:36px;
 	margin-top:auto;
 	margin-bottom:auto;
+}
+.caret {
+	padding-right:5px;
 }
 .learn {
 	margin-top:18px;
