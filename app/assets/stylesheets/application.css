@@ -379,7 +379,7 @@ h2 {
 }
 #lineup h2 {
 	margin-top:20px;
-	margin-bottom:5px;
+	padding-bottom:5px;
 }
 #lineup table td {
 	width:300px;
