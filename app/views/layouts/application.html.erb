@@ -20,7 +20,7 @@
 					<li class="glow"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
 
 					<li class="glow"><%= image_tag current_user.avatar.url(:thumb) %></li>
-					<li class="glow"><%= current_user.email%></li>
+					<li class="glow" id="currentmail"><%= current_user.email%></li>
 
 				<% else %>
 					<li class="glow"><%= link_to 'Sign In', new_user_session_path %></li>

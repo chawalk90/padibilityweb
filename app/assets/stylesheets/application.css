@@ -164,11 +164,15 @@ header {
 .clearfix {
 	height:50px;
 	margin-top:18px;
-	padding-right:5px;
+	padding-right:8px;
 }
 .clearfix #rightfloat {
 	float:right;
 	margin-top:10px;
+}
+#currentmail {
+	margin-left:5px;
+	margin-right:5px;
 }
 .nav .clearfix span {
 	display:inline-block;
