@@ -51,6 +51,9 @@ body {
 	text-align:right;
 	height:50px;
 }
+#settings li a {
+	width:100%;
+}
 header {
 	background:black;
 	color:white;
