@@ -49,6 +49,9 @@ body {
 	display:none;
 	height:90px;
 }
+.dropdown-menu a {
+	text-align:right;
+}
 #settings .dropdown-menu li {
 	text-align:right;
 	height:10px;
