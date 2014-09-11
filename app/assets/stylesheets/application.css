@@ -83,7 +83,7 @@ header {
 .nav li {
 	list-style-type:none;
 	text-align:center;
-	padding-top:-35px;
+	padding-top:-20px;
 	display:inline;
 	width:7%;
 	color:white;
@@ -99,7 +99,7 @@ header {
 	margin-right:10px;
 	margin-left:10px;
 	position:relative;
-	top:-20px;
+	top:-23px;
 }
 .nav li a {
 	display:inline;
@@ -163,7 +163,7 @@ header {
 }
 .clearfix {
 	height:50px;
-	margin-top:2%;
+	margin-top:1.5%;
 }
 .clearfix #rightfloat {
 	float:right;
