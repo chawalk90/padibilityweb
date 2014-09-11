@@ -32,7 +32,7 @@ body {
 }
 #main {
   overflow:auto;
-  padding-bottom:50px; /* this needs to be bigger than footer height*/
+  padding-bottom:45px; /* this needs to be bigger than footer height*/
 }
 .footer {
   position: relative;
@@ -384,6 +384,9 @@ h2 {
 	padding-left:5%;
 	padding-right:5%;
 	padding-top:5px;
+}
+#manual ol {
+	padding-top:50px;
 }
 #lineup {
 	width:920px;
