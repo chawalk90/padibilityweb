@@ -8,6 +8,8 @@
 	</head>
 	<header class="navbar-fixed-top">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<span class="menu-trigger">MENU</span>
 		<div class="nav">
 		<ul class="clearfix"><li class="glow-active" id="house"><%= link_to "#{image_tag("home.png")}".html_safe, root_path %></li>
@@ -16,7 +18,7 @@
 			<li class="glow"><%= link_to ("<span>Contact Us</span>").html_safe %></li>
 				<% if user_signed_in? %>
 				<div class="btn-group">
-    				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><%= current_user.email%><%= image_tag current_user.avatar.url(:thumb) %>
+    				<button type="button" id="userctrl" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><%= current_user.email%><%= image_tag current_user.avatar.url(:thumb) %>
       				<span class="caret"></span>
     				</button>
     <ul class="dropdown-menu" role="menu">
