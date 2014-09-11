@@ -46,11 +46,12 @@ body {
 	background-color:#ed9c28;
 	list-style:none;
 	width:100%;
-	display:inline;
 }
 #settings .dropdown-menu li {
 	text-align:right;
 	height:50px;
+	display:block;
+	width:100%;
 }
 #settings li a {
 	width:100%;
