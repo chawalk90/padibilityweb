@@ -48,6 +48,7 @@ header {
 	width:100%;
 	overflow:hidden;
 	padding-top:-7px;
+	position:fixed;
 }
 footer {
 	position:relative;
