@@ -36,10 +36,11 @@ body {
 }
 .footer {
   position: relative;
-  margin-top: -35px; /* negative value of footer height */
-  height: 35px;
+  margin-top: -45px; /* negative value of footer height */
+  height: 45px;
   clear:both;
   padding-top:10px;
+  padding-bottom:10px;
 } 
 header {
 	background:black;
