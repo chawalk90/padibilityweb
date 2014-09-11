@@ -52,6 +52,10 @@ body {
 .dropdown-menu a {
 	float:left;
 }
+.dropdown-menu hr {
+	height:2px;
+	padding:0;
+}
 #settings .dropdown-menu li {
 	height:10px;
 	display:block;
