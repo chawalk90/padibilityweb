@@ -149,7 +149,6 @@ header {
 }
 .clearfix #rightfloat {
 	float:right;
-	margin-top:20px;
 }
 .nav .clearfix span {
 	display:inline-block;
