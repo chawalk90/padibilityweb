@@ -50,11 +50,12 @@ body {
 	height:90px;
 }
 .dropdown-menu a {
-	float:right;
+	float:left;
 }
 #settings .dropdown-menu li {
 	height:10px;
 	display:block;
+	border-bottom:1px solid black;
 }
 header {
 	background:black;
