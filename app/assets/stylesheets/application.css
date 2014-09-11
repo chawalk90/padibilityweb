@@ -44,6 +44,7 @@ body {
 }
 .dropdown-menu {
 	background-color:#ed9c28;
+	list-style-type:none;
 }
 header {
 	background:black;
