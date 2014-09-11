@@ -163,11 +163,11 @@ header {
 }
 .clearfix {
 	height:50px;
-	margin-top:1.5%;
+	margin-top:2%;
 }
 .clearfix #rightfloat {
 	float:right;
-	margin-top:7px;
+	margin-top:10px;
 }
 .nav .clearfix span {
 	display:inline-block;
