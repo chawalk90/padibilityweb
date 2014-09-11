@@ -65,7 +65,7 @@ header {
 .nav li {
 	list-style-type:none;
 	text-align:center;
-	margin-top:auto;
+	padding-top:auto;
 	display:inline;
 	width:7%;
 	color:white;
