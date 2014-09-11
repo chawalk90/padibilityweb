@@ -164,6 +164,7 @@ header {
 .clearfix {
 	height:50px;
 	margin-top:18px;
+	padding-right:5px;
 }
 .clearfix #rightfloat {
 	float:right;
