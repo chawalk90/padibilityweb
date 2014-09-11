@@ -36,8 +36,8 @@ body {
 }
 .footer {
   position: relative;
-  margin-top: -40px; /* negative value of footer height */
-  height: 40px;
+  margin-top: -35px; /* negative value of footer height */
+  height: 35px;
   clear:both;
   padding-top:10px;
 } 
