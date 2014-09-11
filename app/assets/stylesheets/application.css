@@ -49,7 +49,7 @@ body {
 }
 .dropdown-menu li {
 	text-align:right;
-	width:100%;
+	float:right;
 }
 header {
 	background:black;
