@@ -45,11 +45,10 @@ body {
 .dropdown-menu {
 	background-color:#ed9c28;
 	list-style-type:none;
-	text-align:right;
+	float:right;
 }
 .dropdown-menu li {
 	text-align:right;
-	float:right;
 }
 header {
 	background:black;
