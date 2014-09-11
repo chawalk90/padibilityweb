@@ -105,9 +105,9 @@ header {
 }
 .nav #rightfloat > li:hover {
 	background-color:#ed9c28;
-	padding-top:1%;
+	padding-top:2%;
 	display:inline;
-	margin-bottom:1%;
+	padding-bottom:2%;
 }
 .entrance {
 	list-style-type:none;
