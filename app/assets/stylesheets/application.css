@@ -163,7 +163,7 @@ header {
 }
 .clearfix {
 	height:50px;
-	margin-top:2%;
+	margin-top:8px;
 }
 .clearfix #rightfloat {
 	float:right;
