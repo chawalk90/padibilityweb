@@ -370,12 +370,14 @@ h2 {
 }
 #lineup {
 	width:920px;
-	height:1300px;
+	height:1100px;
 	margin:auto;
 	background: rgba(0, 0, 0, 0.65);
 	padding-left:30px;
 	padding-right:30px;
 	overflow:hidden;
+	position:relative;
+	top:-4px;
 }
 #lineup h2 {
 	margin-top:20px;
