@@ -20,6 +20,7 @@ body {
 	width:100%;
 	overflow:auto;
 	font-size:20px;
+	padding-top:20px;
 	margin-bottom:0;
 }
 header {
@@ -28,7 +29,6 @@ header {
 	width:100%;
 	overflow:hidden;
 	margin-top:-7px;
-	padding-bottom:20px;
 }
 footer {
 	position:relative;
