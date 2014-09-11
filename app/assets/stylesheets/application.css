@@ -40,6 +40,7 @@ body {
   height: 45px;
   clear:both;
   padding-top:10px;
+  padding-bottom:2px;
 } 
 header {
 	background:black;
