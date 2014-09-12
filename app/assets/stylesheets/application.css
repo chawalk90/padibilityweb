@@ -117,6 +117,9 @@ header {
 	display:inline;
 	height:80px;
 }
+.nav:first-child {
+	display:inline-block;
+}
 .nav li {
 	list-style-type:none;
 	text-align:center;
