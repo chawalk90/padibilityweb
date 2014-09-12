@@ -154,7 +154,7 @@ header {
 	text-decoration:none;
 	display:inline;
 }
-.nav #rightfloat > li:hover {
+.navbar-right > li:hover {
 	background-color:#ed9c28;
 	padding-top:2%;
 	display:inline;
