@@ -132,7 +132,7 @@ header {
 	margin-right:10px;
 	margin-left:10px;
 	position:relative;
-	top:-16px;
+	top:18px;
 }
 .nav li a {
 	display:inline;
@@ -270,6 +270,7 @@ header {
 .caret {
 	padding-right:5px;
 	margin-right:5px;
+	color:white;
 }
 .learn {
 	margin-top:18px;
