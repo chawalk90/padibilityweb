@@ -17,7 +17,7 @@
 			<li class="glow"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
 			<li class="glow"><%= link_to ("<span>Contact Us</span>").html_safe %></li>
 				<% if user_signed_in? %>
-				<li id="settings" class="dropdown">
+				<li id="settings" class="dropdown-glow">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> <span id="gutter"><%= current_user.email%> <%= image_tag current_user.avatar.url(:thumb) %></span>
     <ul class="dropdown-menu" role="menu">
     	<li id="update"><%= link_to 'Edit Profile', edit_user_registration_path %></li><br /><hr />
