@@ -53,6 +53,11 @@ body {
 	float:left;
 	margin-top:0;
 }
+.dropdown-menu .active a,
+.dropdown-menu .active a:hover,
+.dropdown-menu .active a:focus {
+	background-color:#ed9c28;
+}
 .dropdown-menu hr {
 	line-height:2px;
 	margin:0;
