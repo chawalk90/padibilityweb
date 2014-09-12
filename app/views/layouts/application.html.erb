@@ -21,7 +21,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> <span id="gutter"><%= current_user.email%> <%= image_tag current_user.avatar.url(:thumb) %></span>
     <ul class="dropdown-menu" role="menu">
     	<li id="update"><%= link_to 'Edit Profile', edit_user_registration_path %></li><br /><hr />
-      <li role="logout"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li><hr id="tablet" /><br />
+      <li role="logout"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li><br /><hr id="tablet" />
       <li role="allset"><%= link_to ("<span>I'm All Set!</span>").html_safe, "#" %></li>
     </ul>
   </li></div>
