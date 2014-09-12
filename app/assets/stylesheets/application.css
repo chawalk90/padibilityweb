@@ -164,7 +164,7 @@ header {
 	padding-bottom:2%;
 }
 .nav #rightfloat .dropdown-menu > li:hover {
-
+	display:none;
 }
 .entrance {
 	list-style-type:none;
