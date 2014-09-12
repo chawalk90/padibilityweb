@@ -52,7 +52,6 @@ body {
 .dropdown-menu a {
 	float:left;
 	margin-top:0;
-	padding-right:5px;
 }
 .dropdown-menu hr {
 	height:2px;
@@ -62,6 +61,7 @@ body {
 	height:10px;
 	display:block;
 	margin-top:0;
+	padding-right:5px;
 }
 header {
 	background:black;
