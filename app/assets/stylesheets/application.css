@@ -163,7 +163,7 @@ header {
 	display:inline;
 	padding-bottom:2%;
 }
-.nav #settings .dropdown-menu a:hover {
+.nav #settings ul a:hover {
 	background-color:#ed9c28;
 }
 .entrance {
