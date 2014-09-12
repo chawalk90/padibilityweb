@@ -54,13 +54,10 @@ body {
 }
 .dropdown-menu hr {
 	height:2px;
-	padding:0;
+	margin:0;
 }
 #settings .dropdown-menu li {
 	height:10px;
-	display:block;
-}
-.dropdown-menu:last-child:hover {
 	display:block;
 }
 header {
@@ -109,7 +106,6 @@ header {
 	display:inline;
 	width:7%;
 	color:white;
-	margin-top:0;
 }
 .nav .logout {
 	display:none;
