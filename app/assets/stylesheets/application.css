@@ -63,6 +63,9 @@ body {
 	margin-top:0;
 	margin-right:5px;
 }
+#gutter {
+	padding-right:5px;
+}
 header {
 	background:black;
 	color:white;
