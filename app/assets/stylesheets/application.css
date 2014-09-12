@@ -159,6 +159,9 @@ header {
 	display:inline;
 	padding-bottom:2%;
 }
+.nav #rightfloat .dropdown-menu > li:hover {
+	padding-bottom:0;
+}
 .entrance {
 	list-style-type:none;
 	padding-left:0;
