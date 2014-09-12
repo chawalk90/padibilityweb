@@ -157,13 +157,15 @@ header {
 	text-decoration:none;
 	display:inline;
 }
-.nav #rightfloat > .glow:hover {
+.nav #rightfloat > li:hover {
 	background-color:#ed9c28;
 	padding-top:2%;
 	display:inline;
 	padding-bottom:2%;
 }
+.nav #rightfloat .dropdown-menu > li:hover {
 
+}
 .entrance {
 	list-style-type:none;
 	padding-left:0;
