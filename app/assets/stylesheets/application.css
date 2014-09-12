@@ -47,14 +47,14 @@ body {
 	list-style:none;
 	width:100%;
 	display:none;
-	height:120px;
+	height:150px;
 }
 .dropdown-menu a {
 	float:left;
 	margin-top:0;
 }
 .dropdown-menu hr {
-	line-height:2px;
+	height:2px;
 	margin:0;
 	padding:0;
 }
@@ -161,9 +161,8 @@ header {
 	padding-bottom:2%;
 }
 .dropdown-menu #tablet {
-	margin-top:20px;
+	margin-top:15px;
 	margin-right:15px;
-	width:100%;
 }
 .nav #rightfloat .dropdown-menu > li:hover {
 
