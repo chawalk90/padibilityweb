@@ -47,21 +47,32 @@ body {
 	list-style:none;
 	width:100%;
 	display:none;
-	height:150px;
+	height:120px;
 }
 .dropdown-menu a {
 	float:left;
 	margin-top:0;
-	padding-right:5px;
 }
 .dropdown-menu hr {
-	height:2px;
+	line-height:2px;
 	margin:0;
+	padding:0;
 }
 #settings .dropdown-menu li {
 	height:10px;
 	display:block;
 	margin-top:0;
+	margin-right:5px;
+	padding-bottom:0;
+}
+#gutter {
+	padding-right:5px;
+	margin-right:5px;
+}
+#update a {
+	padding-top:0;
+	padding-bottom:-5px;
+	margin-bottom:0;
 }
 header {
 	background:black;
@@ -148,6 +159,9 @@ header {
 	padding-top:2%;
 	display:inline;
 	padding-bottom:2%;
+}
+.nav #rightfloat .dropdown-menu > li:hover {
+
 }
 .entrance {
 	list-style-type:none;
