@@ -70,6 +70,7 @@ body {
 }
 #update a {
 	padding-top:0;
+	padding-bottom:-5px;
 	margin-bottom:0;
 }
 header {
