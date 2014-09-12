@@ -159,6 +159,7 @@ header {
 	padding-top:2%;
 	display:inline;
 	padding-bottom:2%;
+	overflow:hidden;
 }
 .entrance {
 	list-style-type:none;
