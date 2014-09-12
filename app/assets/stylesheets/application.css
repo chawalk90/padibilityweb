@@ -160,9 +160,6 @@ header {
 	display:inline;
 	padding-bottom:2%;
 }
-.nav #rightfloat .dropdown-menu > li:hover {
-
-}
 .entrance {
 	list-style-type:none;
 	padding-left:0;
@@ -435,7 +432,7 @@ h2 {
 }
 #lineup {
 	width:920px;
-	height:1050px;
+	height:1080px;
 	margin:auto;
 	background: rgba(0, 0, 0, 0.65);
 	padding-left:30px;
