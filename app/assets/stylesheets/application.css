@@ -56,6 +56,7 @@ body {
 .dropdown-menu hr {
 	height:2px;
 	margin:0;
+	padding:0;
 }
 #settings .dropdown-menu li {
 	height:10px;
