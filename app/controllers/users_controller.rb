@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 	def index
 	end
 
-	before_action :authenticate_user!
+	before_action :authenticate_user!, only [:show, :edit]
 	def show
 		@user = User.find(params[:id])
 	end
