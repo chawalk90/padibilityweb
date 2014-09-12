@@ -47,7 +47,7 @@ body {
 	list-style:none;
 	width:100%;
 	display:none;
-	height:100px;
+	height:110px;
 }
 .dropdown-menu a {
 	float:left;
@@ -64,6 +64,9 @@ body {
 	margin-top:0;
 	margin-right:5px;
 	padding-bottom:0;
+}
+#settings ul {
+	padding-top:0;
 }
 #gutter {
 	padding-right:5px;
