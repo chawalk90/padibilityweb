@@ -61,6 +61,7 @@ body {
 #settings .dropdown-menu li {
 	height:10px;
 	display:block;
+	margin-top:0;
 }
 header {
 	background:black;
