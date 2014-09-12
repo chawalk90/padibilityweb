@@ -13,11 +13,11 @@
 		<span class="menu-trigger">MENU</span>
 		<div class="nav">
 		<ul class="clearfix"><li class="glow-active" id="house"><%= link_to "#{image_tag("home.png")}".html_safe, root_path %></li>
-		<span id="rightfloat"><li class="glow"><%= link_to ("<span>How it Works</span>").html_safe, howitworks_path %></li>
-			<li class="glow"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
+		<li class="glow navbar-right"><%= link_to ("<span>How it Works</span>").html_safe, howitworks_path %></li>
+			<li class="glow navbar-right"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
 			<li class="glow"><%= link_to ("<span>Contact Us</span>").html_safe %></li>
 				<% if user_signed_in? %>
-				<li id="settings" class="dropdown">
+				<li id="settings" class="dropdown navbar-right">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> <span id="gutter"><%= current_user.email%> <%= image_tag current_user.avatar.url(:thumb) %></span>
     <ul class="dropdown-menu" role="menu">
     	<li id="update"><%= link_to 'Edit Profile', edit_user_registration_path %></li><br /><hr />
@@ -26,10 +26,12 @@
     </ul>
   </li></div>
 				<% else %>
-					<li class="glow"><%= link_to 'Sign In', new_user_session_path %></li>
-				<li class="glow">
+					<li id="settings" class="navbar-right">
+					<li class="glow navbar-right"><%= link_to 'Sign In', new_user_session_path %></li>
+				<li class="glow navbar-right">
 					<%= link_to ("<span>Sign Up</span>").html_safe, new_user_registration_path %>
 				</li>
+			</li>
 				<% end %>
 		</ul>
 
