@@ -60,6 +60,9 @@ body {
 	height:10px;
 	display:block;
 }
+.dropdown-menu:last-child:hover {
+	display:block;
+}
 header {
 	background:black;
 	color:white;
@@ -106,6 +109,7 @@ header {
 	display:inline;
 	width:7%;
 	color:white;
+	margin-top:0;
 }
 .nav .logout {
 	display:none;
