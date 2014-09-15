@@ -13,7 +13,7 @@
 		<span class="menu-trigger">MENU</span>
 		<div class="nav"><span class-"navbar-header">
 		<span class="navbar-brand"><%= link_to "#{image_tag("home.png")}".html_safe, root_path %></span></span>
-		<ul class="clearfix navbar-right"><li class="glow"><%= link_to ("<span>How it Works</span>").html_safe, howitworks_path %></li>
+		<ul class="clearfix pull-right"><li class="glow"><%= link_to ("<span>How it Works</span>").html_safe, howitworks_path %></li>
 			<li class="glow"><%= link_to ("<span>The Team</span>").html_safe, team_path %></li>
 			<li class="glow"><%= link_to ("<span>Contact Us</span>").html_safe %></li>
 				<% if user_signed_in? %>
