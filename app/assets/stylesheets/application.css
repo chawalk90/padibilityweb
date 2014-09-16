@@ -167,6 +167,7 @@ header {
 }
 ul.navbar-right {
 	float: right !important;
+	height:100%;
 }
 /*.navbar-right > li:hover {
 	background-color:#ed9c28;
