@@ -181,6 +181,10 @@ ul.navbar-right {
 .navbar-collapse li a {
 	color:white !important;
 }
+.navbar-collapse li {
+	padding-top:2%;
+	padding-bottom:2%;
+}
 
 .entrance {
 	list-style-type:none;
