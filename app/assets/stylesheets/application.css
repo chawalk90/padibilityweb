@@ -188,6 +188,9 @@ ul.navbar-right {
 .navbar-collapse > li:hover {
 	background-color:#ed9c28 !important;
 }
+.navbar-collapse > ul {
+	display:inline-block;
+}
 
 .entrance {
 	list-style-type:none;
