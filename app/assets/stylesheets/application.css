@@ -178,7 +178,7 @@ ul.navbar-right {
 .navbar-collapse {
 	background-color: black;
 }
-.navbar-collapse a {
+.navbar-collapse li {
 	color:white;
 }
 
