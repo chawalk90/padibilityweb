@@ -189,7 +189,6 @@ ul.navbar-right {
 }
 .navbar-right > li:hover {
 	background-color:#ed9c28 !important;
-	overflow:hidden;
 	display:inline;
 }
 .navbar-collapse > ul {
