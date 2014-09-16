@@ -185,6 +185,7 @@ ul.navbar-right {
 .navbar-collapse li {
 	padding-top:2%;
 	padding-bottom:2%;
+	margin-top:1%;
 }
 .navbar-right > li:hover {
 	background-color:#ed9c28 !important;
