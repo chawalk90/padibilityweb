@@ -178,8 +178,8 @@ ul.navbar-right {
 .navbar-collapse {
 	background-color: black;
 }
-.navbar-collapse li {
-	color:white;
+.navbar-collapse li a {
+	color:white !important;
 }
 
 .entrance {
