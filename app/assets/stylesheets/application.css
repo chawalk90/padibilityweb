@@ -186,7 +186,7 @@ ul.navbar-right {
 	padding-top:2%;
 	padding-bottom:2%;
 }
-.navbar-collapse > li:hover {
+.navbar-right > li:hover {
 	background-color:#ed9c28 !important;
 	overflow:hidden;
 	display:inline;
