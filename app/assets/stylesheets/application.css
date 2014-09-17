@@ -170,7 +170,10 @@ ul.navbar-right {
 }
 .navbar-right li ul {
 	float: right !important;
-	width:100%;
+	width:99%;
+}
+.navbar-right li ul li {
+	margin-top:0;
 }
 /*.navbar-right > li:hover {
 	background-color:#ed9c28;
