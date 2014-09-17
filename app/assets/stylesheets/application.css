@@ -185,7 +185,7 @@ ul.navbar-right {
 	overflow:hidden;
 }*/
 div.navbar-collapse {
-	background-color: black;
+	background-color: black !important;
 	overflow:visible;
 }
 .navbar-collapse li a {
