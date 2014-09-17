@@ -168,7 +168,7 @@ ul.navbar-right {
 	float: right !important;
 	height:100%;
 }
-.navbar-right li ul li {
+.navbar-right li ul {
 	float: right !important;
 }
 /*.navbar-right > li:hover {
