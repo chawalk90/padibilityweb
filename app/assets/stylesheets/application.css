@@ -47,7 +47,6 @@ body {
 	list-style:none;
 	height:110px;
 	position:relative;
-	overflow:visible;
 }
 .dropdown-menu a {
 /*	float:left;
@@ -187,6 +186,7 @@ ul.navbar-right {
 }*/
 .navbar-collapse {
 	background-color: black;
+	overflow:visible;
 }
 .navbar-collapse li a {
 	color:white !important;
