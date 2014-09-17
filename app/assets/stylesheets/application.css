@@ -184,7 +184,7 @@ ul.navbar-right {
 	padding-bottom:2%;
 	overflow:hidden;
 }*/
-.navbar-collapse {
+div.navbar-collapse {
 	background-color: black;
 	overflow:visible;
 }
