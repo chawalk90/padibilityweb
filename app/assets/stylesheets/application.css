@@ -184,9 +184,11 @@ ul.navbar-right {
 	padding-bottom:2%;
 	overflow:hidden;
 }*/
-div.navbar-collapse {
-	background-color: black !important;
+.navbar-collapse {
 	overflow:visible;
+}
+.navbar-nav {
+	background-color: black;
 }
 .navbar-collapse li a {
 	color:white !important;
