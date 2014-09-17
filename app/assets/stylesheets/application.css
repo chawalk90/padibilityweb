@@ -45,8 +45,8 @@ body {
 .dropdown-menu {
 	background-color:#ed9c28;
 	list-style:none;
-	width:auto;
 	height:110px;
+	float:right;
 }
 .dropdown-menu a {
 /*	float:left;
