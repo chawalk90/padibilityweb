@@ -46,6 +46,7 @@ body {
 	background-color:#ed9c28;
 	list-style:none;
 	height:110px;
+	position:fixed;
 }
 .dropdown-menu a {
 /*	float:left;
