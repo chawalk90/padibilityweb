@@ -187,7 +187,6 @@ ul.navbar-right {
 }*/
 .navbar-collapse {
 	overflow-x:visible;
-	max-height:80px;
 }
 #bs-navbar-collapse-1 {
 	background-color: black;
